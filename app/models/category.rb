@@ -3,3 +3,5 @@ class Category < ApplicationRecord
   validates :name, uniqueness: true
   validates :description
 end
+
+
