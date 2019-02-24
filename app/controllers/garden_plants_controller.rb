@@ -16,6 +16,7 @@ class GardenPlantsController < ApplicationController
     @garden_plant = GardenPlant.new(params[:garden_plant])
     @garden_plant.plant = Plant.find(params[:plant_id])
     @garden_plant.user = current_user
+    @garden_plant.save!
   end
 
   def edit
@@ -26,8 +27,11 @@ class GardenPlantsController < ApplicationController
 
   end
 
-  def delete
-
+  def destroy
+    @garden_plant = GardenPlant.find(params[:id])
+    @garden_plant.destroy
   end
-
 end
+
+
+
