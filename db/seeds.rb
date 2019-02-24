@@ -1,3 +1,4 @@
+
 vegetables = Category.create!(name: "Vegetables", description: "zhqt cqn djlq")
 tomatoes = Species.create!(
   category: vegetables,
@@ -9,3 +10,4 @@ green_tomato = Plant.create!(
   description: "this is a green tomato",
   species: tomatoes
   )
+
