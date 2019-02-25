@@ -8,7 +8,9 @@ Rails.application.routes.draw do
       resources :plants, only: [:index, :show]
     end
   end
-
-  resources :garden_plants
+  resources :garden_plants, only: [:index, :show, :destroy]
+  resources :plants, only: [] do
+    resources :garden_plants, only: [:new, :create]
+  end
   # get '/dashboard', to: 'users#dashboard'
 end

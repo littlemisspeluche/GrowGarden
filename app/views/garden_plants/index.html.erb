@@ -1,6 +1,8 @@
 <h1>My Garden Plants</h1>
 <% @garden_plants.each do |garden_plant| %>
   <%= garden_plant.plant.name %>
+  <%= link_to "remove plant", garden_plant_path(garden_plant), method: :delete, class: "btn btn-danger" %>
+  <br>
 <% end %>
 
 <br>
