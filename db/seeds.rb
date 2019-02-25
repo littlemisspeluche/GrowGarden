@@ -1,3 +1,9 @@
+puts "Killing all the Plants"
+Plant.destroy_all
+
+
+puts "Killing all the Species"
+Species.destroy_all
 
 puts "Killing all the Plants"
 Plant.destroy_all
@@ -265,4 +271,5 @@ flowers = Category.create!(
         description: "Cymbidium, commonly known as boat orchids, is a genus of evergreen flowering plants in the orchid family Orchidaceae.",
         species: orchids
       )
+
 

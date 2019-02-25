@@ -1,3 +1,17 @@
+
+<h1>Categories#index</h1>
+<%= form_tag search_path, method: :get do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class:  "form-inline",
+    placeholder: "Find a plant"
+  %>
+  <button name="button" type="submit">Submit</button>
+
+<% end %>
+
+
+
 <h1>Homepage</h1>
 
 
