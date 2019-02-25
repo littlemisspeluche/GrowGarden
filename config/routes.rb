@@ -8,6 +8,8 @@ Rails.application.routes.draw do
       resources :plants, only: [:index, :show]
     end
   end
+  get :search,  to: "plants#search"
+  get :autocomplete, to: 'plants#autocomplete'
 
   resources :garden_plants
 

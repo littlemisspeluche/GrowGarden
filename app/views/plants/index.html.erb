@@ -1,2 +1,13 @@
 <h1>Plants#index</h1>
 <p>Find me in app/views/plants/index.html.erb</p>
+<%if @plants.empty? %>
+<ul>
+	<%= link_to "Sorry :( Try again" , categories_path %>
+	
+ <% else  %>
+	<% @plants.each do |plant| %>
+	<li><%= plant.name %> </li>
+	<%end %>
+ <%end %>
+</ul>
+
