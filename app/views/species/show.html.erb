@@ -1,2 +1,8 @@
 <h1>Species#show</h1>
-<p>Find me in app/views/species/show.html.erb</p>
+
+<% @plants.each do |plant| %>
+  <%= link_to "#{plant.name}",  "categories/:category_id/species/:species_id/plants/:id" %>
+<%end %>
+ <!-- /categories/:category_id/species/:species_id/plants/:id -->
+ <br>
+

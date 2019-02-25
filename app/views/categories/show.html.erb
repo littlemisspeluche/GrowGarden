@@ -1,3 +1,9 @@
 <h1>Categories#show</h1>
-<p>Find me in app/views/categories/show.html.erb</p>
+
 <%= @category.name %>
+
+<% @species.each do |species| %>
+  <%= link_to "#{species.name}",  category_species_path(species), class: "btn btn-success" %>
+<% end %>
+<br>
+<%= link_to "back to categories", categories_path(@category) %>

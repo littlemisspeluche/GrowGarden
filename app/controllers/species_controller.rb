@@ -5,5 +5,6 @@ class SpeciesController < ApplicationController
 
   def show
     @species = Species.find(params[:id])
+    @plants = Plant.all
   end
 end

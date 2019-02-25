@@ -10,6 +10,5 @@ Rails.application.routes.draw do
   end
 
   resources :garden_plants
-
   # get '/dashboard', to: 'users#dashboard'
 end
