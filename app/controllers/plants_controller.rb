@@ -13,13 +13,10 @@ class PlantsController < ApplicationController
   		render :index
   	else
   		@plants = Plant.all
-
-  		render :index 
   	end
   end
   def autocomplete
     results = Plant.plants_search(params[:q])
-   
     render json: results.map(&:name)
   end
 

@@ -15,18 +15,9 @@ const autocompleteSearch = function() {
             console.log(data)
             suggest(data);
         })
-        // .then((data) => {
-        //   const matches = []
-        //   data.skills.forEach((skill) => {
-        //     matches.push({type: 'skill', name: skill });
-        //   });
-        //   data.users.forEach((user) => {
-        //     matches.push({type: 'user', name: user });
-        //   });
-        //   suggest(matches)
-        // });
+        
       },
-      // renderItem: renderItem,
+      
     });
   }
 };
