@@ -26,14 +26,6 @@ class GardenPlantsController < ApplicationController
     end
   end
 
-  def edit
-
-  end
-
-  def update
-
-  end
-
   def destroy
     @garden_plant = GardenPlant.find(params[:id])
     @garden_plant.destroy
