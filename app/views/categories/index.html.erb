@@ -1,6 +1,22 @@
-<h1>Categories#index</h1>
+<h1>Homepage</h1>
 
-<% @categories.each do |category| %>
-<%= category.name %>
-<%= category.description %>
-<% end %>
+
+<div class="container">
+  <h2>What Would You Like To Plant?</h2>
+  <div class="row">
+    <% @categories.each do |category| %>
+    <div class="col-xs-12 col-sm-6">
+      <div class="card-description">
+        <%= image_tag("#{category.name}.jpg")%>
+        <div class="card-description-info">
+          <h2><%= category.name %></h2>
+          <p><%= category.description.truncate(66, omission: '... (Read More)') %></p>
+        </div>
+      </div>
+
+    </div>
+    <% end %>
+  </div>
+</div>
+
+
