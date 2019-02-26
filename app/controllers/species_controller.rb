@@ -5,5 +5,7 @@ class SpeciesController < ApplicationController
 
   def show
     @plants = Plant.all
+
+    render 'plants/index'
   end
 end
