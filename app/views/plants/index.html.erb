@@ -11,3 +11,11 @@
  <%end %>
 </ul>
 
+<h1>Species#show</h1>
+<h3>Which one would you like to add to your garden?</h3>
+<% @plants.each do |plant| %>
+  <%= link_to "#{plant.name}",  category_species_plant_path(plant.species.category, plant.species, plant), class: "btn btn-success" %>
+<%end %>
+ <!-- /categories/:category_id/species/:species_id/plants/:id -->
+ <br>
+<a href="javascript:history.back()" >back</a>

@@ -1,13 +1,10 @@
 class PlantsController < ApplicationController
-  def index
-    @plants = Plant.all
-    @species = Species.all
-  end
 
   def show
     @plant = Plant.find(params[:id])
   end
-  def search
+  
+  def index
   	if params[:query].present?
   		@plants = Plant.plants_search(params[:query])
   		render :index
