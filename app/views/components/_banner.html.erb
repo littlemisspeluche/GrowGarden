@@ -5,7 +5,7 @@
     <div class="container center">
       <div class="row">
         <div class="col-xs-12 search-bar-padding">
-        <%= form_tag search_path, method: :get do %>
+        <%= form_tag plants_path, method: :get do %>
           <%= text_field_tag :query,
               params[:query],
               class:  "form-inline placeholder transparent-search-bar",
