@@ -6,7 +6,9 @@ class Plant < ApplicationRecord
   validates :name, uniqueness: true, presence: true
    include PgSearch
   	pg_search_scope :plants_search,
-    against: [:name],
+
+    against: [ :name ],
+
     associated_against: {
       species: [ :name , :description]
 
