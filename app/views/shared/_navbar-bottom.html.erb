@@ -1,0 +1,34 @@
+<!-- visible-xs-block -->
+
+<div class="visible-xs-block navbar-bottom">
+  <ul>
+    <li><%= link_to "#" do %>
+          <% if current_page?(root_path) %>
+            <%= image_tag "icon-calendar-black.png", height: 40 %>
+          <% else %>
+            <%= image_tag "icon-calendar.png", height: 40 %>
+          <% end %>
+        <% end %>
+      </li>
+    <li>
+      <%= link_to "#" do %>
+          <% if current_page?(garden_plants_path) %>
+            <%= image_tag "icon-plant-black.png", height: 40 %>
+          <% else %>
+            <%= image_tag "icon-plant.png", height: 40 %>
+          <% end %>
+        <% end %>
+    </li>
+    <li>
+      <%= link_to "#" do %>
+      <%= image_tag "icon-watering.png", height: 40, class: "active-watering" %>
+      <% end %>
+    </li>
+    <li>
+      <%= link_to "#" do %>
+      <%= image_tag "icon-loupe.png", height: 40, class: "active-loupe" %>
+      <% end %>
+      </li>
+  </ul>
+</div>
+
