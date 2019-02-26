@@ -1,0 +1,29 @@
+.card-description {
+  border-radius: 2px;
+  margin: 30px 2.5%;
+  box-shadow: 0px 0px 3px 2px #e4e4e4
+}
+
+.card-description img {
+  max-height: 200px;
+  width: 100%;
+  filter:contrast(95%);
+}
+
+.card-description-info {
+  padding: 10px;
+}
+.card-description-info h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+}
+.card-description-info p {
+  font-size: 14px;
+  color: #A9A9A9;
+  font-family: 'PT Sans', sans-serif;
+}
