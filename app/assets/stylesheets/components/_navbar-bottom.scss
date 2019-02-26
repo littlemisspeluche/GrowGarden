@@ -1,0 +1,35 @@
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar-bottom {
+  background-color: #5ba571;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+}
+
+/* Style the links inside the navigation bar */
+.navbar-bottom a {
+  float: center;
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+.navbar-bottom ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar-bottom li {
+  display: inline-block;
+}
+
+
+
+.active-calender:active {
+  background: url('/assets/icon-calendar-black.png');
+}
