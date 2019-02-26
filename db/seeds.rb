@@ -1,23 +1,14 @@
-puts "Killing all the Plants"
-Plant.destroy_all
-
-
-puts "Killing all the Species"
-Species.destroy_all
-
-puts "Killing all the Plants"
-Plant.destroy_all
-
-
-puts "Killing all the Species"
-Species.destroy_all
-
-
-
+puts "Killing all the GardenPlants"
 GardenPlant.destroy_all
+
+puts "Killing all the Plants"
+Plant.destroy_all
+
+puts "Killing all the Species"
+Species.destroy_all
+
 puts "Killing all the Categories"
 Category.destroy_all
-
 
 # CATEGORY
 puts "creating fruits category"
@@ -272,4 +263,4 @@ flowers = Category.create!(
         species: orchids
       )
 
-
+puts "Done"
