@@ -15,9 +15,10 @@ class GardenPlantsController < ApplicationController
   def create
     @garden_plant = GardenPlant.new(strong_params)
     @garden_plant.plant = Plant.find(params[:plant_id])
+    @garden_plant.status = Status.find(params[:status_id])
     @garden_plant.user = current_user
 
-    if @garden_plant.save
+    if @garden_plant.save!
       #this is just a regular link,
       redirect_to garden_plants_path
     else
@@ -35,7 +36,7 @@ class GardenPlantsController < ApplicationController
   private
 
   def strong_params
-    params.require(:garden_plant).permit(:status, :location)
+    params.require(:garden_plant).permit(:location)
   end
 end
 
