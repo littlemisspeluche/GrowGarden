@@ -9,7 +9,7 @@
           placeholder: "Find a plant"
       %><button name="button" type="submit">Grow</button>
     <% end %>
-      
+
     </div>
   </div>
 </div>
@@ -28,7 +28,7 @@
       <div class="card-description">
         <%= image_tag("#{category.name}.jpg")%>
         <div class="card-description-info">
-          <h2><%= category.name %></h2>
+          <h2><%= link_to "#{category.name}", category_path(category) %></h2>
           <p><%= category.description.truncate(66, omission: '... (Read More)') %></p>
         </div>
       </div>
