@@ -1,7 +1,7 @@
 .banner {
   color: white;
   text-align: center;
-  height: 100vh;
+  height: calc(100vh - 250px);
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   display: flex;
@@ -21,8 +21,17 @@
   margin-bottom: 30px;
 }
 
-.placeholder{
+.placeholder {
   color: black;
+  padding: 3px 34px;
 }
 
+.transparent-search-bar {
+  border: none;
+  opacity: 0.5;
+}
 
+.search-bar-padding {
+  padding-right: 0;
+  padding-left: 0;
+}
