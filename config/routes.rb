@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  root to: 'pages#home'
+  root to: 'categories#index'
 
   resources :categories, only: [:index, :show] do
     resources :species, only: [:index, :show] do
