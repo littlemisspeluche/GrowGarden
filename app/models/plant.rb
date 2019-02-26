@@ -1,5 +1,5 @@
 class Plant < ApplicationRecord
-  
+  belongs_to :requirement
   belongs_to :species
   has_many :garden_plants
   # validates :description, :requirements, presence: true
@@ -9,12 +9,12 @@ class Plant < ApplicationRecord
     against: [ :requirements, :name ],
     associated_against: {
       species: [ :name , :description]
-      
+
     },
     using: {
       tsearch: { prefix: true }
     }
-    
+
 end
 
 
