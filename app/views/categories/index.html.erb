@@ -24,16 +24,7 @@
   <h2>What Would You Like To Plant?</h2>
   <div class="row">
     <% @categories.each do |category| %>
-    <div class="col-xs-12 col-sm-6">
-      <div class="card-description">
-        <%= image_tag("#{category.name}.jpg")%>
-        <div class="card-description-info">
-          <h2><%= link_to "#{category.name}", category_path(category) %></h2>
-          <p><%= category.description.truncate(66, omission: '... (Read More)') %></p>
-        </div>
-      </div>
-
-    </div>
+    <%= render 'components/card', category: category %>
     <% end %>
   </div>
 </div>
