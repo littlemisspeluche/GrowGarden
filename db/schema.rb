@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_25_094145) do
+ActiveRecord::Schema.define(version: 2019_02_26_152255) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,11 +45,24 @@ ActiveRecord::Schema.define(version: 2019_02_25_094145) do
   create_table "plants", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.text "requirements"
     t.bigint "species_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "difficulty"
+    t.text "short_description"
+    t.string "uses"
+    t.string "container"
+    t.bigint "requirement_id"
+    t.index ["requirement_id"], name: "index_plants_on_requirement_id"
     t.index ["species_id"], name: "index_plants_on_species_id"
+  end
+
+  create_table "requirements", force: :cascade do |t|
+    t.string "light"
+    t.string "temperature"
+    t.string "watering"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "species", force: :cascade do |t|
@@ -75,6 +88,7 @@ ActiveRecord::Schema.define(version: 2019_02_25_094145) do
 
   add_foreign_key "garden_plants", "plants"
   add_foreign_key "garden_plants", "users"
+  add_foreign_key "plants", "requirements"
   add_foreign_key "plants", "species"
   add_foreign_key "species", "categories"
 end
