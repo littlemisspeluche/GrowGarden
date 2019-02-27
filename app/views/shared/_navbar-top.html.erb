@@ -5,7 +5,7 @@
   <!-- Logo -->
   <div class="navbar-logo">
     <%= link_to root_path, class: "navbar-logo" do %>
-      <%= image_tag "logo.png", height: 80 %>
+      <%= image_tag "logo.png", height: 50 %>
     <% end %>
   </div>
   <% if user_signed_in? %>
@@ -25,8 +25,9 @@
       <%= link_to "Watering", "#", class: "navbar-item" %>
       <%= link_to "My Garden", "#", class: "navbar-item" %>
       <%= link_to "Calendar", "#", class: "navbar-item" %>
+
       <%= link_to destroy_user_session_path, class: "navbar-item",  method: :delete do %>
-  <%= t(".sign_out", default: "Log out") %>
+      <%= t(".sign_out", default: "Log out") %>
         <% end %>
     <% else %>
       <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-item" %>
