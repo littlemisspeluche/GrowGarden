@@ -180,7 +180,7 @@ puts "creating vegetables category"
         name: "Winter Squash ('North Georgia Candy Roaster')",
         description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
         species: squash,
-
+)
   # REQUIREMENTS
     b_req = Requirement.new(
       light: "Full Sun",
@@ -725,32 +725,17 @@ cucumber = Species.create(
           species: cucumber ,
           uses: " Vegetable ",
           container: " Not suitable for containers"
-
+            )
 
        cucumber4.requirement = i_req
        cucumber4.save
       GardenPlant.create(plant: cucumber4, user: user, location:"out", status: status)
 
 
-
-
-
-
-
-
 # # CATEGORY
 puts "creating flowers category"
 
-flowers = Category.create!(
-  name: "Flowers",
-  description: "Variety of flowers suitable for your garden or inside of your home.")
-
 #   # SPECIES
-    jasmin = Species.create!(
-      category: flowers,
-      name: "Jasmin",
-      description: "All types of Jasmin"
-    )
       # REQUIREMENTS
         a_req = Requirement.create(
           light: "Full Sun to Partial Shade",
@@ -758,17 +743,8 @@ flowers = Category.create!(
           watering: "Mesic"
           )
 
-#     # PLANTS
-      jasmin_rossi = Plant.new(
-        name: "Daylily (Hemerocallis 'Jasmine Rossi')",
-        description: "Lilium lancifolium is an Asian species of lily, native to China, Japan, Korea, and the Russian Far East. It is widely planted as an ornamental because of its showy orange-and-black flowers, and has become naturalized in numerous scattered locations in eastern North America.",
-        species: jasmin
-      )
-      jasmin_rossi.requirement = a_req
-      jasmin_rossi.save
 
 
-     GardenPlant.create(plant: jasmin_rossi, user: user, location:"out", status: status)
 
      c_req = Requirement.new(
           light: "Full Sun",

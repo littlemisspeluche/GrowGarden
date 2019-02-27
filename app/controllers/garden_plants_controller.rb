@@ -1,7 +1,7 @@
 class GardenPlantsController < ApplicationController
 
   def index
-    @garden_plants = GardenPlant.all
+    @garden_plant = GardenPlant.where(user_id: current_user)
   end
 
   def show
@@ -13,12 +13,13 @@ class GardenPlantsController < ApplicationController
   end
 
   def create
+
     @garden_plant = GardenPlant.new(strong_params)
     @garden_plant.plant = Plant.find(params[:plant_id])
-    @garden_plant.status = Status.find(params[:status_id])
+    @garden_plant.status = Status.create
     @garden_plant.user = current_user
-
     if @garden_plant.save!
+
       #this is just a regular link,
       redirect_to garden_plants_path
     else
@@ -33,9 +34,38 @@ class GardenPlantsController < ApplicationController
     redirect_to garden_plants_path
   end
 
+
+
+  #LIGHT
+  ##Full Sun                  ==>>>>> 3
+  #Full Sun to Partial Shade  ==>>>>> 2
+  ## Partial Shade            ==>>>>> 1
+
+  ##TEMPERATURE
+  #{"20 and 26"
+
+  # temp = "20 and 30"
+  #splitting = temp.split
+  #(splitting[0] + splitting[2]) / 2 = 25 #this is our average of temp
+
+
+  ## WATERING
+  ## Mesic                    ===>>>> 5
+  ## Mesic Dry                ===>>>> 3
+  ## Dry                      ===>>>> 1
+
+
+
+
+
+
+
+
+
   private
 
   def strong_params
+
     params.require(:garden_plant).permit(:location)
   end
 end
