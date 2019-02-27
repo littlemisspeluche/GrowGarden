@@ -1,5 +1,22 @@
-<h1>Plants#show</h1>
-<h4><%= @plant.name %></h4>
+<div id="plant-banner"></div>
+
+<div><h2><%= @plant.name %></h2></div>
+
+<div class="container">
+  <!-- left column -->
+  <div class="col-xs-6">
+    <div class="card">
+      <p>testing 1</p>
+    </div>
+  </div>
+  <!-- right column -->
+  <div class="col-xs-6">
+      <div class="card">
+      <p>testing 2</p>
+    </div>
+  </div>
+</div>
+
 
 <%= link_to "Add to Garden", new_plant_garden_plant_path(@plant) %>
 <br>
