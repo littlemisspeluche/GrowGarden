@@ -1,18 +1,18 @@
 <h1><% @species.name %></h1>
 <%if @plants.empty? %>
 	<%= link_to "Sorry :( Try again" , categories_path %>
-	
+
  <% else  %>
 	<% @plants.each do |plant| %>
 	<div class="card-product">
   <img src="<%= image_path('Herbs.jpg')%>">
   <div class="card-product-infos">
-    <h2><%= plant.name %></h2>
+    <h2><%= link_to "#{plant.name}", category_species_plant_path(plant.species.category, plant.species, plant) %></h2>
     <p><%= plant.description %> <strong>relevant info</strong> only.</p>
   </div>
 </div>
 
-	
+
 	<%end %>
  <%end %>
 
