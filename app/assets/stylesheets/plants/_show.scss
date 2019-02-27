@@ -6,3 +6,36 @@
 .container {
   display: flex;
 }
+
+.description-card {
+  span {
+    p:first-child {
+      display: none;
+    }
+  }
+}
+
+.mobile-icons {
+  display: flex;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .mobile-icons {
+    display: block;
+  }
+  .description-card {
+    display: flex;
+    align-items: center;
+    span {
+      margin: 10px;
+      p:first-child {
+        display: block;
+      }
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
