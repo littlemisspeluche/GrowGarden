@@ -8,22 +8,34 @@
 }
 
 .description-card {
+  min-width: 112px;
   span {
     p:first-child {
-      display: none;
     }
+  }
+  i {
+    color: #5ba571;
+    border-radius: 50%;
+    border-color: black;
+    padding: 28px;
+    font-size: 25px;
+    background-color: #E0E0E0
   }
 }
 
 .mobile-icons {
   display: flex;
+  text-align: center;
+  justify-content: center;
 }
-
 
 
 @media only screen and (min-width: 768px) {
   .mobile-icons {
     display: block;
+    font-weight: normal;
+    text-align: left;
+
   }
   .description-card {
     display: flex;
@@ -36,6 +48,9 @@
     }
     p {
       margin: 0;
+    }
+    i {
+      background-color: transparent;
     }
   }
 }
