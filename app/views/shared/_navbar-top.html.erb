@@ -1,7 +1,7 @@
 
 
   <!-- Top Navbar (Web) -->
-  <div class="navbar-top navbar-fixed-top hidden-xs hidden-sm">
+<div class="navbar-top navbar-fixed-top">
   <!-- Logo -->
   <div class="navbar-logo">
     <%= link_to root_path, class: "navbar-logo" do %>
@@ -9,6 +9,7 @@
     <% end %>
   </div>
   <% if user_signed_in? %>
+  <div class="hidden-xs hidden-sm">
     <% unless current_page?(root_path) %>
     <div class="nav-search-bar">
         <%= form_tag plants_path, method: :get do %>
@@ -16,8 +17,7 @@
             params[:query],
             class:  "navbar-search",
             placeholder: "What do you want to grow?"%>
-
-            <button class="btn" name="button" type="submit">Grow</button>
+            <button name="button" type="submit">Grow</button>
         <% end %>
     </div>
     <% end %>
@@ -26,12 +26,12 @@
       <%= link_to "My Garden", "#", class: "navbar-item" %>
       <%= link_to "Calendar", "#", class: "navbar-item" %>
       <%= link_to destroy_user_session_path, class: "navbar-item",  method: :delete do %>
-        <%= t(".sign_out", default: "Log out") %>
+  <%= t(".sign_out", default: "Log out") %>
         <% end %>
     <% else %>
       <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-item" %>
     <% end %>
     </div>
   </div>
-
+</div>
 
