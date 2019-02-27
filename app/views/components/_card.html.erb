@@ -1,9 +1,9 @@
 <div class="col-xs-12 col-sm-6">
   <%= link_to category_path(category) do %>
-  <div class="card-description">
-    <%= image_tag("#{category.name}.jpg")%>
-    <div class="card-description-info">
-      <h2><%= link_to "#{category.name}", category_path(category) %></h2>
+  <div class="card-description-info">
+  	<div class="card-img" style="background-image: url(<%= image_path(category.name + '.jpg') %>)"></div>
+    <div class="card-description">
+      <h2><%= category.name %></h2>
       <p><%= category.description.truncate(66, omission: '... (Read More)') %></p>
     </div>
   </div>
