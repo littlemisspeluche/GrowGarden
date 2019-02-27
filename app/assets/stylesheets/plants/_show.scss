@@ -2,17 +2,29 @@
   background-image: asset-url('apple_icon.png');
   background-size: cover;
   height: 400px;
+  position: relative;
 }
 .container {
   display: flex;
 }
 
+.plus {
+  background-color: #5ba571;
+  border-radius: 50%;
+  margin-right: 10px;
+  padding: 30px;
+  position: absolute;
+  right: 30px;
+  bottom: -43px;
+  color: white;
+}
+
 .description-card {
   min-width: 112px;
-  span {
-    p:first-child {
-    }
-  }
+  // span {
+  //   p:first-child {
+  //   }
+  // }
   i {
     color: #5ba571;
     border-radius: 50%;
@@ -31,6 +43,9 @@
 
 
 @media only screen and (min-width: 768px) {
+  .plus {
+     visibility: hidden;
+  }
   .mobile-icons {
     display: block;
     font-weight: normal;
