@@ -7,6 +7,7 @@ class CategoriesController < ApplicationController
 
   def show
   	@category = Category.find(params[:id])
-    @species = Species.all
-  end
+   	@species = Species.where(category_id: @category) 
+    
+   end
 end
