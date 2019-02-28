@@ -1,5 +1,7 @@
 <div id="plant-banner">
-  <i class="fas fa-plus plus"></i>
+  <%= link_to new_plant_garden_plant_path(@plant) do %>
+    <i class="fas fa-plus plus"></i>
+  <% end %>
 </div>
 <div><h2><%= @plant.name %></h2></div>
 <div class="container">
@@ -57,7 +59,7 @@
 </div>
 
 
-<%= link_to "Add to Garden", new_plant_garden_plant_path(@plant) %>
+<%= link_to "Add to Garden", new_plant_garden_plant_path(@plant), class: 'hidden-xs hidden-md' %>
 
 <br>
 <div class="top">
