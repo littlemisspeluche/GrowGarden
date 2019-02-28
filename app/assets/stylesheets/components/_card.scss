@@ -21,6 +21,11 @@
 
 .card-description-info {
   margin: 10px;
+  a {
+    color: $green;
+    font-weight: bold;
+  }
+
 }
 .card-description-info h2 {
   margin-top: 10px;
@@ -57,5 +62,5 @@
   border-width: 1px;
   transition: all 0.2s ease;
 
-  
+
 }
