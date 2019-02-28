@@ -21,6 +21,11 @@
 
 .card-description-info {
   margin: 10px;
+  a {
+    color: $green;
+    font-weight: bold;
+  }
+
 }
 .card-description-info h2 {
   margin-top: 10px;
@@ -56,6 +61,15 @@
   border-style: solid;
   border-width: 1px;
   transition: all 0.2s ease;
+}
 
-  
+.card-product-infos {
+  a {
+    color: $green;
+    font-weight: bold;
+  }
+}
+
+.plant-index {
+  margin-top: 0 !important;
 }

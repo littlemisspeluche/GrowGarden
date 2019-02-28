@@ -1,23 +1,23 @@
-<h1 class="h1">Species-<%= @category.name %> <i class="fas fa-spa"></i></h1>
+<h1 class="h1"><%= @category.name %> <i class="fas fa-spa"></i></h1>
 <div class="row">
 	<% @species.each do |specie| %>
-  	<div class="col-xs-12 col-sm-4">
-			<div class="card-description">
-				<div class="card-imgg" style = "background-image: url(<%= image_path('Herbs.jpg')%>)"></div>
-				<div class="card-description-info">
-				 <%= link_to "#{specie.name}" ,category_species_path(@category, specie)  %>
-					<p><%=specie.description%></p>
-				</div>
-			</div>
-		</div>
-	<% end %>
+  <%= link_to category_species_path(@category, specie) do %>
+  <div class="col-xs-12 col-sm-4">
+   <div class="card-description">
+    <div class="card-imgg" style = "background-image: url(<%= image_path('Herbs.jpg')%>)"></div>
+    <div class="card-description-info">
+     <%= link_to "#{specie.name}" ,category_species_path(@category, specie)  %>
+     <p><%=specie.description%></p>
+   </div>
+ </div>
+</div>
+<% end %>
+<% end %>
 </div>
 
 
 <div class="top">
-<%= link_to "Back", "javascript:history.back()", class: "bt bt-flat" %>
-  
-<button class="btn-yellow" onclick="javascript:history.back()">back</button>
+  <button class="btn-yellow" onclick="javascript:history.back()">back</button>
 
 </div>
 
