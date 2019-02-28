@@ -18,12 +18,10 @@ class GardenPlantsController < ApplicationController
     @garden_plant.plant = Plant.find(params[:plant_id])
     @garden_plant.status = Status.create
     @garden_plant.user = current_user
-    if @garden_plant.save!
-
-      #this is just a regular link,
+    if @garden_plant.save
       redirect_to garden_plants_path
     else
-      #this link does not refresh my variables (does not go through the action in controller, just the view)
+      # this link does not refresh my variables (does not go through the action in controller, just the view)
       render :new
     end
   end

@@ -1,19 +1,23 @@
 <h1 class="h1">Species-<%= @category.name %> <i class="fas fa-spa"></i></h1>
 <div class="row">
-	<% @species.each do |species| %>
+	<% @species.each do |specie| %>
   	<div class="col-xs-12 col-sm-4">
 			<div class="card-description">
 				<div class="card-imgg" style = "background-image: url(<%= image_path('Herbs.jpg')%>)"></div>
-				
 				<div class="card-description-info">
-					<h2><%=species.name%></h2>
-					<p><%=species.description%></p>
+				 <%= link_to "#{specie.name}" ,category_species_path(@category, specie)  %>
+					<p><%=specie.description%></p>
 				</div>
 			</div>
-		</div>		
+		</div>
 	<% end %>
 </div>
 
+
 <div class="top">
 <%= link_to "Back", "javascript:history.back()", class: "bt bt-flat" %>
+  
+<button class="btn-yellow" onclick="javascript:history.back()">back</button>
+
 </div>
+

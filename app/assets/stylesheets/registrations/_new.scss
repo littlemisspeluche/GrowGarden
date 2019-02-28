@@ -1,7 +1,7 @@
 .aa{
  background-color:#D9F9E1;
  width : 100%;
- 
+
 }
 .form{
 	background-color :#F5EEF5;
@@ -14,11 +14,11 @@
 	margin-bottom: 50px;
   	border-radius: 25px;
 	}
-.btn {
-	background: #52B86A;
-	color: white;
-	width:100%;
-}
+// .btn {
+// 	background: #52B86A;
+// 	color: white;
+// 	width:100%;
+// }
 input{
 	opacity: 0.7;
 	color: #80B38C;
@@ -26,9 +26,9 @@ input{
 }
 .title{
 	text-align: center;
-	
+
 	color: #3B5A3B;
-}	
+}
 .title p{
 font-family: PT Sans;
 font-style: normal;
@@ -45,9 +45,10 @@ font-size: 32px;
 
 input::placeholder {
   color: #80B38C !important;
+
   font-size: 15px;
- 
 }
+
 span.errspan{
 float: right;
 top: 36px;
