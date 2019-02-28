@@ -1,8 +1,8 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
 
-<%= link_to "My_Garden", garden_plants_path, class: "btn btn-primary" %>
+<%= link_to "My_Garden", garden_plants_path, class: "btn-yellow" %>
 <br>
 <% @categories.each do |category| %>
-  <%= link_to "#{category.name}",  category_path(category), class: "btn btn-success" %>
+  <%= link_to "#{category.name}",  category_path(category), class: " btn-yellow" %>
 <% end %>

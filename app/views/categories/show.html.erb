@@ -4,15 +4,15 @@
   	<div class="col-xs-12 col-sm-4">
 			<div class="card-description">
 				<div class="card-imgg" style = "background-image: url(<%= image_path('Herbs.jpg')%>)"></div>
-        <%= link_to "#{specie.name}" ,category_species_path(@category, specie)  %>
 				<div class="card-description-info">
-					<h2><%=specie.name%></h2>
+				 <%= link_to "#{specie.name}" ,category_species_path(@category, specie)  %>
 					<p><%=specie.description%></p>
 				</div>
 			</div>
 		</div>
 	<% end %>
 </div>
-<a class="test" href="javascript:history.back()" >back</a>
-<button onclick="javascript:history.back()">back</button>
+
+<button class="btn-yellow" onclick="javascript:history.back()">back</button>
+
 
