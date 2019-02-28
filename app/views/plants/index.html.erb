@@ -1,24 +1,28 @@
-<h1><% @species.name %></h1>
 <%if @plants.empty? %>
-	<%= link_to "Sorry :( Try again" , categories_path %>
-	
- <% else  %>
-	<% @plants.each do |plant| %>
-	<div class="card-product">
-  <img src="<%= image_path('Herbs.jpg')%>">
-  <div class="card-product-infos">
-    <h2><%= plant.name %></h2>
-    <p><%= plant.description %> <strong>relevant info</strong> only.</p>
+	<div class="sorry">
+		<h3>Plant not found :(</h3>
+		<img src="<%= image_path('sorry.png')%>">
+		<%= link_to "Try again",categories_path,class:"bt-flat" %>
   </div>
-</div>
-
-	
-	<%end %>
+<% else  %>
+	<div class="row ">
+		<% @plants.each do |plant| %>
+	 		<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+				<div class="card-product">
+ 		 			<img src="<%= image_path('Herbs.jpg')%>">
+ 		 			<div class="card-product-infos">
+     	 			<h2><%= plant.name %></h2>
+   		 			<p><%= plant.description.truncate(66, omission: '... (Read More)') %> </p>
+  				</div>
+				</div>
+			</div>
+		<%end %>
+	</div>
  <%end %>
 
-
-
-<a href="javascript:history.back()" >back</a>
+<div class="top">	
+	<%= link_to "Back", "javascript:history.back()", class: "bt bt-flat" %>
+</div>
 
 
 
