@@ -11,7 +11,7 @@
 		<% @plants.each do |plant| %>
    <%= link_to category_species_plant_path(plant.species.category, plant.species, plant) do %>
 	 		<div class="col-xs-12 col-sm-6 col-sm-offset-3">
-				<div class="card-product">
+				<div class="card-product plant-index">
  		 			<img src="<%= image_path('Herbs.jpg')%>">
  		 			<div class="card-product-infos">
  		 				 <h3><%= link_to "#{plant.name}", category_species_plant_path(plant.species.category, plant.species, plant) %></h3>
