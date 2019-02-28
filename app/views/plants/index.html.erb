@@ -1,3 +1,4 @@
+
 <div class="container">
   <div class="row">
     <h3><% @species.name %></h3>
@@ -10,14 +11,15 @@
       	<div class="card-product">
         <img src="<%= image_path('Herbs.jpg')%>">
         <div class="card-product-infos">
-          <h3><%= plant.name %></h3>
-          <p><%= plant.description %><strong>relevant info</strong> only.</p>
-        </div>
-      </div>
+    <h2><%= link_to "#{plant.name}", category_species_plant_path(plant.species.category, plant.species, plant) %></h2>
+    <p><%= plant.description %> <strong>relevant info</strong> only.</p>
+  </div>
+</div>
 
 
-      	<% end %>
-       <% end %>
+	<%end %>
+ <%end %>
+
 
     </div>
   </div>

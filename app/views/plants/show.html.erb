@@ -1,4 +1,60 @@
-<h1>Plants#show</h1>
-<h4><%= @plant.name %></h4>
+<div id="plant-banner">
+  <i class="fas fa-plus plus"></i>
+</div>
+<div><h2><%= @plant.name %></h2></div>
+<div class="container">
+  <div class="row">
+    <!-- left column -->
+    <div class="col-xs-12 col-sm-6">
+      <div class="mobile-icons">
+        <div class="description-card">
+          <i class="fas fa-sun"></i>
+          <span>
+            <p><strong>Light</strong></p>
+            <p>Direct Light</p>
+          </span>
+        </div>
+          <div class="description-card">
+            <i class="fas fa-temperature-high"></i>
+            <span>
+              <p><strong>Temp</strong></p>
+              <p>Warm and dry</p>
+            </span>
+          </div>
+          <div class="description-card">
+            <i class="fas fa-sliders-h"></i>
+            <span>
+              <p><strong>Difficulty</strong></p>
+              <p>Not hard</p>
+            </span>
+         </div>
+      </div>
+      <div class="mobile-icons">
+        <div class="description-card">
+          <i class="fas fa-users-cog"></i>
+          <span>
+            <p><strong>Uses</strong></p>
+            <p>Salad</p>
+          </span>
+        </div>
+        <div class="description-card">
+          <i class="fas fa-toolbox"></i>
+          <span>
+            <p><strong>Containers</strong></p>
+            <p>Not relevant</p>
+          </span>
+        </div>
+      </div>
+  </div>
+  <!-- right column -->
+  <div class="col-xs-12 col-sm-6">
+      <div class="card">
+      <p>Winter squash is an annual fruit representing several squash species within the genus Cucurbita. It differs from summer squash in that it is harvested and eaten in the mature fruit stage when the seeds within have matured fully and the skin has hardened into a tough rind. At this stage, most varieties of this fruit can be stored for use during the winter. Winter squash is generally cooked before being eaten, and the skin or rind is not usually eaten as it is with summer squash.[1]
+      In New Zealand and Australian English, the term "pumpkin" generally refers to the broader category called "winter squash."</p>
+    </div>
+  </div>
+  </div>
+</div>
+
 
 <%= link_to "Add to Garden", new_plant_garden_plant_path(@plant) %>
