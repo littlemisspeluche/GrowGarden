@@ -19,7 +19,7 @@ class GardenPlantsController < ApplicationController
     @garden_plant.status = Status.create
     @garden_plant.user = current_user
     if @garden_plant.save
-      UserMailer.plant_added(current_user)
+      UserMailer.plant_added(current_user).deliver_now
       redirect_to garden_plants_path
     else
       # this link does not refresh my variables (does not go through the action in controller, just the view)
