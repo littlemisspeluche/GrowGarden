@@ -7,11 +7,12 @@
 <% else  %>
 	<div class="row ">
 		<% @plants.each do |plant| %>
+
 	 		<div class="col-xs-12 col-sm-6 col-sm-offset-3">
 				<div class="card-product">
  		 			<img src="<%= image_path('Herbs.jpg')%>">
  		 			<div class="card-product-infos">
-     	 			<h2><%= plant.name %></h2>
+ 		 				 <h3><%= link_to "#{plant.name}", category_species_plant_path(plant.species.category, plant.species, plant) %></h3>
    		 			<p><%= plant.description.truncate(66, omission: '... (Read More)') %> </p>
   				</div>
 				</div>
@@ -21,6 +22,6 @@
  <%end %>
 
 <div class="top">	
-	<%= link_to "Back", "javascript:history.back()", class: "bt bt-flat" %>
+	<%= link_to "Back", "javascript:history.back()", class: "btn-yellow" %>
 </div>
 
