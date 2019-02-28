@@ -1,24 +1,29 @@
-<h1><% @species.name %></h1>
-<%if @plants.empty? %>
-	<%= link_to "Sorry :( Try again" , categories_path %>
-	
- <% else  %>
-	<% @plants.each do |plant| %>
-	<div class="card-product">
-  <img src="<%= image_path('Herbs.jpg')%>">
-  <div class="card-product-infos">
-    <h2><%= plant.name %></h2>
-    <p><%= plant.description %> <strong>relevant info</strong> only.</p>
+<div class="container">
+  <div class="row">
+    <h3><% @species.name %></h3>
+    <div class="col-xs-12">
+      <% if @plants.empty? %>
+      	<%= link_to "Sorry, we couldn't find what you search for, you can try again" , categories_path %>
+
+       <% else  %>
+      	<% @plants.each do |plant| %>
+      	<div class="card-product">
+        <img src="<%= image_path('Herbs.jpg')%>">
+        <div class="card-product-infos">
+          <h3><%= plant.name %></h3>
+          <p><%= plant.description %><strong>relevant info</strong> only.</p>
+        </div>
+      </div>
+
+
+      	<% end %>
+       <% end %>
+
+    </div>
   </div>
 </div>
 
-	
-	<%end %>
- <%end %>
 
-
-
-<a href="javascript:history.back()" >back</a>
 
 
 
