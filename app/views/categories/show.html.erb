@@ -1,4 +1,4 @@
-<h1 class="h1">Species-<%= @category.name %></h1>
+<h1 class="h1">Species-<%= @category.name %> <i class="fas fa-spa"></i></h1>
 <div class="row">
 	<% @species.each do |specie| %>
   	<div class="col-xs-12 col-sm-4">
@@ -13,6 +13,11 @@
 	<% end %>
 </div>
 
+
+<div class="top">
+<%= link_to "Back", "javascript:history.back()", class: "bt bt-flat" %>
+  
 <button class="btn-yellow" onclick="javascript:history.back()">back</button>
 
+</div>
 
