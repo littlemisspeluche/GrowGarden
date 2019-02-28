@@ -5,7 +5,7 @@ class SpeciesController < ApplicationController
 
   def show
     @species = Species.find(params[:id])
-    @plants = Plant.all
+    @plants = Plant.where(species_id: @species) 
 
     render 'plants/index'
   end
