@@ -9,6 +9,11 @@
   margin-top: 22px;
   display: flex;
   align-items: center;
+
+  margin-top: 90px;
+  
+
+
 }
 
 .card-product img {
@@ -34,5 +39,18 @@
 
 .card-product .card-product-infos {
   padding: 16px;
+}
+
+.sorry{
+  margin: 50px;
+  margin-top: 145px;
+}
+.sorry h3{
+  color: $green;
+}
+.top {
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
