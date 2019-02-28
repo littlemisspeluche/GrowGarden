@@ -247,7 +247,6 @@ puts "creating vegetables category"
       watering: "Mesic"
       )
 
-
         e_req = Requirement.create(
           light: "Full Sun",
           temperature: "20 and 26",
@@ -309,7 +308,6 @@ puts "creating vegetables category"
         eplant4.requirement = e_req
         eplant4.save
         GardenPlant.create(plant: eplant4, user: user, location:"out", status: status)
-
 
         eplant5 = Plant.new(
           name: "Eggplant (Solanum melongena 'Listada de Gandia')",
@@ -401,7 +399,7 @@ l_req = Requirement.create(
         watering: "Mesic")
 
         lettuce1 = Plant.new(
-          name: "Lettuce (Lactuca sativa )",
+          name: "Lettuce (Lactuca sativa)",
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: lettuce,
           uses: "Vegetable, Salad greens"
@@ -769,7 +767,7 @@ puts "creating flowers category"
         watering: "Mesic")
 
       jessamine = Plant.new(
-      name: "  Jessamine (Gelsemium Jasmine Duet)",
+      name: "Jessamine (Gelsemium Jasmine Duet)",
       description: "Lilium lancifolium is an Asian species of lily, native to China, Japan, Korea, and the Russian Far East. It is widely planted as an ornamental because of its showy orange-and-black flowers, and has become naturalized in numerous scattered locations in eastern North America.",
       species: jasmin,
       uses: "Suitable as Annual"
@@ -791,7 +789,7 @@ puts "creating flowers category"
 
 
       jnights = Plant.new(
-      name: "  Daylily (Hemerocallis 'Jasmine Nights')",
+      name: "Daylily (Hemerocallis 'Jasmine Nights')",
       description: "Lilium lancifolium is an Asian species of lily, native to China, Japan, Korea, and the Russian Far East. It is widely planted as an ornamental because of its showy orange-and-black flowers, and has become naturalized in numerous scattered locations in eastern North America.",
       species: jasmin,
       uses: "Suitable as Annual"
@@ -815,7 +813,7 @@ puts "creating flowers category"
 
 
       jbearded = Plant.new(
-      name: " Tall Bearded Iris (Iris 'Jasmine How')",
+      name: "Tall Bearded Iris (Iris 'Jasmine How')",
       description: "Lilium lancifolium is an Asian species of lily, native to China, Japan, Korea, and the Russian Far East. It is widely planted as an ornamental because of its showy orange-and-black flowers, and has become naturalized in numerous scattered locations in eastern North America.",
       species: jasmin,
       uses: "Suitable as Annual"
@@ -891,7 +889,7 @@ puts "creating flowers category"
 
   # PLANTS
     choy_sum = Plant.new(
-      name: "Choy Sum ",
+      name: "Choy Sum",
       description: "Choy Sum, bai cai or pak choi but they all really mean the same thing: a dark, leafy vegetable with slender stems that's more reminiscent of Swiss chard or spinach than it is a cannonball cabbage.",
       species: cabbage
     )
