@@ -1,57 +1,88 @@
-<div class="navbar-wagon">
+<!-- in the sign-in / sign-up pages :
+                logo -->
+
+<div class="navbar-top navbar-fixed-top">
   <!-- Logo -->
-  <%= link_to root_path, class: "navbar-wagon-brand" do %>
-    <%= image_tag "logo.png", height: 80 %>
-  <% end %>
-
-  <!-- Right Navigation -->
-  <div class="navbar-wagon-right hidden-xs hidden-sm">
-
-    <% if user_signed_in? %>
-
-      <!-- Links when logged in -->
-      <%= link_to "Host", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Trips", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Messages", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-
-      <!-- Avatar with dropdown menu -->
-      <div class="navbar-wagon-item">
-        <div class="dropdown">
-          <%= image_tag "http://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
-          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-            <li>
-              <%= link_to "#" do %>
-                <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
-              <% end %>
-            </li>
-            <li>
-              <%= link_to "#" do %>
-                <i class="fa fa-cog"></i>  <%= t(".settings", default: "Settings") %>
-              <% end %>
-            </li>
-            <li>
-              <%= link_to destroy_user_session_path, method: :delete do %>
-                <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
-              <% end %>
-            </li>
-          </ul>
-        </div>
-      </div>
-    <% else %>
-      <!-- Login link (when logged out) -->
-      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+  <div class="navbar-logo">
+    <%= link_to root_path, class: "navbar-logo" do %>
+      <%= image_tag "logo.png", height: 50 %>
     <% end %>
   </div>
 
-  <!-- Dropdown list appearing on mobile only -->
-  <div class="navbar-wagon-item hidden-md hidden-lg">
-    <div class="dropdown">
-      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
-      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
-      </ul>
+in the homepage web:
+logo
+watering
+my-garden
+calendar
+log out
+
+
+visible-sm-block
+
+
+
+
+in all of the other pages:
+logo
+search-bar
+watering
+my-garden
+calendar
+log out
+
+
+
+
+
+
+  <!-- Top Navbar (Web) -->
+<div class="navbar-top navbar-fixed-top">
+  <!-- Logo -->
+  <div class="navbar-logo">
+    <%= link_to root_path, class: "navbar-logo" do %>
+      <%= image_tag "logo.png", height: 50 %>
+    <% end %>
+  </div>
+  <div class="hidden-md">
+    <% if user_signed_in? %>
+      <% unless current_page?(new_user_session_path) %>
+        <%= link_to destroy_user_session_path, class: "navbar-item",  method: :delete do %>
+              <%= t(".sign_out", default: "Log out") %>
+        <% end %>
+      <% else %>
+        <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-item" %>
+      <% end %>
+    <% end %>
+  </div>
+
+
+  <% if user_signed_in? %>
+    <div class="hidden-xs hidden-sm">
+      <% unless current_page?(root_path) %>
+        <div class="nav-search-bar">
+          <%= form_tag plants_path, method: :get do %>
+            <%= text_field_tag :query,
+              params[:query],
+              class:  "navbar-search",
+              placeholder: "What do you want to grow?"
+            %>
+            <button name="button" type="submit">Grow</button>
+          <% end %>
+        </div>
+      <% end %>
+      <div class="navbar-links">
+        <%= link_to "Watering", "#", class: "navbar-item" %>
+        <%= link_to "My Garden", "#", class: "navbar-item" %>
+        <%= link_to "Calendar", "#", class: "navbar-item" %>
+
+        <%= link_to destroy_user_session_path, class: "navbar-item",  method: :delete do %>
+            <%= t(".sign_out", default: "Log out") %>
+        <% end %>
+      <% else %>
+        <% unless current_page?(new_user_session_path) %>
+          <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-item" %>
+      <% end %>
+    <% end %>
     </div>
   </div>
 </div>
