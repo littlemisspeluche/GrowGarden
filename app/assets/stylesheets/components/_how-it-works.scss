@@ -1,0 +1,95 @@
+
+.section-steps {
+  background-color: #f6f5f3;
+
+}
+
+// .col {
+//   display: block;
+//   float:left;
+//   margin: 1% 0 1% 1.6%;
+// }
+
+/* Small Phones to small tablets: from 481px to 767px*/
+@media only screen and (max-width:767px) {
+  .hero-text-box{padding: 0 4%;}
+  .col {
+    width: 100%;
+    margin: 0 0 4% 0;
+  }
+}
+
+
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.col:first-child {
+  margin-left: 0;
+}
+.span-1-of-2 {
+  width: 49.2%;
+}
+
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen{
+ width: 50%;
+}
+
+// .js--wp-2{
+//   opacity: 0;
+//   -webkit-animation-direction: 1s;
+//   animation-direction: 1s;
+// }
+
+// .js--wp-2.animated {
+//   opacity: 1;
+// }
+.works-step{
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type{
+    margin-bottom: 80px;
+}
+
+.step{
+    color: #c939d3;
+    border: 2px solid #c939d3;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.section-steps h2 {
+  font-size: 26px;
+  color: #3d3d3f;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+
+// img {
+//     height: 50px;
+//     width: auto;
+//     margin-right: 10px;
+// }
+
