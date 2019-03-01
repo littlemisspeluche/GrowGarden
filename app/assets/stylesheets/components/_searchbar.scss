@@ -1,0 +1,46 @@
+
+.search-bar {
+  margin-top: 50px;
+  overflow: auto;
+  -webkit-border-radius: 5px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.search-bar input[type="text"] {
+  border: 0px;
+  width: 45%;
+  padding: 10px 10px;
+  -webkit-border-radius: 5px;
+}
+
+.search-bar input::placeholder {
+  color: #c939d3;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.search-bar input[type="submit"] {
+  border: 0px;
+  background-color: #c939d3;
+  color: #f6f5f3;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  cursor:pointer;
+  width: 94px;
+
+}
+
+/* Medua Query for Search Box */
+
+ @media only screen and (max-device-width: 480px) {
+  .search-bar {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .search-bar input[type="text"] {
+    width: 70%;
+  }
+  .search-bar input[type="submit"] {
+    width: 70px;
+  }
+}

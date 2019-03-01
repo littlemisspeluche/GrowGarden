@@ -1,46 +1,47 @@
-.banner {
-  color: white;
-  text-align: center;
-  height: calc(100vh - 250px);
-  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+.background-img {
   background-size: cover !important;
-  display: flex;
-  align-items: center;
+  // height: calc(100vh - 250px);
+  height: 100vh;
+  text-align: center;
+  padding-top: 40vh;
+  background-position: center;
+  background-attachment: fixed;
   justify-content: center;
+  position: relative;
 }
-.banner h1 {
-  font-size: 50px;
-  font-weight: bold;
+
+.banner-content {
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-size: 44px;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  letter-spacing: 3px;
+  word-spacing: 13px;
+  color: #f6f5f3;
 }
-.banner p {
+
+.banner-content p {
   font-size: 18px;
   font-weight: lighter;
-  color: rgb(255, 255, 255);
-  opacity: 0.9;
+  font-family: 'PT Sans', sans-serif;
+  color: #f6f5f3;
+  opacity: 0.7;
   margin-bottom: 30px;
 }
 
-.placeholder {
-  padding: 3px;
-}
+/* Medua Query for Search Box */
 
-.transparent-search-bar {
-  border: none;
-  opacity: 0.9;
-  font-size: 15px;
-  padding: 9px 7px;
-  width: 225px;
-}
+ @media only screen and (max-device-width: 480px) {
+  .background-img {
+    height: 71vh;
+    padding-top: 23vh;
+    background-size: cover;
+    background-position: center;
+  }
 
 
-.search-bar-padding {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-.button{
-  opacity: 0.9;
-  padding: 6px 12px 10px 12px;
-  border: 0;
 }
