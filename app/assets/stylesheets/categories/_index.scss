@@ -13,7 +13,7 @@ button{
 }
 
 .section-categories {
-  background-color: #f6f5f3;
+  background-color: #f9f8fd;
   padding: 100px 0 0px 0;
   font-size: 16px;
   font-weight: lighter;
@@ -40,4 +40,10 @@ button{
   width: 200px;
   margin: 0 auto;
   margin-top: 30px;
+}
+
+/* Mobile device (up to 812px) - iPhone x : from 481px to 812px*/
+@media only screen and (max-width:812px){
+  .section-categories { padding: 40px 0 0px 0; }
+
 }

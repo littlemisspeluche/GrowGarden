@@ -2,7 +2,7 @@
 .search-bar {
   margin-top: 50px;
   overflow: auto;
-  -webkit-border-radius: 5px;
+  -webkit-border-radius: 3px;
   font-family: 'PT Sans', sans-serif;
 }
 
@@ -10,7 +10,7 @@
   border: 0px;
   width: 45%;
   padding: 10px 10px;
-  -webkit-border-radius: 5px;
+  -webkit-border-radius: 3px;
 }
 
 .search-bar input::placeholder {
@@ -30,7 +30,7 @@
 
 }
 
-/* Medua Query for Search Box */
+/* Media Query for Search Box */
 
  @media only screen and (max-device-width: 480px) {
   .search-bar {

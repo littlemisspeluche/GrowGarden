@@ -1,5 +1,5 @@
 .section-steps {
-  background-color: #f6f5f3;
+  background-color: #f9f8fd;
   padding: 120px 0;
   font-size: 16px;
   font-weight: lighter;
@@ -36,18 +36,6 @@
  width: 40%;
 }
 
-// .js--wp-2{
-//   opacity: 0;
-//   -webkit-animation-direction: 1s;
-//   animation-direction: 1s;
-// }
-
-// .js--wp-2.animated {
-//   opacity: 1;
-// }
-
-
-
 // Header - How it Works
 .section-steps h2 {
   text-align: center;
@@ -80,7 +68,7 @@
    margin-bottom: 80px;
 }
 
-.work-step p:first-child {
+#first-item {
   padding-top: 0;
 }
 .work-step p {
@@ -102,9 +90,45 @@ padding-top: 10px;
   margin-right: 25px;
 
 }
-
+// App Store / Google Store Buttons
 .btn-download {
     height: 40px;
     width: auto;
     margin-right: 10px;
+}
+
+
+/* Mobile device (up to 812px) - iPhone x : from 481px to 812px*/
+@media only screen and (max-width:812px){
+  .section-steps { padding: 40px; }
+    .row,
+    .col {
+      width: 100%;
+      margin: 0 0 4% 0;
+    }
+  .app-screen { width:40%; }
+  .steps-box:first-child { text-align: center; }
+  .work-step { margin-bottom: 20px; }
+  .work-step:last-of-type { margin-bottom: 35px; }
+  .step {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+
+    padding: 4px;
+    font-size: 120%;
+  }
+  #first-item {
+  padding-top: 5px;
+}
+  .work-step p {
+    padding-top: 5px;
+    padding-left: 56px;
+  }
+
+  .btn-download {
+    height: 25px;
+    width: auto;
+    margin-right: 10px;
+  }
 }
