@@ -1,24 +1,10 @@
-
 .section-steps {
   background-color: #f6f5f3;
-
+  padding: 120px 0;
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: 'PT Sans', sans-serif;
 }
-
-// .col {
-//   display: block;
-//   float:left;
-//   margin: 1% 0 1% 1.6%;
-// }
-
-/* Small Phones to small tablets: from 481px to 767px*/
-@media only screen and (max-width:767px) {
-  .hero-text-box{padding: 0 4%;}
-  .col {
-    width: 100%;
-    margin: 0 0 4% 0;
-  }
-}
-
 
 .steps-box:first-child{
     text-align: right;
@@ -26,8 +12,9 @@
     margin-top: 30px;
 }
 
-.col:first-child {
-  margin-left: 0;
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
 }
 .span-1-of-2 {
   width: 49.2%;
@@ -38,14 +25,15 @@
   float: left;
   margin: 1% 0 1% 1.6%;
 }
-
-.steps-box:last-child{
-    padding-left: 3%;
-    margin-top: 70px;
+.col:first-child {
+  margin-left: 0;
 }
 
-.app-screen{
- width: 50%;
+
+// Animated iPhone Display
+
+.app-screen {
+ width: 40%;
 }
 
 // .js--wp-2{
@@ -57,39 +45,66 @@
 // .js--wp-2.animated {
 //   opacity: 1;
 // }
-.works-step{
-    margin-bottom: 50px;
-}
 
-.works-step:last-of-type{
-    margin-bottom: 80px;
-}
 
-.step{
-    color: #c939d3;
-    border: 2px solid #c939d3;
-    display: inline-block;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    padding: 5px;
-    float: left;
-    font-size: 150%;
-    margin-right: 25px;
-}
 
+// Header - How it Works
 .section-steps h2 {
+  text-align: center;
   font-size: 26px;
   color: #3d3d3f;
   font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
+  word-spacing: 2px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  font-weight: lighter;
 }
 
+.section-steps h2:after {
+  display: block;
+  height: 3px;
+  background-color: #c939d3;
+  content:  " ";
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
 
-// img {
-//     height: 50px;
-//     width: auto;
-//     margin-right: 10px;
-// }
+// Work Steps
+.work-step{
+  margin-bottom: 50px;
+}
 
+.work-step:last-of-type{
+   margin-bottom: 80px;
+}
+
+.work-step p:first-child {
+  padding-top: 0;
+}
+.work-step p {
+padding-top: 10px;
+
+}
+// Step Number
+.step{
+  color: #c939d3;
+  border: 3px solid #c939d3;
+  display: inline-block;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
+
+}
+
+.btn-download {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
