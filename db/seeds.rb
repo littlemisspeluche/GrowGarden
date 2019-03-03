@@ -17,13 +17,13 @@ puts "creating user/status"
 
 #USER/STATUS
 status_3 = Status.new()
-user_3 = User.create(email: "liad@gmail.com", password: "123456")
+user_3 = User.create(email: "liad1459@gmail.com", password: "123456")
 status_4 = Status.new()
-user_4 = User.create(email: "barak@gmail.com", password: "123456")
+user_4 = User.create(email: "barakbbg@gmail.com", password: "123456")
 status_2 = Status.new()
-user_2 = User.create(email: "orianne@gmail.com", password: "123456")
+user_2 = User.create(email: "matalonyaniv14@gmail.com", password: "123456")
 status = Status.new()
-user = User.create(email: "matalon@gmail.com", password: "123456")
+user = User.create(email: "matalonyaniv14@gmail.com", password: "123456")
 
 puts "creating flowers category"
 
