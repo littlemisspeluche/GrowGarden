@@ -26,7 +26,7 @@ class GardenPlantsController < ApplicationController
   def create
     @garden_plant = GardenPlant.new(strong_params)
     @garden_plant.plant = Plant.find(params[:plant_id])
-    @garden_plant.status = Status.create
+    @garden_plant.status_today
     @garden_plant.user = current_user
     if @garden_plant.save
       UserMailer.plant_added(current_user).deliver_now
