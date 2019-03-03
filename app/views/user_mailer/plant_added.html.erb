@@ -1,2 +1,7 @@
 <h1>Welcome to Grow Garden</h1>
-<p>TODO: Write content</p>
+<p>Hey <%= @user.email %></p>
+
+
+<p>We're updating you on the new addition to your Garden!!</p>
+<h5><%= GardenPlant.where(user_id: @user).last.plant.name %></h5>
+<p><%= GardenPlant.where(user_id: @user).last.plant.description %><</p>
