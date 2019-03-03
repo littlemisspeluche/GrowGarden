@@ -1148,6 +1148,14 @@ puts "creating flowers category"
   # GARDENPLANT
     GardenPlant.create(plant: oyster_mushroom, user: user, location:"out", status: status)
 
+    #imagas 
+    
+      
+
+
+
+
+    puts "uplading"
 
 
 

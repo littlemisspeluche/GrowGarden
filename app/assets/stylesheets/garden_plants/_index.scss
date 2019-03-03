@@ -7,5 +7,73 @@
 
 .card-garden-plant ul {
   list-style: none;
+
+}
+
+
+.card-garden-plant li {
+  margin-bottom: 6px;
+
+}
+
+
+ul p {
+  color: $green;
+  font-style: bold;
+  border-bottom: 3px solid;
+  margin-right: 30px;
+}
+
+
+#remove-garden-plant {
+  padding-top: 10px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#header-garden  {
+  padding-top: 50px;
+  color: $green;
+  font-style: bold;
+}
+
+
+#req {
+  text-align: center;
+  font-size: 25px;
+}
+
+
+
+#plant-name-garden {
+  text-align: center;
+}
+
+.buttons-garden li {
+  padding-bottom: 5px;
+}
+
+// .show-garden-plant {
+//     margin-top: 10px;
+//     background-color: $green;
+//     padding: 10px 15px;
+//     color: white;
+//     font-weight: bold;
+//     border-radius: 4px;
+//     transition: 0.3s;
+// }
+// .remove_garden_plant{
+//     margin-top: 10px;
+//     background-color: $yellow;
+//     padding: 10px 15px;
+//     color: white;
+//     font-weight: bold;
+//     border-radius: 4px;
+//     transition: 0.3s;
+// }
+#status-plant {
+  margin-top: 20px;
 }
 

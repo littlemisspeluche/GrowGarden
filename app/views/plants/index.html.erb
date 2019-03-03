@@ -1,26 +1,30 @@
-<%if @plants.empty? %>
-	<div class="sorry">
-		<h3>Plant not found :(</h3>
-		<img src="<%= image_path('sorry.png')%>">
-		<%= link_to "Try again",categories_path,class:"bt-flat" %>
-  </div>
-<% else  %>
-	<div class="row ">
-		<% @plants.each do |plant| %>
 
-	 		<div class="col-xs-12 col-sm-6 col-sm-offset-3">
-				<div class="card-product">
- 		 			<img src="<%= image_path('Herbs.jpg')%>">
- 		 			<div class="card-product-infos">
- 		 				 <h3><%= link_to "#{plant.name}", category_species_plant_path(plant.species.category, plant.species, plant) %></h3>
-   		 			<p><%= plant.description.truncate(66, omission: '... (Read More)') %> </p>
-  				</div>
-				</div>
-			</div>
-		<%end %>
-	</div>
- <%end %>
-
-<div class="top">
-	<%= link_to "Back", "javascript:history.back()", class: "btn-yellow" %>
+<div class="container aa">
+  <div class="col-xs-12 col-md-6 col-md-offset-3" >
+    <%if @plants.empty? %>
+      <div class="sorry text-center">
+        <h1>404</h1>
+		    <h3>Plant not found :(</h3>
+        <%= image_tag("http://www.hoohouse.co.uk/img/icon-sad-flower.svg", height: "100") %>
+        <%= link_to "Try again",categories_path,class:"try-again-btn" %>
+      </div>
+    <% else  %>
+       <h1 class="h1"><%= @species.name %> <i class="fas fa-spa"></i></h1>
+	     <div class="row ">
+         <% @plants.each do |plant| %>
+           <%= link_to category_species_plant_path(plant.species.category, plant. species, plant) do %>
+	 		       <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+				       <div class="card-product plant-index">
+ 		 			       <img src="<%= image_path('Herbs.jpg')%>">
+ 		 			       <div class="card-product-infos">
+ 		 				       <h3><%= link_to "#{plant.name}", category_species_plant_path(plant.species.category, plant.species, plant) %></h3>
+   		 			       <p><%= plant.description.truncate(66, omission: '... (Read More)') %> </p>
+  				      </div>
+				      </div>
+			      </div>
+		       <% end %>
+         <% end %>
+	     </div>
+  <%end %>
+</div>
 </div>
