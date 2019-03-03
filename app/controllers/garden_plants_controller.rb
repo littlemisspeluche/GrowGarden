@@ -1,4 +1,14 @@
 class GardenPlantsController < ApplicationController
+  def watering
+    @plants = current_user.garden_plants.to_be_watered_today
+  end
+
+  def water
+    @plant = GardenPlant.find(params[:id])
+    @plant.mark_as_watered
+
+    redirect_to plant_watering_path
+  end
 
   def index
     @garden_plant = GardenPlant.where(user_id: current_user)
