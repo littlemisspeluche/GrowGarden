@@ -1,16 +1,23 @@
-<div class="background-img" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.7) 50%, rgba(0,0,0,0.6) 0%), url(<%= image_path('Herbs.jpg')%>);">
+<div class="banner-top">
   <div class="banner-content">
-    <h1>Grow Garden</h1>
-    <p>We will take care of your plants</p>
-    <div class="form-inline search-bar">
-      <%= form_tag plants_path, method: :get do %>
-        <%= text_field_tag :query,
-            params[:query],
-            class: "input",
-            placeholder: "What do you want to grow?" %>
-            <%= submit_tag 'Search', class: 'button' %>
-      <% end %>
+    <div class="banner-center">
+      <h1>Grow Garden</h1>
+      <p>We will take care of your plants</p>
+      <div class="form-inline search-bar">
+        <%= form_tag plants_path, method: :get do %>
+          <%= text_field_tag :query,
+              params[:query],
+              class: "input",
+              placeholder: "What do you want to grow?" %>
+              <%= submit_tag 'Search', class: 'button' %>
+        <% end %>
+
+      </div>
+
     </div>
+  </div>
+  <div class="background-img">
+    <%= image_tag 'background-img.png' %>
   </div>
 </div>
 
