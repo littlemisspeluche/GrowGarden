@@ -1,8 +1,10 @@
 class GardenPlantsController < ApplicationController
+  # all the plants that need to be watered today(like an index)
   def watering
     @plants = current_user.garden_plants.to_be_watered_today
   end
 
+  # watering a single plant
   def water
     @plant = GardenPlant.find(params[:id])
     @plant.mark_as_watered
