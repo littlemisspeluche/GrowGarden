@@ -1,4 +1,6 @@
 .section-steps {
+  position: absolute;
+  right: 103px;
   background-color: #f9f8fd;
   padding: 120px 0;
   font-size: 16px;
@@ -100,7 +102,10 @@ padding-top: 10px;
 
 /* Mobile device (up to 812px) - iPhone x : from 481px to 812px*/
 @media only screen and (max-width:812px){
-  .section-steps { padding: 40px; }
+  .section-steps {
+    padding: 40px;
+    right: 0;
+     }
     .row,
     .col {
       width: 100%;
