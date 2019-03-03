@@ -9,11 +9,11 @@ class GardenPlantsController < ApplicationController
   end
 
   def new
+
     @garden_plant = GardenPlant.new
   end
 
   def create
-
     @garden_plant = GardenPlant.new(strong_params)
     @garden_plant.plant = Plant.find(params[:plant_id])
     @garden_plant.status = Status.create
