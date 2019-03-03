@@ -10,6 +10,7 @@ class GardenPlant < ApplicationRecord
   def status_today
     status = statuses.where(created_at: Time.zone.now.beginning_of_day..Time.zone.now.end_of_day).first
     status = statuses.build unless status
+
     status
   end
 
@@ -27,5 +28,9 @@ class GardenPlant < ApplicationRecord
   def update_water_on
     next_watering = plant.days_between_each_watering.days.from_now
     self.update(water_on: next_watering)
+  end
+
+  def overall_score
+
   end
 end
