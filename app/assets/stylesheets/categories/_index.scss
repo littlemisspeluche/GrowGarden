@@ -2,8 +2,8 @@
 	margin: 0;
 	padding: 0;
 	display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 button{
@@ -13,7 +13,6 @@ button{
 }
 
 .section-categories {
-  background-color: #f9f8fd;
   padding: 100px 0 0px 0;
   font-size: 16px;
   font-weight: lighter;
@@ -44,6 +43,9 @@ button{
 
 /* Mobile device (up to 812px) - iPhone x : from 481px to 812px*/
 @media only screen and (max-width:812px){
-  .section-categories { padding: 40px 0 0px 0; }
-
+  .section-categories {
+    padding: 40px 0 0px 0;
+    position: relative;
+    left: 0px;
+  }
 }
