@@ -1,4 +1,20 @@
 <br>
 <br><br>
-<%= raise %>
-<h1>watering.html.erb</h1>
+
+<h1>My Garden</h1>
+<p>You should water these planys today:</p>
+
+<ul>
+  <% @plants.each do |plant| %>
+    <li>
+     <%= plant.name %>
+     <% if plant.status_today.watered_on.nil? %>
+       <span>
+         <%= link_to "Water", water_plant_path(plant), method: :post, class: "btn btn-default" %>
+       </span>
+      <% else %>
+        <em>Watered</em>
+      <% end %>
+    </li>
+  <% end %>
+</ul>

@@ -15,6 +15,16 @@ class Plant < ApplicationRecord
       tsearch: { prefix: true }
     }
 
+    def days_between_each_watering
+      case self.requirement.watering.downcase
+      when "mesic"
+        2
+      when "mesic dry"
+        4
+      when "dry"
+        7
+      end
+    end
 end
 
 
