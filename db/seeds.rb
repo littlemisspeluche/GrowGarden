@@ -9,20 +9,23 @@ Species.destroy_all
 
 puts "Killing all the Categories"
 Category.destroy_all
+puts "Killing all the Users"
 User.destroy_all
 
 
-puts "creating flowers category"
+puts "creating user/status"
 
 #USER/STATUS
 status_3 = Status.new()
-user_3 = User.create(email: "liad@gmail.com", password: "123456")
+user_3 = User.create(email: "liad1459@gmail.com", password: "123456")
 status_4 = Status.new()
-user_4 = User.create(email: "barak@gmail.com", password: "123456")
+user_4 = User.create(email: "barakbbg@gmail.com", password: "123456")
 status_2 = Status.new()
-user_2 = User.create(email: "orianne@gmail.com", password: "123456")
+user_2 = User.create(email: "matalonyaniv14@gmail.com", password: "123456")
 status = Status.new()
-user = User.create(email: "matalon@gmail.com", password: "123456")
+user = User.create(email: "matalonyaniv14@gmail.com", password: "123456")
+
+puts "creating flowers category"
 
 flowers = Category.create!(
  name: "Flowers",
@@ -46,7 +49,7 @@ flowers = Category.create!(
      description: "Lilium lancifolium is an Asian species of lily, native to China, Japan, Korea, and the Russian Far East. It is widely planted as an ornamental because of its showy orange-and-black flowers, and has become naturalized in numerous scattered locations in eastern North America.",
      species: jasmin,
      photos: "jasmin_rossi"
-     
+
    )
    jasmin_rossi.requirement = a_req
    jasmin_rossi.save
@@ -1214,14 +1217,14 @@ puts "creating flowers category"
   # GARDENPLANT
     GardenPlant.create(plant: oyster_mushroom, user: user, location:"out", status: status)
 
-    #imagas 
-    
-      
+    #imagas
 
 
 
 
-    
+
+
+
 
 
 

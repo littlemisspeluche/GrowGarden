@@ -5,6 +5,7 @@ class WeatherApi
   end
 
 
+
   def perform
     setting_daily_temp(@garden)
     getting_daily_light(@garden)
@@ -50,5 +51,6 @@ class WeatherApi
       config.apikey = "7522ff79b2ce460c78e068e593355180"
     end
   end
+
 
 end

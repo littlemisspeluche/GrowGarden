@@ -10,6 +10,9 @@ gem 'rails', '5.2.2'
 gem 'redis'
 gem 'pg_search'
 gem 'openweather2' ##### TEST
+gem "letter_opener", group: :development ### MAILER
+gem 'dotenv-rails', groups: [:development, :test]
+
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
