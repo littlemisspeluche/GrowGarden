@@ -2,31 +2,31 @@
 <div class="visible-xs-block navbar-bottom">
 
   <ul>
-    <li><%= link_to "#" do %>
+    <li><%= link_to root_path do %>
           <% if current_page?(root_path) %>
-            <%= image_tag "icon-calendar-full.png", height: 40 %>
+            <%= image_tag "icon_loupe-black.png", height: 40 %>
           <% else %>
-            <%= image_tag "icon-calendar.png", height: 40 %>
+            <%= image_tag "icon_loupe.png", height: 40 %>
           <% end %>
         <% end %>
       </li>
     <li>
-      <%= link_to "#" do %>
+      <%= link_to garden_plants_path do %>
           <% if current_page?(garden_plants_path) %>
-            <%= image_tag "icon-plant-full.png", height: 40 %>
+            <%= image_tag "icon_plants_black.png", height: 40 %>
           <% else %>
-            <%= image_tag "icon-plant.png", height: 40 %>
+            <%=  image_tag "icon_plants.png", height: 40 %>
           <% end %>
         <% end %>
     </li>
     <li>
       <%= link_to "#" do %>
-      <%= image_tag "icon-watering.png", height: 40, class: "active-watering" %>
+      <%= image_tag "icon_watering.png", height: 40, class: "active-watering" %>
       <% end %>
     </li>
     <li>
       <%= link_to "#" do %>
-      <%= image_tag "icon-loupe.png", height: 40, class: "active-loupe" %>
+      <%= image_tag "icon_envalope.png", height: 40, class: "active-loupe" %>
       <% end %>
       </li>
   </ul>

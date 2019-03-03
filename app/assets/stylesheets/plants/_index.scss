@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   margin-top: 90px;
-}
+
 
 .card-product img {
   height: 120px;
@@ -44,6 +44,9 @@
 .sorry{
   margin: 50px;
   margin-top: 145px;
+  h1 {
+    font-size: 90px;
+  }
 }
 .sorry h3{
   color: $green;

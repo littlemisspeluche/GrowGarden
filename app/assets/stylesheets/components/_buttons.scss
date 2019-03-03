@@ -60,6 +60,7 @@ a {
   background-color: black;
 
 }
+
 .btn-green {
   background-color: $green;
   padding: 10px 15px;
@@ -72,4 +73,15 @@ a {
 .btn-green:hover {
   color: $tokyo;
   background-color: Transparent;
+}
+
+
+.try-again-btn {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: $green;
+  transition: background 0.3s ease;
+  display: block;
+  margin-top: 80px;
 }

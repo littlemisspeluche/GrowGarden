@@ -2,12 +2,50 @@
 	margin: 0;
 	padding: 0;
 	display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 button{
 	background-color: $green;
 	color: white;
 	opacity: 0.41;
+}
+
+.section-categories {
+  padding: 100px 0 0px 0;
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.section-header {
+  text-align: center;
+  font-size: 26px;
+  color: #3d3d3f;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  word-spacing: 2px;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+
+.section-header:after {
+  display: block;
+  height: 3px;
+  background-color: #c939d3;
+  content:  " ";
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/* Mobile device (up to 812px) - iPhone x : from 481px to 812px*/
+@media only screen and (max-width:812px){
+  .section-categories {
+    padding: 40px 0 0px 0;
+    position: relative;
+    left: 0px;
+  }
 }

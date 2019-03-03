@@ -1,6 +1,4 @@
-
-
-  <!-- Top Navbar (Web) -->
+  <!-- Top Navbar -->
 <div class="navbar-top navbar-fixed-top">
   <!-- Logo -->
   <div class="navbar-logo">
@@ -8,7 +6,7 @@
       <%= image_tag "logo.png", height: 50 %>
     <% end %>
   </div>
-  <div class="hidden-md">
+  <div class="hidden-md hidden-lg">
     <% if user_signed_in? %>
       <% unless current_page?(new_user_session_path) %>
         <%= link_to destroy_user_session_path, class: "navbar-item",  method: :delete do %>
@@ -37,7 +35,7 @@
       <% end %>
       <div class="navbar-links">
         <%= link_to "Watering", "#", class: "navbar-item" %>
-        <%= link_to "My Garden", "#", class: "navbar-item" %>
+        <%= link_to "My Garden",garden_plants_path, class: "navbar-item" %>
         <%= link_to "Calendar", "#", class: "navbar-item" %>
 
         <%= link_to destroy_user_session_path, class: "navbar-item",  method: :delete do %>
