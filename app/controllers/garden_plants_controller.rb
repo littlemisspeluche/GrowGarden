@@ -1,4 +1,14 @@
 class GardenPlantsController < ApplicationController
+  def watering
+    @plants = current_user.garden_plants.to_be_watered_today
+  end
+
+  def water
+    @plant = GardenPlant.find(params[:id])
+    @plant.mark_as_watered
+
+    redirect_to plant_watering_path
+  end
 
   def index
     @garden_plant = GardenPlant.where(user_id: current_user)
@@ -9,11 +19,11 @@ class GardenPlantsController < ApplicationController
   end
 
   def new
+
     @garden_plant = GardenPlant.new
   end
 
   def create
-
     @garden_plant = GardenPlant.new(strong_params)
     @garden_plant.plant = Plant.find(params[:plant_id])
     @garden_plant.status = Status.create

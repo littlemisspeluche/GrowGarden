@@ -44,7 +44,9 @@ flowers = Category.create!(
    jasmin_rossi = Plant.new(
      name: "Daylily (Hemerocallis 'Jasmine Rossi')",
      description: "Lilium lancifolium is an Asian species of lily, native to China, Japan, Korea, and the Russian Far East. It is widely planted as an ornamental because of its showy orange-and-black flowers, and has become naturalized in numerous scattered locations in eastern North America.",
-     species: jasmin
+     species: jasmin,
+     photos: "jasmin_rossi"
+     
    )
    jasmin_rossi.requirement = a_req
    jasmin_rossi.save
@@ -70,7 +72,8 @@ flowers = Category.create!(
   tiger_lily = Plant.new(
     name: "Tiger Lily",
     description: "Lilium lancifolium is an Asian species of lily, native to China, Japan, Korea, and the Russian Far East. It is widely planted as an ornamental because of its showy orange-and-black flowers, and has become naturalized in numerous scattered locations in eastern North America.",
-    species: lily
+    species: lily,
+    photos: "tiger_lily"
   )
   tiger_lily.requirement = a_req
   tiger_lily.save
@@ -85,7 +88,8 @@ flowers = Category.create!(
   madona_lily = Plant.new(
     name: "Madonna Lily",
     description: "Lilium candidum, the Madonna lily, is a plant in the true lily family. It is native to the Balkans and Middle East, and naturalized in other parts of Europe, including France, Italy, and Ukraine, and in North Africa, the Canary Islands, Mexico, and other regions.",
-    species: lily
+    species: lily,
+    photos: "Madona_Lily"
   )
   madona_lily.requirement = a_req
   madona_lily.save
@@ -99,7 +103,8 @@ flowers = Category.create!(
   wood_lily = Plant.new(
     name: "Wood Lily",
     description: "Lilium philadelphicum, also known as the wood lily, Philadelphia lily, prairie lily or western red lily, is a perennial species of lily native to North America.",
-    species: lily
+    species: lily,
+    photos: "Wood_Lily"
   )
   madona_lily.requirement = a_req
   madona_lily.save
@@ -128,7 +133,8 @@ flowers = Category.create!(
   cattleya_orchids = Plant.new(
     name: "Cattleya orchids",
     description: "Cattleya is a genus of orchids from Costa Rica south to Argentina.",
-    species: orchids
+    species: orchids,
+    photos: "cattleya_orchids"
   )
   madona_lily.requirement = v_req
   madona_lily.save
@@ -142,7 +148,8 @@ flowers = Category.create!(
   boat_orchid = Plant.new(
     name: "Boat orchid",
     description: "Cymbidium, commonly known as boat orchids, is a genus of evergreen flowering plants in the orchid family Orchidaceae.",
-    species: orchids
+    species: orchids,
+    photos: "cattleya_orchids"
   )
   boat_orchid.requirement = v_req
   boat_orchid.save
@@ -190,6 +197,7 @@ puts "creating vegetables category"
       name: "Winter Squash ('North Georgia Candy Roaster')",
       description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
       species: squash,
+      photos: "cattleya_orchids"
     )
     butternut_squash.requirement = b_req
     butternut_squash.save
@@ -221,7 +229,8 @@ puts "creating vegetables category"
       name: "Egyptian Walking Onion (Allium x proliferum)",
       description: "It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
       species: onion,
-      uses: "Uses: Culinary Herb Vegetable"
+      uses: "Uses: Culinary Herb Vegetable",
+      photos: "egyptian_walking_onion"
     )
       egyptian_walking_onion.requirement = z_req
       egyptian_walking_onion.save
@@ -257,7 +266,8 @@ puts "creating vegetables category"
           name: "Eggplant (Solanum melongena)",
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: eggplant,
-          uses: "Vegetable, Suitable as Annual"
+          uses: "Vegetable, Suitable as Annual",
+          photos: "solanum_melongena"
           )
 
         eplant.requirement = e_req
@@ -268,7 +278,8 @@ puts "creating vegetables category"
           name: "Eggplant (Solanum melongena 'Black Beauty')",
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: eggplant,
-          uses: "Vegetable, Suitable as Annual"
+          uses: "Vegetable, Suitable as Annual",
+          photos: "black_beauty"
           )
 
         eplant1.requirement = e_req
@@ -280,7 +291,8 @@ puts "creating vegetables category"
           name: "Eggplant (Solanum melongena 'Rosa Bianca')",
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: eggplant,
-          uses: "Vegetable, Suitable as Annual"
+          uses: "Vegetable, Suitable as Annual",
+          photos: "black_beauty"
           )
 
         eplant2.requirement = e_req
@@ -291,7 +303,8 @@ puts "creating vegetables category"
           name: "Eggplant (Solanum melongena 'Ichiban')",
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: eggplant,
-          uses: "Vegetable, Suitable as Annual"
+          uses: "Vegetable, Suitable as Annual",
+          photos: "melongena_ichiban"
           )
 
         eplant3.requirement = e_req
@@ -302,7 +315,8 @@ puts "creating vegetables category"
           name: "Eggplant (Solanum melongena 'Little Fingers')",
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: eggplant,
-          uses: "Vegetable, Suitable as Annual"
+          uses: "Vegetable, Suitable as Annual",
+          photos: "little_fingers"
           )
 
         eplant4.requirement = e_req
@@ -313,7 +327,8 @@ puts "creating vegetables category"
           name: "Eggplant (Solanum melongena 'Listada de Gandia')",
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: eggplant,
-          uses: "Vegetable, Suitable as Annual"
+          uses: "Vegetable, Suitable as Annual",
+          photos: "eggplant_solanum_melongena"
           )
 
         eplant5.requirement = e_req
@@ -326,7 +341,8 @@ puts "creating vegetables category"
           name: "Eggplant (Solanum melongena 'Listada de Gandia')",
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: eggplant,
-          uses: "Vegetable, Suitable as Annual"
+          uses: "Vegetable, Suitable as Annual",
+          photos: "eggplant_solanum_melongena"
           )
 
         eplant6.requirement = e_req
@@ -338,7 +354,8 @@ puts "creating vegetables category"
           name: "Eggplant (Solanum melongena 'Casper')",
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: eggplant,
-          uses: "Vegetable, Suitable as Annual"
+          uses: "Vegetable, Suitable as Annual",
+          photos: "eggplant_solanum_melongena_casper"
           )
 
         eplant7.requirement = e_req
@@ -351,7 +368,8 @@ puts "creating vegetables category"
           name: "Eggplant (Solanum melongena 'Long Purple')",
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: eggplant,
-          uses: "Vegetable, Suitable as Annual"
+          uses: "Vegetable, Suitable as Annual",
+           photos: "eggplant_solanum_melongena_casper"
           )
 
         eplant8.requirement = e_req
@@ -364,7 +382,8 @@ puts "creating vegetables category"
           name: "Eggplant (Solanum melongena 'Diamond')",
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: eggplant,
-          uses: "Vegetable, Suitable as Annual"
+          uses: "Vegetable, Suitable as Annual",
+          photos: "eggplant_solanum_melongena_casper"
           )
 
         eplant9.requirement = e_req
@@ -378,7 +397,8 @@ puts "creating vegetables category"
           name: "Eggplant (Solanum melongena 'Gretel')",
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: eggplant,
-          uses: "Vegetable, Suitable as Annual"
+          uses: "Vegetable, Suitable as Annual",
+          photos: "eggplant_solanum_melongena_casper"
           )
 
         eplant10.requirement = e_req
@@ -402,7 +422,8 @@ l_req = Requirement.create(
           name: "Lettuce (Lactuca sativa)",
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: lettuce,
-          uses: "Vegetable, Salad greens"
+          uses: "Vegetable, Salad greens",
+          photos: "lettuce_lactuca_sativa"
           )
 
         lettuce1.requirement = l_req
@@ -416,7 +437,8 @@ l_req = Requirement.create(
           name: "Iceberg Lettuce (Lactuca sativa 'Miluna')",
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: lettuce,
-          uses: "Vegetable, Salad greens"
+          uses: "Vegetable, Salad greens",
+          photos: "iceberg_lettuce_lactuca_sativa_miluna"
           )
 
         lettuce2.requirement = l_req
@@ -441,7 +463,8 @@ ginger = Species.create(
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: ginger,
           uses: "Vegetable, Cut Flower Will Naturalize",
-          container: "Suitable in 3 gallon or larger"
+          container: "Suitable in 3 gallon or larger",
+          photos: "shampoo_ginger_bitter_ginger"
           )
 
         ginger1.requirement = f_req
@@ -457,7 +480,8 @@ ginger = Species.create(
           uses: "Vegetable,  Culinary Herb",
           container: "Suitable in 1 gallon
 Suitable for hanging baskets
-Needs excellent drainage in pots"
+Needs excellent drainage in pots",
+           photos: "common_ginger_zingiber_officinale"
           )
 
         ginger2.requirement = f_req
@@ -470,7 +494,8 @@ Needs excellent drainage in pots"
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: ginger,
           uses: " Groundcover,  Culinary Herb",
-          container: "Suitable in 1 gallon"
+          container: "Suitable in 1 gallon",
+          photos: "wild_ginger_asarum_caulescens"
           )
 
         ginger3.requirement = f_req
@@ -484,7 +509,8 @@ Needs excellent drainage in pots"
           species: ginger,
           uses: " Groundcover,  Culinary Herb, Cut Flower",
           container: "Suitable in 1 gallon, Suitable in 3 gallon or larger
-Needs excellent drainage in pots"
+Needs excellent drainage in pots",
+          photos: "common_ginger_zingiber_officinale"
           )
 
         ginger4.requirement = f_req
@@ -510,7 +536,8 @@ potato = Species.create(
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: potato,
           uses: " Vegetable ",
-          container: "well-drained"
+          container: "well-drained",
+          photos: "potato_solanum_tuberosum_all_blue"
           )
 
         potato1.requirement = g_req
@@ -525,7 +552,8 @@ potato = Species.create(
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: potato,
           uses: " Vegetable ",
-          container: "well-drained"
+          container: "well-drained",
+          photos: "potato_solanum_tuberosum_all_red"
           )
 
         potato2.requirement = g_req
@@ -541,7 +569,8 @@ potato = Species.create(
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: potato,
           uses: " Vegetable ",
-          container: "well-drained"
+          container: "well-drained",
+          photos: "potato_solanum_tuberosum_all_red"
           )
 
         potato3.requirement = g_req
@@ -555,7 +584,8 @@ potato = Species.create(
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: potato,
           uses: " Vegetable ",
-          container: "well-drained"
+          container: "well-drained",
+          photos: "potato_solanum_tuberosum_all_red"
           )
 
         potato4.requirement = g_req
@@ -586,7 +616,8 @@ zucchini = Species.create(
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: zucchini ,
           uses: " Vegetable ",
-          container: "well-drained"
+          container: "well-drained",
+          photos: "dark_green_zucchini"
           )
 
 
@@ -602,7 +633,9 @@ zucchini = Species.create(
           name: "Zucchini (Cucurbita pepo 'Black Beauty')",
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: zucchini ,
-          uses: " Vegetable "
+          uses: " Vegetable ",
+          photos: "black_beauty"
+
           )
 
 
@@ -617,7 +650,8 @@ zucchini = Species.create(
           name: "Zucchini (Cucurbita pepo 'Costata Romanesco')",
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: zucchini ,
-          uses: " Vegetable "
+          uses: " Vegetable ",
+          photos: "costata_romanesco"
           )
 
 
@@ -632,7 +666,8 @@ zucchini = Species.create(
           name: "Zucchini (Cucurbita pepo 'Gold Rush')",
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: zucchini ,
-          uses: " Vegetable "
+          uses: " Vegetable ",
+          photos: "black_beauty"
           )
 
 
@@ -665,7 +700,8 @@ cucumber = Species.create(
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: cucumber ,
           uses: " Vegetable ",
-          container: " Not suitable for containers"
+          container: " Not suitable for containers",
+          photos: "white_wonder"
           )
 
 
@@ -685,7 +721,8 @@ cucumber = Species.create(
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: cucumber ,
           uses: " Vegetable ",
-          container: " Not suitable for containers"
+          container: " Not suitable for containers",
+          photos: "national_pickling"
           )
 
 
@@ -698,7 +735,8 @@ cucumber = Species.create(
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: cucumber ,
           uses: " Vegetable ",
-          container: " Not suitable for containers"
+          container: " Not suitable for containers",
+          photos: "white_wonder"
           )
 
 
@@ -711,7 +749,8 @@ cucumber = Species.create(
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: cucumber ,
           uses: " Vegetable ",
-          container: " Not suitable for containers"
+          container: " Not suitable for containers",
+          photos: "white_wonder"
 
             )
 
@@ -745,7 +784,9 @@ puts "creating flowers category"
      jasmine = Plant.new(
       name: "Flowering Tobacco (Nicotiana alata 'Jasmine')",
       description: "Lilium lancifolium is an Asian species of lily, native to China, Japan, Korea, and the Russian Far East. It is widely planted as an ornamental because of its showy orange-and-black flowers, and has become naturalized in numerous scattered locations in eastern North America.",
-      species: jasmin
+      species: jasmin,
+      photos: "alata_jasmin"
+
       )
      jasmine.requirement = c_req
     GardenPlant.create(plant: jasmine, user: user, location:"in", status: status)
@@ -754,7 +795,8 @@ puts "creating flowers category"
       name: "Oryza 'Jasmine",
       description: "Lilium lancifolium is an Asian species of lily, native to China, Japan, Korea, and the Russian Far East. It is widely planted as an ornamental because of its showy orange-and-black flowers, and has become naturalized in numerous scattered locations in eastern North America.",
       species: jasmin,
-      uses: "Suitable as Annual"
+      uses: "Suitable as Annual",
+      photos: "oryza_jasmine"
       )
 
       oryza.requirement = c_req
@@ -770,7 +812,8 @@ puts "creating flowers category"
       name: "Jessamine (Gelsemium Jasmine Duet)",
       description: "Lilium lancifolium is an Asian species of lily, native to China, Japan, Korea, and the Russian Far East. It is widely planted as an ornamental because of its showy orange-and-black flowers, and has become naturalized in numerous scattered locations in eastern North America.",
       species: jasmin,
-      uses: "Suitable as Annual"
+      uses: "Suitable as Annual",
+      photos: "jessamine_gelsemium_jasmine_duet"
       )
       jessamine.requirement = d_req
       jessamine.save
@@ -781,7 +824,8 @@ puts "creating flowers category"
       name: "Lady's Eardrops (Fuchsia 'Jasmine')",
       description: "Lilium lancifolium is an Asian species of lily, native to China, Japan, Korea, and the Russian Far East. It is widely planted as an ornamental because of its showy orange-and-black flowers, and has become naturalized in numerous scattered locations in eastern North America.",
       species: jasmin,
-      uses: "Suitable as Annual"
+      uses: "Suitable as Annual",
+      photos: "jessamine_gelsemium_jasmine_duet"
       )
       ladys.requirement = d_req
       ladys.save
@@ -792,7 +836,8 @@ puts "creating flowers category"
       name: "Daylily (Hemerocallis 'Jasmine Nights')",
       description: "Lilium lancifolium is an Asian species of lily, native to China, Japan, Korea, and the Russian Far East. It is widely planted as an ornamental because of its showy orange-and-black flowers, and has become naturalized in numerous scattered locations in eastern North America.",
       species: jasmin,
-      uses: "Suitable as Annual"
+      uses: "Suitable as Annual",
+      photos: "daylily_hemerocallis_jasmine_nights"
       )
       jnights.requirement = d_req
       jnights.save
@@ -804,7 +849,8 @@ puts "creating flowers category"
       name: "Daylily (Hemerocallis 'Jasmine Emma')",
       description: "Lilium lancifolium is an Asian species of lily, native to China, Japan, Korea, and the Russian Far East. It is widely planted as an ornamental because of its showy orange-and-black flowers, and has become naturalized in numerous scattered locations in eastern North America.",
       species: jasmin,
-      uses: "Suitable as Annual"
+      uses: "Suitable as Annual",
+      photos: "daylily_hemerocallis_jasmine_nights"
       )
       jemma.requirement = d_req
       jemma.save
@@ -816,7 +862,8 @@ puts "creating flowers category"
       name: "Tall Bearded Iris (Iris 'Jasmine How')",
       description: "Lilium lancifolium is an Asian species of lily, native to China, Japan, Korea, and the Russian Far East. It is widely planted as an ornamental because of its showy orange-and-black flowers, and has become naturalized in numerous scattered locations in eastern North America.",
       species: jasmin,
-      uses: "Suitable as Annual"
+      uses: "Suitable as Annual",
+      photos: "jasmine_how"
       )
       jbearded.requirement = d_req
       jbearded.save
@@ -827,7 +874,8 @@ puts "creating flowers category"
       name: "Garden Onion (Allium cepa 'Walla Walla Sweet')",
       description: "It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
       species: onion,
-      uses: "Uses: Culinary Herb Vegetable"
+      uses: "Uses: Culinary Herb Vegetable",
+      photos: "walla_walla_sweet"
     )
       garden_onion.requirement = y_req
       garden_onion.save
@@ -842,7 +890,8 @@ puts "creating flowers category"
       name: "Bunching Onion (Allium cepa 'White Lisbon')",
       description: "It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
       species: onion,
-      uses: "Culinary Herb Vegetable"
+      uses: "Culinary Herb Vegetable",
+      photos: "walla_walla_sweet"
     )
       bunching_onion.requirement = y_req
       bunching_onion.save
@@ -863,7 +912,8 @@ puts "creating flowers category"
     cannonball_cabbage = Plant.new(
       name: "Cannonball Cabbage",
       description: "More commonly known as green cabbage, the cannonball cabbage is one of the most popular cabbage varieties. It is so named for the way its leaves wound tightly over one another in a dense, compact fashion; with the final product resembling a cannonball.",
-      species: cabbage
+      species: cabbage,
+      photos: "cannonball_cabbage"
     )
     cannonball_cabbage.requirement = y_req
     cannonball_cabbage.save
@@ -877,7 +927,8 @@ puts "creating flowers category"
     bok_choy = Plant.new(
       name: "Bok Choy",
       description: "bok choy, bai cai or pak choi but they all really mean the same thing: a dark, leafy vegetable with slender stems that's more reminiscent of Swiss chard or spinach than it is a cannonball cabbage.",
-      species: cabbage
+      species: cabbage,
+      photos: "bok_chou"
     )
     bok_choy.requirement = y_req
     bok_choy.save
@@ -891,7 +942,8 @@ puts "creating flowers category"
     choy_sum = Plant.new(
       name: "Choy Sum",
       description: "Choy Sum, bai cai or pak choi but they all really mean the same thing: a dark, leafy vegetable with slender stems that's more reminiscent of Swiss chard or spinach than it is a cannonball cabbage.",
-      species: cabbage
+      species: cabbage,
+      photos: "cannonball_cabbage"
     )
     choy_sum.requirement = y_req
     choy_sum.save
@@ -918,7 +970,8 @@ puts "creating flowers category"
     allstars = Plant.new(
       name: "Allstars",
       description: "Allstars are generally paler than other varieties. They grow big and firm, though, and have plenty of sweetness and juice. They are the kind of berries that are particularly great for slicing and using in salads.",
-      species: strawberries
+      species: strawberries,
+      photos: "cannonball_cabbage"
     )
     allstars.requirement = w_req
     allstars.save
@@ -932,7 +985,8 @@ puts "creating flowers category"
     ventana = Plant.new(
       name: "Ventana",
       description: "Ventana strawberries are bright red fruit, slightly lighter in color, a good flavor, standard shape, and large size with excellent fruit quality.",
-      species: strawberries
+      species: strawberries,
+      photos: "cannonball_cabbage"
     )
     ventana.requirement = w_req
     ventana.save
@@ -946,7 +1000,8 @@ puts "creating flowers category"
     alpine = Plant.new(
       name: "Alpine",
       description: "Alpine strawberries (fraises des bois in French) are a tiny and exquisitely sweet wild strawberry from France.",
-      species: strawberries
+      species: strawberries,
+      photos: "cannonball_cabbage"
     )
     alpine.requirement = w_req
     alpine.save
@@ -967,7 +1022,9 @@ puts "creating flowers category"
     san_marzano = Plant.new(
       name: "San Marzano",
       description: "San Marzano tomatoes are thinner and more pointed. The flesh is much thicker with fewer seeds, and the taste is stronger, sweeter and less acidic.",
-      species: tomatoes
+      species: tomatoes,
+      photos: "cannonball_cabbage"
+
     )
     san_marzano.requirement = y_req
     san_marzano.save
@@ -980,7 +1037,8 @@ puts "creating flowers category"
       name: "Cherokee Purple",
       description: "Cherokee Purple is the name of a cultivar of tomato that develops a fruit with a deep, dusky-rose color while maintaining a somewhat greenish hue near the stem when mature for eating.",
       species: tomatoes,
-      uses: "Culinary Herb Vegetable"
+      uses: "Culinary Herb Vegetable",
+      photos: "cannonball_cabbage"
     )
     cherokee_purple.requirement = y_req
     cherokee_purple.save
@@ -997,7 +1055,8 @@ puts "creating flowers category"
       name: "Cherry Tomato",
       description: "The cherry tomato is a type of small round tomato believed to be an intermediate genetic admixture between wild currant-type tomatoes and domesticated garden tomatoes.",
       species: tomatoes,
-      uses: "Culinary Herb Vegetable"
+      uses: "Culinary Herb Vegetable",
+      photos: "cannonball_cabbage"
     )
     cherry_tomato.requirement = y_req
     cherry_tomato.save
@@ -1026,7 +1085,8 @@ puts "creating flowers category"
       name: "Sweet Basil",
       description: "Sweet Basil is your traditional style Basil that most of us use in our tomato sauces, pesto, in soups, and I use it a lot to make my own Italian seasonings.",
       species: basil,
-      uses: "Culinary Herb"
+      uses: "Culinary Herb",
+      photos: "cannonball_cabbage"
     )
     sweet_basil.requirement = a_req
     sweet_basil.save
@@ -1040,7 +1100,8 @@ puts "creating flowers category"
     holy_basil = Plant.new(
       name: "Holy Basil (Ocimum tenuiflorum)",
       description: "Holy Basil is flatter and pointier than traditional sweet basil. It also has a more aromatic flavor.",
-      species: basil
+      species: basil,
+      photos: "cannonball_cabbage"
     )
     holy_basil.requirement = a_req
     holy_basil.save
@@ -1069,7 +1130,8 @@ puts "creating flowers category"
       name: "Common Thyme (Thymus vulgaris)",
       description: "Sweet Basil is your traditional style Basil that most of us use in our tomato sauces, pesto, in soups, and I use it a lot to make my own Italian seasonings.",
       species: thymes,
-      uses: "Groundcover Culinary Herb"
+      uses: "Groundcover Culinary Herb",
+      photos: "cannonball_cabbage"
     )
     common_thyme.requirement = x_req
     common_thyme.save
@@ -1084,7 +1146,8 @@ puts "creating flowers category"
       name: "Creeping Thyme (Thymus serpyllum)",
       description: "Sweet Basil is your traditional style Basil that most of us use in our tomato sauces, pesto, in soups, and I use it a lot to make my own Italian seasonings.",
       species: thymes,
-      uses: "Groundcover Culinary Herb"
+      uses: "Groundcover Culinary Herb",
+      photos: "cannonball_cabbage"
     )
     common_thyme.requirement = x_req
     common_thyme.save
@@ -1111,7 +1174,8 @@ puts "creating flowers category"
       portabello_mushroom = Plant.new(
         name: "Portabello Mushroom",
         description: "Common in Italian cooking, dense, rich portobellos lend depth to sauces and pastas and make a great meat substitute. When portabellos are young and small, they're called criminis.",
-        species: mushrooms
+        species: mushrooms,
+        photos: "cannonball_cabbage"
       )
       portabello_mushroom.requirement = u_req
       portabello_mushroom.save
@@ -1125,7 +1189,8 @@ puts "creating flowers category"
       shiitake_mushroom = Plant.new(
         name: "Shiitake Mushroom",
         description: "They're best identified by their umbrella-shaped brown caps, which curl under ever so slightly. Fresh shiitakes have a light woodsy flavor and aroma, while their dried counterparts are more intense.",
-        species: mushrooms
+        species: mushrooms,
+        photos: "cannonball_cabbage"
       )
       shiitake_mushroom.requirement = u_req
       shiitake_mushroom.save
@@ -1140,7 +1205,8 @@ puts "creating flowers category"
       oyster_mushroom = Plant.new(
         name: "Oyster Mushroom",
         description: "Like their namesakes, they're whitish in color and fan-shaped, and possess a delicate odor and flavor. Oyster mushrooms are found in many Japanese and Chinese dishes such as soups and stir-fries.",
-        species: mushrooms
+        species: mushrooms,
+        photos: "cannonball_cabbage"
       )
       oyster_mushroom.requirement = u_req
       oyster_mushroom.save
@@ -1155,7 +1221,7 @@ puts "creating flowers category"
 
 
 
-    puts "uplading"
+    
 
 
 

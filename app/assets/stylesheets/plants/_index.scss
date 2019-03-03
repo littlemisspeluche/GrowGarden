@@ -1,5 +1,9 @@
 
 @import 'show';
+.plant-index{
+  margin-top: 0 !important;
+  margin: 15px 0px;
+}
 
 .card-product {
   overflow: hidden;
@@ -9,27 +13,23 @@
   margin-top: 22px;
   display: flex;
   align-items: center;
-
   margin-top: 90px;
-
-
-
 }
 
 .card-product img {
-  height: 100%;
-  width: 120px;
-  object-fit: cover;
+  height: 120px;
+  width: 19vh;
+
 }
 
 .card-product h3 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   margin: 0;
 }
 
 .card-product-infos p {
-  font-size: 12px;
+  font-size: 15px;
   color: #3d3d3f;
   line-height: 1.4;
   opacity: .7;
