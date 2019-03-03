@@ -17,6 +17,7 @@ button{
   font-size: 16px;
   font-weight: lighter;
   font-family: 'PT Sans', sans-serif;
+//  background-color: #FFF;
 }
 
 .section-header {
@@ -34,7 +35,7 @@ button{
 .section-header:after {
   display: block;
   height: 3px;
-  background-color: #c939d3;
+  background-color: #FDCD38;
   content:  " ";
   width: 200px;
   margin: 0 auto;
