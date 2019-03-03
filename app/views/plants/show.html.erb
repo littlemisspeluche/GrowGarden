@@ -1,9 +1,12 @@
 <div id="plant-banner">
+  <%=cl_image_tag @plant.photos %>
+</div>
+<div class="plus-icon">
   <%= link_to new_plant_garden_plant_path(@plant) do %>
     <i class="fas fa-plus plus"></i>
   <% end %>
 </div>
-<div><h2><%= @plant.name %></h2></div>
+<div class = "h2"><h2><%= @plant.name %></h2></div>
 <div class="container">
   <div class="row">
     <!-- left column -->

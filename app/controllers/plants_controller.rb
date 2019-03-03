@@ -1,4 +1,4 @@
-class PlantsController < ApplicationController
+  class PlantsController < ApplicationController
 
   def show
     @plant = Plant.find(params[:id])
