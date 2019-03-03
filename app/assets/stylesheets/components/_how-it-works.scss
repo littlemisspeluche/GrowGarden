@@ -1,0 +1,134 @@
+.section-steps {
+  background-color: #f9f8fd;
+  padding: 120px 0;
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+.span-1-of-2 {
+  width: 49.2%;
+}
+
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+.col:first-child {
+  margin-left: 0;
+}
+
+
+// Animated iPhone Display
+
+.app-screen {
+ width: 40%;
+}
+
+// Header - How it Works
+.section-steps h2 {
+  text-align: center;
+  font-size: 26px;
+  color: #3d3d3f;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  word-spacing: 2px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+
+.section-steps h2:after {
+  display: block;
+  height: 3px;
+  background-color: #c939d3;
+  content:  " ";
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+// Work Steps
+.work-step{
+  margin-bottom: 50px;
+}
+
+.work-step:last-of-type{
+   margin-bottom: 80px;
+}
+
+#first-item {
+  padding-top: 0;
+}
+.work-step p {
+padding-top: 10px;
+
+}
+// Step Number
+.step{
+  color: #c939d3;
+  border: 3px solid #c939d3;
+  display: inline-block;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
+
+}
+// App Store / Google Store Buttons
+.btn-download {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+
+/* Mobile device (up to 812px) - iPhone x : from 481px to 812px*/
+@media only screen and (max-width:812px){
+  .section-steps { padding: 40px; }
+    .row,
+    .col {
+      width: 100%;
+      margin: 0 0 4% 0;
+    }
+  .app-screen { width:40%; }
+  .steps-box:first-child { text-align: center; }
+  .work-step { margin-bottom: 20px; }
+  .work-step:last-of-type { margin-bottom: 35px; }
+  .step {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+
+    padding: 4px;
+    font-size: 120%;
+  }
+  #first-item {
+  padding-top: 5px;
+}
+  .work-step p {
+    padding-top: 5px;
+    padding-left: 56px;
+  }
+
+  .btn-download {
+    height: 25px;
+    width: auto;
+    margin-right: 10px;
+  }
+}

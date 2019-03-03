@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 2px solid transparent;
 }
 
 .navbar-item {
@@ -29,5 +30,16 @@
   input {
     width: 70%;
   }
+}
+
+.navbar-top a {
+  text-decoration: none;
+
+}
+.navbar-top a:hover, a:active {
+  color: black;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #c939d3;
+  transition: 0.3s;
 }
 
