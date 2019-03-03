@@ -1,5 +1,13 @@
 class GardenPlantsController < ApplicationController
 
+
+   def watering
+    # @plant = GardenPlant.find(params[:id])
+    # @plant.status.daily_watering = true
+    # @plant.save!
+    puts "working"
+  end
+
   def index
     @garden_plant = GardenPlant.where(user_id: current_user)
   end

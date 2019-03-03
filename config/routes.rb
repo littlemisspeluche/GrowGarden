@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   get :autocomplete, to: 'plants#autocomplete'
 
+  get :watering, to: 'garden_plants#watering'
   resources :garden_plants, only: [:index, :show, :destroy]
   resources :plants, only: [:index] do
     resources :garden_plants, only: [:new, :create]
