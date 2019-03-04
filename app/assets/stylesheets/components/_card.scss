@@ -22,11 +22,14 @@
 
 .card-description-info {
   margin: 10px;
-  a {
-    color: #0A7D81;
-    font-weight: bold;
-  }
+  text-decoration: none;
 }
+
+.category-card a {
+    color: #0A7D81;
+    text-decoration: none;
+}
+
 .card-description-info h2 {
   margin-top: 10px;
   font-size: 20px;
@@ -35,7 +38,6 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   text-decoration:none;
-
 }
 .card-description-info p {
   font-size: 14px;
