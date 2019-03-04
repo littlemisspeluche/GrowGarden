@@ -11,8 +11,8 @@
         <% end %>
       </li>
     <li>
-      <%= link_to garden_plants_path do %>
-          <% if current_page?(garden_plants_path) %>
+      <%= link_to my_garden_plants_path do %>
+          <% if current_page?(my_garden_plants_path) %>
             <%= image_tag "icon_plants_black.png", height: 40 %>
           <% else %>
             <%=  image_tag "icon_plants.png", height: 40 %>
