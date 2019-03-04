@@ -30,12 +30,13 @@
     text-decoration: none;
 }
 
+
+
 .card-description-info h2 {
   margin-top: 10px;
   font-size: 20px;
   font-family: 'PT Sans', sans-serif;
   font-weight: bolder;
-  text-transform: uppercase;
   letter-spacing: 2px;
   text-decoration:none;
 }
@@ -46,12 +47,25 @@
   text-decoration:none;
 }
 
-.card-product-infos {
-  a {
-    color: $green;
-    font-weight: bold;
-  }
+
+
+.card-description-info a {
+  color: #0A7D81;
+  text-decoration: none;
+  text-transform: uppercase;
 }
+
+.card-description-info a:active {
+  text-decoration: none;
+  border: none;
+}
+
+// .card-product-infos {
+//   a {
+//     color: $green;
+//     font-weight: bold;
+//   }
+// }
 
 .plant-index {
   margin-top: 0 !important;
