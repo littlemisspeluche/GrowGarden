@@ -1,12 +1,21 @@
+
 .container { display: flex; }
 
 .plant-banner {
   background-image: asset-url('apple_icon.png');
   background-size: cover;
   height: 400px;
+
+#plant-banner img{
+  height: 102%;
+  width: 100%;
+}
+
+.plus-icon {
   position: relative;
   margin: 25px 0 45px 0;
 }
+
 
 #header-plant h2 {
   //text-align: center;
@@ -19,7 +28,6 @@
   letter-spacing: 1px;
   font-weight: lighter;
 
-}
 
 .plus {
   background-color: #FCD05F;
@@ -85,4 +93,7 @@ i {
       background-color: transparent;
     }
   }
+}
+.h2 h2{
+  margin-top:40px;
 }

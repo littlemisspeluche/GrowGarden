@@ -9,20 +9,29 @@ Species.destroy_all
 
 puts "Killing all the Categories"
 Category.destroy_all
+puts "Killing all the Users"
 User.destroy_all
 
 
-puts "creating flowers category"
+puts "creating user/status"
+
+
+#US = Status.new()
+user_3 = User.create(email: "liad@gmail.com", password:  '123456')
+user_4 = User.create(email: "barak@gmail.com", password: "123456")
 
 #USER/STATUS
 status_3 = Status.new()
-user_3 = User.create(email: "liad@gmail.com", password: "123456")
+user_3 = User.create(email: "liad1459@gmail.com", password: "123456")
 status_4 = Status.new()
-user_4 = User.create(email: "barak@gmail.com", password: "123456")
+user_4 = User.create(email: "barakbbg@gmail.com", password: "123456")
+
 status_2 = Status.new()
-user_2 = User.create(email: "orianne@gmail.com", password: "123456")
+user_2 = User.create(email: "matalonyaniv14@gmail.com", password: "123456")
 status = Status.new()
-user = User.create(email: "matalon@gmail.com", password: "123456")
+user = User.create(email: "matalonyaniv14@gmail.com", password: "123456")
+
+puts "creating flowers category"
 
 flowers = Category.create!(
  name: "Flowers",
@@ -46,12 +55,12 @@ flowers = Category.create!(
      description: "Lilium lancifolium is an Asian species of lily, native to China, Japan, Korea, and the Russian Far East. It is widely planted as an ornamental because of its showy orange-and-black flowers, and has become naturalized in numerous scattered locations in eastern North America.",
      species: jasmin,
      photos: "jasmin_rossi"
-     
+
    )
    jasmin_rossi.requirement = a_req
    jasmin_rossi.save
 
-  GardenPlant.create(plant: jasmin_rossi, user: user, location:"out", status: status)
+  GardenPlant.create(plant: jasmin_rossi, user: user, location: 'new york' )
 
     ########
 
@@ -79,8 +88,8 @@ flowers = Category.create!(
   tiger_lily.save
 
   # GARDENPLANT
-  GardenPlant.create(plant: tiger_lily, user: user_2, location:"out", status: status_2)
-  GardenPlant.create(plant: tiger_lily, user: user, location:"out", status: status)
+  GardenPlant.create(plant: tiger_lily, user: user_2, location: 'new york')
+  GardenPlant.create(plant: tiger_lily, user: user, location: 'new york' )
 
     ########
 
@@ -95,7 +104,7 @@ flowers = Category.create!(
   madona_lily.save
 
 # GARDENPLANT
-  GardenPlant.create(plant: madona_lily, user: user_4, location:"out", status: status_4)
+  GardenPlant.create(plant: madona_lily, user: user_4, location: 'new york')
 
     ########
 
@@ -110,8 +119,8 @@ flowers = Category.create!(
   madona_lily.save
 
 # GARDENPLANT
-  GardenPlant.create(plant: madona_lily, user: user_3, location:"out", status: status_3)
-  GardenPlant.create(plant: madona_lily, user: user_4, location:"out", status: status_4)
+  GardenPlant.create(plant: madona_lily, user: user_3, location: 'new york')
+  GardenPlant.create(plant: madona_lily, user: user_4, location: 'new york')
 
     ########
 
@@ -140,7 +149,7 @@ flowers = Category.create!(
   madona_lily.save
 
 # GARDENPLANT
-  GardenPlant.create(plant: madona_lily, user: user_2, location:"out", status: status_2)
+  GardenPlant.create(plant: madona_lily, user: user_2, location: 'new york')
 
     ########
 
@@ -155,8 +164,8 @@ flowers = Category.create!(
   boat_orchid.save
 
 # GARDENPLANT
-  GardenPlant.create(plant: boat_orchid, user: user_3, location:"out", status: status_3)
-  GardenPlant.create(plant: boat_orchid, user: user, location:"out", status: status)
+  GardenPlant.create(plant: boat_orchid, user: user_3, location: 'new york')
+  GardenPlant.create(plant: boat_orchid, user: user, location: 'new york' )
 
     ########
 
@@ -203,7 +212,7 @@ puts "creating vegetables category"
     butternut_squash.save
 
     # GARDENPLANT
-    GardenPlant.create(plant: butternut_squash, user: user, location:"out", status: status)
+    GardenPlant.create(plant: butternut_squash, user: user, location: 'new york' )
 
     ########
 
@@ -237,7 +246,7 @@ puts "creating vegetables category"
 
 
       # GARDENPLANT
-      GardenPlant.create(plant: egyptian_walking_onion, user: user_2, location:"out", status: status)
+      GardenPlant.create(plant: egyptian_walking_onion, user: user_2, location: 'new york' )
 
 
 ##EGGPLANT Species
@@ -272,7 +281,7 @@ puts "creating vegetables category"
 
         eplant.requirement = e_req
         eplant.save
-        GardenPlant.create(plant: eplant, user: user, location:"out", status: status)
+        GardenPlant.create(plant: eplant, user: user, location: 'new york' )
 
          eplant1 = Plant.new(
           name: "Eggplant (Solanum melongena 'Black Beauty')",
@@ -284,7 +293,7 @@ puts "creating vegetables category"
 
         eplant1.requirement = e_req
         eplant1.save
-        GardenPlant.create(plant: eplant1, user: user, location:"out", status: status)
+        GardenPlant.create(plant: eplant1, user: user, location: 'new york' )
 
 
          eplant2 = Plant.new(
@@ -297,7 +306,7 @@ puts "creating vegetables category"
 
         eplant2.requirement = e_req
         eplant2.save
-        GardenPlant.create(plant: eplant2, user: user, location:"out", status: status)
+        GardenPlant.create(plant: eplant2, user: user, location: 'new york' )
 
         eplant3 = Plant.new(
           name: "Eggplant (Solanum melongena 'Ichiban')",
@@ -309,7 +318,7 @@ puts "creating vegetables category"
 
         eplant3.requirement = e_req
         eplant3.save
-        GardenPlant.create(plant: eplant3, user: user, location:"out", status: status)
+        GardenPlant.create(plant: eplant3, user: user, location: 'new york' )
 
          eplant4 = Plant.new(
           name: "Eggplant (Solanum melongena 'Little Fingers')",
@@ -321,7 +330,7 @@ puts "creating vegetables category"
 
         eplant4.requirement = e_req
         eplant4.save
-        GardenPlant.create(plant: eplant4, user: user, location:"out", status: status)
+        GardenPlant.create(plant: eplant4, user: user, location: 'new york' )
 
         eplant5 = Plant.new(
           name: "Eggplant (Solanum melongena 'Listada de Gandia')",
@@ -333,7 +342,7 @@ puts "creating vegetables category"
 
         eplant5.requirement = e_req
         eplant5.save
-        GardenPlant.create(plant: eplant5, user: user, location:"out", status: status)
+        GardenPlant.create(plant: eplant5, user: user, location: 'new york' )
 
 
 
@@ -347,7 +356,7 @@ puts "creating vegetables category"
 
         eplant6.requirement = e_req
         eplant6.save
-        GardenPlant.create(plant: eplant6, user: user, location:"out", status: status)
+        GardenPlant.create(plant: eplant6, user: user, location: 'new york' )
 
 
         eplant7 = Plant.new(
@@ -360,7 +369,7 @@ puts "creating vegetables category"
 
         eplant7.requirement = e_req
         eplant7.save
-        GardenPlant.create(plant: eplant7, user: user, location:"out", status: status)
+        GardenPlant.create(plant: eplant7, user: user, location: 'new york' )
 
 
 
@@ -374,7 +383,7 @@ puts "creating vegetables category"
 
         eplant8.requirement = e_req
         eplant8.save
-        GardenPlant.create(plant: eplant8, user: user, location:"out", status: status)
+        GardenPlant.create(plant: eplant8, user: user, location: 'new york' )
 
 
 
@@ -388,7 +397,7 @@ puts "creating vegetables category"
 
         eplant9.requirement = e_req
         eplant9.save
-        GardenPlant.create(plant: eplant9, user: user, location:"out", status: status)
+        GardenPlant.create(plant: eplant9, user: user, location: 'new york' )
 
 
 
@@ -403,7 +412,7 @@ puts "creating vegetables category"
 
         eplant10.requirement = e_req
         eplant10.save
-        GardenPlant.create(plant: eplant10, user: user, location:"out", status: status)
+        GardenPlant.create(plant: eplant10, user: user, location: 'new york' )
 
 
 ##LETTUCE SPECIES
@@ -428,7 +437,7 @@ l_req = Requirement.create(
 
         lettuce1.requirement = l_req
         lettuce1.save
-        GardenPlant.create(plant: lettuce1, user: user, location:"out", status: status)
+        GardenPlant.create(plant: lettuce1, user: user, location: 'new york' )
 
 
 
@@ -443,7 +452,7 @@ l_req = Requirement.create(
 
         lettuce2.requirement = l_req
         lettuce2.save
-        GardenPlant.create(plant: lettuce2, user: user, location:"out", status: status)
+        GardenPlant.create(plant: lettuce2, user: user, location: 'new york' )
 
 ### GINGER
 ginger = Species.create(
@@ -469,7 +478,7 @@ ginger = Species.create(
 
         ginger1.requirement = f_req
         ginger1.save
-        GardenPlant.create(plant: ginger1, user: user, location:"out", status: status)
+        GardenPlant.create(plant: ginger1, user: user, location: 'new york' )
 
 
 
@@ -486,7 +495,7 @@ Needs excellent drainage in pots",
 
         ginger2.requirement = f_req
         ginger2.save
-        GardenPlant.create(plant: ginger2, user: user, location:"out", status: status)
+        GardenPlant.create(plant: ginger2, user: user, location: 'new york' )
 
 
         ginger3 = Plant.new(
@@ -500,7 +509,7 @@ Needs excellent drainage in pots",
 
         ginger3.requirement = f_req
         ginger3.save
-        GardenPlant.create(plant: ginger3, user: user, location:"out", status: status)
+        GardenPlant.create(plant: ginger3, user: user, location: 'new york' )
 
 
         ginger4 = Plant.new(
@@ -515,7 +524,7 @@ Needs excellent drainage in pots",
 
         ginger4.requirement = f_req
         ginger4.save
-        GardenPlant.create(plant: ginger4, user: user, location:"out", status: status)
+        GardenPlant.create(plant: ginger4, user: user, location: 'new york' )
 
 
 potato = Species.create(
@@ -542,7 +551,7 @@ potato = Species.create(
 
         potato1.requirement = g_req
         potato1.save
-        GardenPlant.create(plant: potato1, user: user, location:"out", status: status)
+        GardenPlant.create(plant: potato1, user: user, location: 'new york' )
 
 
 
@@ -558,7 +567,7 @@ potato = Species.create(
 
         potato2.requirement = g_req
         potato2.save
-        GardenPlant.create(plant: potato2, user: user, location:"out", status: status)
+        GardenPlant.create(plant: potato2, user: user, location: 'new york' )
 
 
 
@@ -575,7 +584,7 @@ potato = Species.create(
 
         potato3.requirement = g_req
         potato3.save
-        GardenPlant.create(plant: potato3, user: user, location:"out", status: status)
+        GardenPlant.create(plant: potato3, user: user, location: 'new york' )
 
 
 
@@ -590,7 +599,7 @@ potato = Species.create(
 
         potato4.requirement = g_req
         potato4.save
-        GardenPlant.create(plant: potato4, user: user, location:"out", status: status)
+        GardenPlant.create(plant: potato4, user: user, location: 'new york' )
 
 
 
@@ -623,7 +632,7 @@ zucchini = Species.create(
 
         zucchini1.requirement = h_req
         zucchini1.save
-        GardenPlant.create(plant: zucchini1, user: user, location:"out", status: status)
+        GardenPlant.create(plant: zucchini1, user: user, location: 'new york' )
 
 
 
@@ -641,7 +650,7 @@ zucchini = Species.create(
 
         zucchini2.requirement = h_req
         zucchini2.save
-        GardenPlant.create(plant: zucchini2, user: user, location:"out", status: status)
+        GardenPlant.create(plant: zucchini2, user: user, location: 'new york' )
 
 
 
@@ -657,7 +666,7 @@ zucchini = Species.create(
 
         zucchini3.requirement = h_req
         zucchini3.save
-        GardenPlant.create(plant: zucchini3, user: user, location:"out", status: status)
+        GardenPlant.create(plant: zucchini3, user: user, location: 'new york' )
 
 
 
@@ -673,7 +682,7 @@ zucchini = Species.create(
 
         zucchini4.requirement = h_req
         zucchini4.save
-        GardenPlant.create(plant: zucchini4, user: user, location:"out", status: status)
+        GardenPlant.create(plant: zucchini4, user: user, location: 'new york' )
 
 
 
@@ -707,7 +716,7 @@ cucumber = Species.create(
 
        cucumber1.requirement = i_req
        cucumber1.save
-      GardenPlant.create(plant: cucumber1, user: user, location:"out", status: status)
+      GardenPlant.create(plant: cucumber1, user: user, location: 'new york' )
 
 
 
@@ -728,7 +737,7 @@ cucumber = Species.create(
 
        cucumber2.requirement = i_req
        cucumber2.save
-      GardenPlant.create(plant: cucumber2, user: user, location:"out", status: status)
+      GardenPlant.create(plant: cucumber2, user: user, location: 'new york' )
 
         cucumber3 = Plant.new(
           name: "Cucumber (Cucumis sativus 'White Wonder')",
@@ -742,7 +751,7 @@ cucumber = Species.create(
 
        cucumber3.requirement = i_req
        cucumber3.save
-      GardenPlant.create(plant: cucumber3, user: user, location:"out", status: status)
+      GardenPlant.create(plant: cucumber3, user: user, location: 'new york' )
 
         cucumber4 = Plant.new(
           name: "Cucumber (Cucumis sativus 'Burpless')",
@@ -757,7 +766,7 @@ cucumber = Species.create(
 
        cucumber4.requirement = i_req
        cucumber4.save
-      GardenPlant.create(plant: cucumber4, user: user, location:"out", status: status)
+      GardenPlant.create(plant: cucumber4, user: user, location: 'new york' )
 
 
 
@@ -789,7 +798,7 @@ puts "creating flowers category"
 
       )
      jasmine.requirement = c_req
-    GardenPlant.create(plant: jasmine, user: user, location:"in", status: status)
+    GardenPlant.create(plant: jasmine, user: user, location:"in", )
 
       oryza = Plant.new(
       name: "Oryza 'Jasmine",
@@ -801,7 +810,7 @@ puts "creating flowers category"
 
       oryza.requirement = c_req
       oryza.save
-      GardenPlant.create(plant: oryza, user: user, location:"in", status: status)
+      GardenPlant.create(plant: oryza, user: user, location:"in", )
 
       d_req = Requirement.create(
         light: "Partial Shade",
@@ -817,7 +826,7 @@ puts "creating flowers category"
       )
       jessamine.requirement = d_req
       jessamine.save
-      GardenPlant.create(plant: jessamine, user: user, location:"in", status: status)
+      GardenPlant.create(plant: jessamine, user: user, location:"in", )
 
 
       ladys = Plant.new(
@@ -829,7 +838,7 @@ puts "creating flowers category"
       )
       ladys.requirement = d_req
       ladys.save
-      GardenPlant.create(plant: ladys, user: user, location:"in", status: status)
+      GardenPlant.create(plant: ladys, user: user, location:"in", )
 
 
       jnights = Plant.new(
@@ -841,7 +850,7 @@ puts "creating flowers category"
       )
       jnights.requirement = d_req
       jnights.save
-      GardenPlant.create(plant: jnights, user: user, location:"in", status: status)
+      GardenPlant.create(plant: jnights, user: user, location:"in", )
 
 
 
@@ -854,7 +863,7 @@ puts "creating flowers category"
       )
       jemma.requirement = d_req
       jemma.save
-      GardenPlant.create(plant: jemma, user: user, location:"in", status: status)
+      GardenPlant.create(plant: jemma, user: user, location:"in", )
 
 
 
@@ -867,7 +876,7 @@ puts "creating flowers category"
       )
       jbearded.requirement = d_req
       jbearded.save
-      GardenPlant.create(plant: jbearded, user: user, location:"in", status: status)
+      GardenPlant.create(plant: jbearded, user: user, location:"in", )
 
   # PLANT
     garden_onion = Plant.new(
@@ -881,7 +890,7 @@ puts "creating flowers category"
       garden_onion.save
 
     # GARDENPLANT
-    GardenPlant.create(plant: garden_onion, user: user, location:"out", status: status)
+    GardenPlant.create(plant: garden_onion, user: user, location: 'new york' )
 
     ########
 
@@ -897,7 +906,7 @@ puts "creating flowers category"
       bunching_onion.save
 
     # GARDENPLANT
-    GardenPlant.create(plant: bunching_onion, user: user_3, location:"out", status: status_3)
+    GardenPlant.create(plant: bunching_onion, user: user_3, location: 'new york')
 
     ########
 
@@ -919,7 +928,7 @@ puts "creating flowers category"
     cannonball_cabbage.save
 
   # GARDENPLANT
-    GardenPlant.create(plant: bunching_onion, user: user, location:"out", status: status)
+    GardenPlant.create(plant: bunching_onion, user: user, location: 'new york' )
 
     ########
 
@@ -934,7 +943,7 @@ puts "creating flowers category"
     bok_choy.save
 
   # GARDENPLANT
-    GardenPlant.create(plant: bok_choy, user: user_4, location:"out", status: status_4)
+    GardenPlant.create(plant: bok_choy, user: user_4, location: 'new york')
 
     ########
 
@@ -949,7 +958,7 @@ puts "creating flowers category"
     choy_sum.save
 
   # GARDENPLANT
-    GardenPlant.create(plant: choy_sum, user: user_3, location:"out", status: status_3)
+    GardenPlant.create(plant: choy_sum, user: user_3, location: 'new york')
 
     ########
 
@@ -977,7 +986,7 @@ puts "creating flowers category"
     allstars.save
 
   # GARDENPLANT
-    GardenPlant.create(plant: allstars, user: user, location:"out", status: status)
+    GardenPlant.create(plant: allstars, user: user, location: 'new york' )
 
     ########
 
@@ -992,8 +1001,8 @@ puts "creating flowers category"
     ventana.save
 
   # GARDENPLANT
-    GardenPlant.create(plant: ventana, user: user_3, location:"out", status: status_3)
-    GardenPlant.create(plant: ventana, user: user_4, location:"out", status: status_4)
+    GardenPlant.create(plant: ventana, user: user_3, location: 'new york')
+    GardenPlant.create(plant: ventana, user: user_4, location: 'new york')
 
     ########
   # PLANTS
@@ -1007,7 +1016,7 @@ puts "creating flowers category"
     alpine.save
 
   # GARDENPLANT
-    GardenPlant.create(plant: alpine, user: user_2, location:"out", status: status_3)
+    GardenPlant.create(plant: alpine, user: user_2, location: 'new york')
 
     ########
 
@@ -1030,7 +1039,7 @@ puts "creating flowers category"
     san_marzano.save
 
   # GARDENPLANT
-    GardenPlant.create(plant: san_marzano, user: user_2, location:"out", status: status_2)
+    GardenPlant.create(plant: san_marzano, user: user_2, location: 'new york')
 
   # PLANTS
     cherokee_purple = Plant.new(
@@ -1045,7 +1054,7 @@ puts "creating flowers category"
 
   # GARDENPLANT
 
-    GardenPlant.create(plant: cherokee_purple, user: user_4, location:"out", status: status_4)
+    GardenPlant.create(plant: cherokee_purple, user: user_4, location: 'new york')
 
 
   ########
@@ -1062,7 +1071,7 @@ puts "creating flowers category"
     cherry_tomato.save
 
     # GARDENPLANT
-      GardenPlant.create(plant: cherry_tomato, user: user_3, location:"in", status: status_3)
+      GardenPlant.create(plant: cherry_tomato, user: user_3, location:"in")
 
     ########
 
@@ -1092,7 +1101,7 @@ puts "creating flowers category"
     sweet_basil.save
 
   # GARDENPLANT
-    GardenPlant.create(plant: sweet_basil, user: user_2, location:"in", status: status_2)
+    GardenPlant.create(plant: sweet_basil, user: user_2, location:"in",)
 
     ########
 
@@ -1107,7 +1116,7 @@ puts "creating flowers category"
     holy_basil.save
 
   # GARDENPLANT
-    GardenPlant.create(plant: sweet_basil, user: user, location:"in", status: status)
+    GardenPlant.create(plant: sweet_basil, user: user, location:"in", )
 
     ########
 
@@ -1137,7 +1146,7 @@ puts "creating flowers category"
     common_thyme.save
 
   # GARDENPLANT
-    GardenPlant.create(plant: common_thyme, user: user_3, location:"out", status: status_3)
+    GardenPlant.create(plant: common_thyme, user: user_3, location: 'new york')
 
     ########
 
@@ -1153,7 +1162,7 @@ puts "creating flowers category"
     common_thyme.save
 
   # GARDENPLANT
-    GardenPlant.create(plant: common_thyme, user: user_4, location:"out", status: status_4)
+    GardenPlant.create(plant: common_thyme, user: user_4, location: 'new york')
 
     ########
 
@@ -1181,7 +1190,7 @@ puts "creating flowers category"
       portabello_mushroom.save
 
   # GARDENPLANT
-    GardenPlant.create(plant: portabello_mushroom, user: user_2, location:"out", status: status_2)
+    GardenPlant.create(plant: portabello_mushroom, user: user_2, location: 'new york')
 
     ########
 
@@ -1196,8 +1205,8 @@ puts "creating flowers category"
       shiitake_mushroom.save
 
   # GARDENPLANT
-    GardenPlant.create(plant: shiitake_mushroom, user: user, location:"out", status: status)
-    GardenPlant.create(plant: shiitake_mushroom, user: user_3, location:"out", status: status_3)
+    GardenPlant.create(plant: shiitake_mushroom, user: user, location: 'new york' )
+    GardenPlant.create(plant: shiitake_mushroom, user: user_3, location: 'new york')
 
     ########
 
@@ -1212,16 +1221,22 @@ puts "creating flowers category"
       oyster_mushroom.save
 
   # GARDENPLANT
-    GardenPlant.create(plant: oyster_mushroom, user: user, location:"out", status: status)
+    GardenPlant.create(plant: oyster_mushroom, user: user, location: 'new york' )
 
-    #imagas 
-    
-      
+    #imagas
 
 
 
 
-    
+
+    #imagas
+
+
+
+
+
+
+
 
 
 

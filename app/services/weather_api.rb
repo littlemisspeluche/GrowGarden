@@ -17,30 +17,36 @@ class WeatherApi
   def setting_daily_temp(garden)
     puts "Setting Daily Temperature"
     today_temp = Openweather2.get_weather(city: "#{garden.location}", units: 'metric')
-    garden.status.daily_temp = today_temp.temperature
-    garden.status.save
+    garden.status_today.update(daily_temp: today_temp.temperature)
+    garden.status_today.save
     puts "Saved"
+  rescue StandardError => e
+    p e
   end
 
   def getting_daily_light(garden)
     puts "Getting Daily Light......"
     today_light = Openweather2.get_weather(city: "#{garden.location}", units: 'metric')
-    garden.status.daily_light = today_light.clouds
-    garden.status.save
+    garden.status_today.update(daily_light: today_light.clouds)
+    garden.status_today.save
     puts 'Saved'
+  rescue StandardError => e
+    p e
   end
 
   def setting_daily_light(garden)
     puts "Setting Daily Light......"
-    if garden.status.daily_light.to_i < 20
-      garden.status.daily_light = "Full Sun"
-    elsif garden.status.daily_light.to_i > 70
-      garden.status.daily_light = "Partial Shade"
+    if garden.status_today.daily_light.to_i < 20
+      garden.status_today.daily_light = "Full Sun"
+    elsif garden.status_today.daily_light.to_i > 70
+      garden.status_today.daily_light = "Partial Shade"
     else
-      garden.status.daily_light = "Full Sun to Partial Shade"
+      garden.status_today.daily_light = "Full Sun to Partial Shade"
     end
-    garden.status.save
+    garden.status_today.save
     puts 'Saved'
+  rescue StandardError => e
+    p e
   end
 
 

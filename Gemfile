@@ -13,6 +13,8 @@ gem 'openweather2' ##### TEST
 gem "letter_opener", group: :development ### MAILER
 gem 'dotenv-rails', groups: [:development, :test]
 
+gem 'sidekiq'                     ###
+gem 'sidekiq-failures', '~> 1.0'  ### BACKGROUND JOBS
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
@@ -22,6 +24,7 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'cloudinary', '~> 1.9.1'
+
 
 group :development do
   gem 'web-console', '>= 3.3.0'
