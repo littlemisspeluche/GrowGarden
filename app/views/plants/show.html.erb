@@ -1,41 +1,32 @@
+<div class="plant-picture">
+  <%= image_tag "Basil.jpg" %>
+  <%= link_to new_plant_garden_plant_path(@plant) do %>
+  <i class="fas fa-plus plus"></i>
+  <% end %>
+</div>
+<div id="header-plant"><h2><%= @plant.name %></h2></div>
 
-<!-- <div class="">
-  <ul>
-    <li>
-      <%= image_tag "xxx-xx-xxx.xxx", height: 40 %>
-    </li>
-    <li>
-      <%= image_tag "xxx-xx-xxx.xxx", height: 40 %>
-    </li>
-    <li>
-      <%= image_tag "xxx-xx-xxx.xxx", height: 40 %>
-    </li>
-    <li>
-      <%= image_tag "icon_envalope.png", height: 40 %>
-    </li>
-  </ul>
-</div> -->
 
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
       <div class="requirements">
         <div class="plant-requirement">
-          <%= image_tag "Light.png", class: "needs-icon" %>
+          <%= image_tag "Light.png", height: 40, class: "needs-icon" %>
           <span>
             <p>Light</p>
             <p>Partial Shade</p>
           </span>
         </div>
         <div class="plant-requirement">
-          <%= image_tag "Temp.png", class: "needs-icon" %>
+          <%= image_tag "Temp.png", height: 40, class: "needs-icon" %>
           <span>
             <p>Temp</p>
             <p>Warm and dry</p>
           </span>
         </div>
         <div class="plant-requirement">
-          <%= image_tag "Container.png", class: "needs-icon" %>
+          <%= image_tag "Container.png", height: 40, class: "needs-icon" %>
           <span>
             <p>Containers</p>
             <p>Not relevant</p>
@@ -45,21 +36,21 @@
 
       <div class="requirements">
         <div class="plant-requirement">
-          <%= image_tag "Difficulty.png", class: "needs-icon" %>
+          <%= image_tag "Difficulty.png", height: 40, class: "needs-icon" %>
           <span>
             <p>Difficulty</p>
             <p>Not hard</p>
           </span>
         </div>
         <div class="plant-requirement">
-          <%= image_tag "Watering.png", class: "needs-icon" %>
+          <%= image_tag "Watering.png", height: 40, class: "needs-icon" %>
           <span>
             <p>Watering</p>
             <p>Daily</p>
           </span>
         </div>
         <div class="plant-requirement">
-          <%= image_tag "Use.png", class: "needs-icon" %>
+          <%= image_tag "Use.png", height: 40, class: "needs-icon" %>
           <span>
             <p>Uses</p>
             <p>Cooking | Salad | Sauce</p>
@@ -88,81 +79,4 @@
 <%= link_to "Back", "javascript:history.back()", class: "bt bt-flat" %>
 </div>
 
-
-
-
-
-<!-- ORIGINAL FILE --- DON'T DELETE UNTIL THE PAGE IS READY!!! -->
-
-<div class="plant-banner">
-
-  <%= link_to new_plant_garden_plant_path(@plant) do %>
-    <i class="fas fa-plus plus"></i>
-  <% end %>
-</div>
-
-<div id="header-plant"><h2><%= @plant.name %></h2></div>
-
-
-<div class="container">
-  <div class="row">
-    <!-- left column -->
-    <div class="col-xs-12 col-sm-6">
-      <div class="mobile-icons">
-        <div class="description-card">
-          <i class="fas fa-sun big-icon"></i>
-          <span>
-            <p><strong>Light</strong></p>
-            <p>Direct Light</p>
-          </span>
-        </div>
-          <div class="description-card">
-            <i class="fas fa-temperature-high big-icon"></i>
-            <span>
-              <p><strong>Temp</strong></p>
-              <p>Warm and dry</p>
-            </span>
-          </div>
-          <div class="description-card">
-            <i class="fas fa-sliders-h big-icon"></i>
-            <span>
-              <p><strong>Difficulty</strong></p>
-              <p>Not hard</p>
-            </span>
-         </div>
-      </div>
-      <div class="mobile-icons">
-        <div class="description-card">
-          <i class="fas fa-users-cog big-icon"></i>
-          <span>
-            <p><strong>Uses</strong></p>
-            <p>Salad</p>
-          </span>
-        </div>
-        <div class="description-card">
-          <i class="fas fa-toolbox big-icon"></i>
-          <span>
-            <p><strong>Containers</strong></p>
-            <p>Not relevant</p>
-          </span>
-        </div>
-      </div>
-  </div>
-  <!-- right column -->
-  <div class="col-xs-12 col-sm-6">
-      <div class="card">
-      <p>Winter squash is an annual fruit representing several squash species within the genus Cucurbita. It differs from summer squash in that it is harvested and eaten in the mature fruit stage when the seeds within have matured fully and the skin has hardened into a tough rind. At this stage, most varieties of this fruit can be stored for use during the winter. Winter squash is generally cooked before being eaten, and the skin or rind is not usually eaten as it is with summer squash.[1]
-      In New Zealand and Australian English, the term "pumpkin" generally refers to the broader category called "winter squash."</p>
-    </div>
-  </div>
-  </div>
-</div>
-
-
-<%= link_to "Add to Garden", new_plant_garden_plant_path(@plant), class: 'hidden-xs hidden-md' %>
-
-<br>
-<div class="top">
-<%= link_to "Back", "javascript:history.back()", class: "bt bt-flat" %>
-</div>
 
