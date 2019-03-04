@@ -21,7 +21,8 @@ class WeatherApi
     garden.status_today.save
     puts "Saved"
   rescue StandardError => e
-    p e
+    p "Temperature Error ====>>> #{e}"
+     byebug
   end
 
   def getting_daily_light(garden)
@@ -31,7 +32,8 @@ class WeatherApi
     garden.status_today.save
     puts 'Saved'
   rescue StandardError => e
-    p e
+     p "Light Error ====>>> #{e}"
+     byebug
   end
 
   def setting_daily_light(garden)
@@ -46,7 +48,8 @@ class WeatherApi
     garden.status_today.save
     puts 'Saved'
   rescue StandardError => e
-    p e
+     p "Setting Light Error ====>>> #{e}"
+      byebug
   end
 
 

@@ -1,7 +1,8 @@
 class OverallHealth
+  attr_accessor :score
   def initialize(options = {})
     @garden = options[:garden]
-    @score = 0
+    @score = nil
   end
 
   def perform
