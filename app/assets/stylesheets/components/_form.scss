@@ -1,54 +1,50 @@
 .log-in-form {
+  background-color: #f6f5f3;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  padding: 10px;
+  align-items: center;
+  border-radius: 25px;
+  height: 550px;
   margin-top: 90px !important;
 }
 
-.log-in-button {
-  background-color: #007bff;
-  font-weight: bold;
-  border-radius: 8px;
-  width: 100%;
-  padding: 10px;
-  color: white;
 
+.log-in-button {
+  border: 0px;
+  background-color: #deb615;
+  color: #f6f5f3;
+  -webkit-border-radius: 5px;
+  padding: 10px;
+  width: 80%;
+  margin: 0 10%;
 }
+.user-registration {
+  position: absolute;
+  bottom: 33px;
+  left: 35px;
+  line-height: 29px;
+  color: #3d3d3f;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.sign-up  {
+  text-decoration: none;
+  color: #3d3d3f;
+}
+
 
 .inputs {
   padding: 10px;
 }
 
-.sign-up  {
-  background-color: #E6E6FA;
-  border-radius: 8px;
-  padding: 10px;
-  text-align: center;
+.forgot-password {
+  color: #3d3d3f;
   text-decoration: none;
-  color: black
 }
 
-.forgot-password {
-  color: black;
-  text-decoration: none;
-}
 .new-account {
   margin-top: 90px!important;
   padding: 30px!important;
 }
-.sign-up-button {
-  background-color: #007bff;
-  font-weight: bold;
-  border-radius: 8px;
-  width: 100%;
-  padding: 10px;
-  color: white;
-}
-.log-in-btn {
-  background-color: #E6E6FA;
-  border-radius: 8px!important;
-  padding: 5px!important;
-  text-align: center!important;
-  text-decoration: none!important;
-  color: black!important;
-  margin-top: 20px!important;
-  border-style: solid;
-  border-width: 1px;
-}
+
+

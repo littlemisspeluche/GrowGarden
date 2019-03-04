@@ -27,7 +27,7 @@ button{
   font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
   word-spacing: 2px;
-  margin-bottom: 60px;
+  margin: 60px auto 55px ;
   letter-spacing: 1px;
   font-weight: lighter;
 }
@@ -35,7 +35,7 @@ button{
 .section-header:after {
   display: block;
   height: 3px;
-  background-color: #FDCD38;
+  background-color: #deb615;
   content:  " ";
   width: 200px;
   margin: 0 auto;
