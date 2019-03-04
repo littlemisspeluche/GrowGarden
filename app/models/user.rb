@@ -6,7 +6,7 @@ class User < ApplicationRecord
 
   has_many :garden_plants
 
-  after_create :send_welcome_email
+  # after_create :send_welcome_email
 
   private
 
