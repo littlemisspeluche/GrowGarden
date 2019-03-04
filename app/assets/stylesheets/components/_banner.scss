@@ -2,7 +2,6 @@
   background-size: cover !important;
   height: calc(100vh - 70px);
   text-align: center;
-  padding-top: 10vh;
   background-position: center;
   background-attachment: fixed;
   position: relative;
@@ -13,18 +12,19 @@
 }
 
 .background-img {
-    height: 365px;
+    min-height: 330px;
     width: 100%;
     display: flex;
     justify-content: center;
   img {
-    width: 345px;
+    width: 335px;
     height: 100%;
 
   }
 }
 
 .banner-content {
+  max-height: 350px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -49,15 +49,14 @@
   margin-bottom: 30px;
 }
 .banner-center {
-padding-top: 50px;
+  padding-top: 106px;
 }
 
 /* Medua Query for Search Box */
 
 @media only screen and (max-device-width: 480px) {
   .background-img {
-//    height: 71vh;
-//    padding-top: 23vh;
+
     background-size: cover;
     background-position: center;
   }

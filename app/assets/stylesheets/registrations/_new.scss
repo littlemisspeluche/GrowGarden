@@ -1,61 +1,79 @@
 .aa{
- background-color:#D9F9E1;
+// background-color:#D9F9E1;
  height: 100vh;
 
 }
-.form {
-	background-color :#F5EEF5;
-	max-width: 450px;
-	margin: 15px;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 10px;
-	align-items: center;
-	margin-bottom: 50px;
+
+.new-account {
+  position: absolute;
+  top: 40px;
+  right: 2px;
+  margin-top: 90px!important;
+  padding: 30px!important;
+}
+
+.sign-up-form {
+  padding: 10px;
+  align-items: center;
   border-radius: 25px;
-	}
-// .btn {
-// 	background: #52B86A;
-// 	color: white;
-// 	width:100%;
-// }
-input{
-	opacity: 0.7;
-	color: #80B38C;
-
+  height: 600px !important;
+  background-color: #f6f5f3;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
 }
-.title{
-	text-align: center;
 
-	color: #3B5A3B;
-}
-.title p{
-font-family: PT Sans;
-font-style: normal;
-font-weight: normal;
-line-height: normal;
-font-size: 32px;
-
-}
-.title i{
-	font-size: 60px;
-	 margin: 10px;
+.sign-up-button {
+  border: 0px;
+  background-color: #deb615;
+  color: #f6f5f3;
+  -webkit-border-radius: 5px;
+  padding: 10px;
+  width: 80%;
+  margin: 0 10%;
+  margin-top: 30px 0;
 }
 
 
-input::placeholder {
-  color: #80B38C;
-
-  font-size: 15px;
+.user-account {
+  position: absolute;
+  bottom: 145px;
+  left: 45px;
+  font-family: 'PT Sans', sans-serif;
+  a {
+    text-decoration: none;
+    color: #3d3d3f;
+  }
 }
 
-span.errspan{
-float: right;
-top: 36px;
-right:15px;
-position:relative;
-z-index:2;
-color: #80B38C !important;
-font-size: 30px;
+.title {
+  h2 {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    color: #02686B;
+    padding: 0 30px 30px;
+  }
 }
+
+.form-inputs {
+  label {
+    color: #3d3d3f;
+    font-family: 'PT Sans', sans-serif;
+  }
+  input {
+  	opacity: 0.5;
+    border-radius: 3px;
+  }
+}
+
+
+
+//span.errspan{
+//float: right;
+//top: 36px;
+//right:15px;
+//position:relative;
+//z-index:2;
+//color: #3d3d3f !important;
+//font-size: 30px;
+//}
 

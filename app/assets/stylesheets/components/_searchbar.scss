@@ -21,7 +21,7 @@
 
 .search-bar input[type="submit"] {
   border: 0px;
-  background-color: #FDCD38;
+  background-color: #deb615;
   color: #f6f5f3;
   padding: 10px;
   -webkit-border-radius: 5px;
@@ -35,8 +35,8 @@
  @media only screen and (max-device-width: 480px) {
   .search-bar {
     width: 95%;
-    margin: 0 auto;
-  }
+    margin: 30px 10px 0;
+    }
   .search-bar input[type="text"] {
     width: 70%;
   }

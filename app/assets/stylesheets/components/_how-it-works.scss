@@ -58,7 +58,7 @@
   font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
   word-spacing: 2px;
-  margin-bottom: 30px;
+  margin: 60px auto 55px ;
   letter-spacing: 1px;
   font-weight: lighter;
 }
@@ -66,7 +66,7 @@
 .section-steps h2:after {
   display: block;
   height: 3px;
-  background-color: #FDCD38;
+  background-color: #deb615;
   content:  " ";
   width: 200px;
   margin: 0 auto;
@@ -91,8 +91,8 @@ padding-top: 10px;
 }
 // Step Number
 .step{
-  color: #FDCD38;
-  border: 3px solid #FDCD38;
+  color: #deb615;
+  border: 3px solid #deb615;
   display: inline-block;
   border-radius: 50%;
   height: 50px;

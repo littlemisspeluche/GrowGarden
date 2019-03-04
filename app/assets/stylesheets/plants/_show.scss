@@ -1,6 +1,11 @@
-#plant-banner {
-  height: 300px;
-}
+
+.container { display: flex; }
+
+.plant-banner {
+  background-image: asset-url('apple_icon.png');
+  background-size: cover;
+  height: 400px;
+
 #plant-banner img{
   height: 102%;
   width: 100%;
@@ -8,15 +13,24 @@
 
 .plus-icon {
   position: relative;
+  margin: 25px 0 45px 0;
 }
 
-.container {
-  display: flex;
 
-}
+#header-plant h2 {
+  //text-align: center;
+  font-size: 26px;
+  color: #3d3d3f;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  word-spacing: 2px;
+  margin: 10px 0 30px 10px;
+  letter-spacing: 1px;
+  font-weight: lighter;
+
 
 .plus {
-  background-color: #5ba571;
+  background-color: #FCD05F;
   border-radius: 50%;
   margin-right: 10px;
   padding: 30px;
@@ -32,14 +46,18 @@
   //   p:first-child {
   //   }
   // }
-  i {
-    color: #5ba571;
-    border-radius: 50%;
-    border-color: black;
-    padding: 28px;
-    font-size: 25px;
-    background-color: #E0E0E0
+
+i {
+  color: #5EC1C3;
+  border-radius: 50%;
+  border-color: black;
+  padding: 15px;
+  background-color: black;
   }
+}
+
+.big-icon {
+  font-size: 36px;
 }
 
 .mobile-icons {
