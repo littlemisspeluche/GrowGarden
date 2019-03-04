@@ -1,9 +1,15 @@
 #plant-banner {
-  background-image: asset-url('apple_icon.png');
-  background-size: cover;
-  height: 400px;
+  height: 300px;
+}
+#plant-banner img{
+  height: 102%;
+  width: 100%;
+}
+
+.plus-icon {
   position: relative;
 }
+
 .container {
   display: flex;
 
@@ -69,4 +75,7 @@
       background-color: transparent;
     }
   }
+}
+.h2 h2{
+  margin-top:40px;
 }

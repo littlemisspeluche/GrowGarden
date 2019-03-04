@@ -1,9 +1,9 @@
 <h1 id="header-new">Add a new plant</h1>
 <%= simple_form_for @garden_plant, url: :plant_garden_plants, method: :post do |f| %>
+
   <%= f.input :location, placeholder: "Where Are You?" %>
   <%= f.submit "submit", class: "btn btn-yellow" %>
 <% end %>
 <br>
 
 <!-- <a href="javascript:history.back()" >back</a> -->
-

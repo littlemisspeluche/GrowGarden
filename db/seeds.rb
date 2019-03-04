@@ -9,18 +9,29 @@ Species.destroy_all
 
 puts "Killing all the Categories"
 Category.destroy_all
+puts "Killing all the Users"
 User.destroy_all
 
 
-puts "creating flowers category"
+puts "creating user/status"
+
 
 #US = Status.new()
 user_3 = User.create(email: "liad@gmail.com", password:  '123456')
 user_4 = User.create(email: "barak@gmail.com", password: "123456")
+
+#USER/STATUS
+status_3 = Status.new()
+user_3 = User.create(email: "liad1459@gmail.com", password: "123456")
+status_4 = Status.new()
+user_4 = User.create(email: "barakbbg@gmail.com", password: "123456")
+
 status_2 = Status.new()
-user_2 = User.create(email: "orianne@gmail.com", password: "123456")
+user_2 = User.create(email: "matalonyaniv14@gmail.com", password: "123456")
 status = Status.new()
-user = User.create(email: "matalon@gmail.com", password: "123456")
+user = User.create(email: "matalonyaniv14@gmail.com", password: "123456")
+
+puts "creating flowers category"
 
 flowers = Category.create!(
  name: "Flowers",
@@ -1211,6 +1222,12 @@ puts "creating flowers category"
 
   # GARDENPLANT
     GardenPlant.create(plant: oyster_mushroom, user: user, location: 'new york' )
+
+    #imagas
+
+
+
+
 
     #imagas
 

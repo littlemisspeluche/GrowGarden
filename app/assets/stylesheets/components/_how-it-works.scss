@@ -38,6 +38,18 @@
  width: 40%;
 }
 
+.animated {
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: all 0.6s ease;
+}
+
+
+.animation-fade-in {
+  opacity: 1;
+  transform: translate(0);
+}
+
 // Header - How it Works
 .section-steps h2 {
   text-align: center;
