@@ -834,7 +834,7 @@ puts "creating flowers category"
       description: "Lilium lancifolium is an Asian species of lily, native to China, Japan, Korea, and the Russian Far East. It is widely planted as an ornamental because of its showy orange-and-black flowers, and has become naturalized in numerous scattered locations in eastern North America.",
       species: jasmin,
       uses: "Suitable as Annual",
-      photos: "jessamine_gelsemium_jasmine_duet"
+      photos: "Lady_s_Eardrops_Fuchsia_Jasmine"
       )
       ladys.requirement = d_req
       ladys.save
@@ -859,7 +859,7 @@ puts "creating flowers category"
       description: "Lilium lancifolium is an Asian species of lily, native to China, Japan, Korea, and the Russian Far East. It is widely planted as an ornamental because of its showy orange-and-black flowers, and has become naturalized in numerous scattered locations in eastern North America.",
       species: jasmin,
       uses: "Suitable as Annual",
-      photos: "daylily_hemerocallis_jasmine_nights"
+      photos: "Daylily__Hemerocallis__Jasmine_Emma"
       )
       jemma.requirement = d_req
       jemma.save
@@ -898,9 +898,9 @@ puts "creating flowers category"
     bunching_onion = Plant.new(
       name: "Bunching Onion (Allium cepa 'White Lisbon')",
       description: "It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
-      species: onion,
+      species: onion,OnionWhite_Lisbon
       uses: "Culinary Herb Vegetable",
-      photos: "walla_walla_sweet"
+      photos: "OnionWhite_Lisbon"
     )
       bunching_onion.requirement = y_req
       bunching_onion.save
@@ -952,7 +952,7 @@ puts "creating flowers category"
       name: "Choy Sum",
       description: "Choy Sum, bai cai or pak choi but they all really mean the same thing: a dark, leafy vegetable with slender stems that's more reminiscent of Swiss chard or spinach than it is a cannonball cabbage.",
       species: cabbage,
-      photos: "cannonball_cabbage"
+      photos: "Choy_Sum"
     )
     choy_sum.requirement = y_req
     choy_sum.save
@@ -980,7 +980,7 @@ puts "creating flowers category"
       name: "Allstars",
       description: "Allstars are generally paler than other varieties. They grow big and firm, though, and have plenty of sweetness and juice. They are the kind of berries that are particularly great for slicing and using in salads.",
       species: strawberries,
-      photos: "cannonball_cabbage"
+      photos: "Allstars"
     )
     allstars.requirement = w_req
     allstars.save
@@ -995,7 +995,7 @@ puts "creating flowers category"
       name: "Ventana",
       description: "Ventana strawberries are bright red fruit, slightly lighter in color, a good flavor, standard shape, and large size with excellent fruit quality.",
       species: strawberries,
-      photos: "cannonball_cabbage"
+      photos: "Ventana"
     )
     ventana.requirement = w_req
     ventana.save
@@ -1010,7 +1010,7 @@ puts "creating flowers category"
       name: "Alpine",
       description: "Alpine strawberries (fraises des bois in French) are a tiny and exquisitely sweet wild strawberry from France.",
       species: strawberries,
-      photos: "cannonball_cabbage"
+      photos: "Alpine"
     )
     alpine.requirement = w_req
     alpine.save
@@ -1032,7 +1032,7 @@ puts "creating flowers category"
       name: "San Marzano",
       description: "San Marzano tomatoes are thinner and more pointed. The flesh is much thicker with fewer seeds, and the taste is stronger, sweeter and less acidic.",
       species: tomatoes,
-      photos: "cannonball_cabbage"
+      photos: "San_Marzano"
 
     )
     san_marzano.requirement = y_req
@@ -1047,7 +1047,7 @@ puts "creating flowers category"
       description: "Cherokee Purple is the name of a cultivar of tomato that develops a fruit with a deep, dusky-rose color while maintaining a somewhat greenish hue near the stem when mature for eating.",
       species: tomatoes,
       uses: "Culinary Herb Vegetable",
-      photos: "cannonball_cabbage"
+      photos: "Cherokee_Purple"
     )
     cherokee_purple.requirement = y_req
     cherokee_purple.save
@@ -1065,7 +1065,7 @@ puts "creating flowers category"
       description: "The cherry tomato is a type of small round tomato believed to be an intermediate genetic admixture between wild currant-type tomatoes and domesticated garden tomatoes.",
       species: tomatoes,
       uses: "Culinary Herb Vegetable",
-      photos: "cannonball_cabbage"
+      photos: "Cherry_Tomat"
     )
     cherry_tomato.requirement = y_req
     cherry_tomato.save
@@ -1095,7 +1095,7 @@ puts "creating flowers category"
       description: "Sweet Basil is your traditional style Basil that most of us use in our tomato sauces, pesto, in soups, and I use it a lot to make my own Italian seasonings.",
       species: basil,
       uses: "Culinary Herb",
-      photos: "cannonball_cabbage"
+      photos: "Sweet_Basil"
     )
     sweet_basil.requirement = a_req
     sweet_basil.save
@@ -1110,7 +1110,7 @@ puts "creating flowers category"
       name: "Holy Basil (Ocimum tenuiflorum)",
       description: "Holy Basil is flatter and pointier than traditional sweet basil. It also has a more aromatic flavor.",
       species: basil,
-      photos: "cannonball_cabbage"
+      photos: "Holy_Basil"
     )
     holy_basil.requirement = a_req
     holy_basil.save
@@ -1140,7 +1140,7 @@ puts "creating flowers category"
       description: "Sweet Basil is your traditional style Basil that most of us use in our tomato sauces, pesto, in soups, and I use it a lot to make my own Italian seasonings.",
       species: thymes,
       uses: "Groundcover Culinary Herb",
-      photos: "cannonball_cabbage"
+      photos: "Common_Thyme"
     )
     common_thyme.requirement = x_req
     common_thyme.save
