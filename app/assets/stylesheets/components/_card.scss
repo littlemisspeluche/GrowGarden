@@ -1,7 +1,10 @@
 .card-description {
   border-radius: 2px;
   padding: 5px 6px;
-  box-shadow: 0px 0px 3px 2px #e4e4e4
+  box-shadow: 0px 0px 3px 2px #e4e4e4;
+}
+.card-size{
+  margin: 10px;
 }
 
 .card-img{
@@ -17,26 +20,25 @@
   background-position: center;
 }
 
-
-
 .card-description-info {
   margin: 10px;
-  a {
-    color: #02686B;
-    font-weight: bold;
-  }
-
+  text-decoration: none;
 }
+
+.category-card a {
+    color: #0A7D81;
+    text-decoration: none;
+}
+
+
+
 .card-description-info h2 {
   margin-top: 10px;
   font-size: 20px;
   font-family: 'PT Sans', sans-serif;
   font-weight: bolder;
-  text-transform: uppercase;
   letter-spacing: 2px;
-  color: #02686B;
   text-decoration:none;
-
 }
 .card-description-info p {
   font-size: 14px;
@@ -44,31 +46,26 @@
   font-family: 'PT Sans', sans-serif;
   text-decoration:none;
 }
-.h1{
-  text-align: center;
-  margin-top: 100px;
-}
-.test{
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-size: 1.5em;
-  color:  $purple, $aqua;
-  display: inline-block;
-  cursor: pointer;
+
+
+
+.card-description-info a {
+  color: #0A7D81;
   text-decoration: none;
-  padding: 0.6em 1.6em;
-  margin: 0.6em;
-  border-style: solid;
-  border-width: 1px;
-  transition: all 0.2s ease;
+  text-transform: uppercase;
 }
 
-.card-product-infos {
-  a {
-    color: $green;
-    font-weight: bold;
-  }
+.card-description-info a:active {
+  text-decoration: none;
+  border: none;
 }
+
+// .card-product-infos {
+//   a {
+//     color: $green;
+//     font-weight: bold;
+//   }
+// }
 
 .plant-index {
   margin-top: 0 !important;

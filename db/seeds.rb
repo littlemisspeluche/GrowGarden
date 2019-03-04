@@ -19,6 +19,7 @@ puts "creating user/status"
 #US = Status.new()
 user_3 = User.create(email: "liad@gmail.com", password:  '123456')
 user_4 = User.create(email: "barak@gmail.com", password: "123456")
+user_4 = User.create(email: "orianne@gmail.com", password: "123456")
 
 #USER/STATUS
 status_3 = Status.new()
@@ -1226,7 +1227,7 @@ puts "creating flowers category"
     #imagas
 
 
-
+    Cloudinary::Uploader.upload("app/assets/images/Cucumber.jpg")
 
 
     #imagas
