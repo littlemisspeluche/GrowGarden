@@ -17,11 +17,24 @@
   font-size: 14px;
   text-transform: uppercase;
 }
+.navbar-item:hover, .navbar-item:active {
+  color: black;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #deb615;
+  transition: 0.3s;
+  text-decoration: none;
+}
 
 
 .navbar-logo {
   margin-left: -10px;
+  border: none;
 }
+  .navbar-logo a:active {
+    text-decoration: none;
+    border: none;
+    color: #3d3d3f;
+  }
 
 .nav-search-bar {
   position: absolute;
@@ -32,14 +45,15 @@
   }
 }
 
-.navbar-top a {
-  text-decoration: none;
 
+.navbar-links a {
+  text-decoration: none;
 }
-.navbar-top a:hover, a:active {
+.navbar-links a:hover, a:active {
   color: black;
   padding-bottom: 6px;
   border-bottom: 2px solid #deb615;
   transition: 0.3s;
 }
+
 

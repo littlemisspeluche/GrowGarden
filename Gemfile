@@ -10,7 +10,6 @@ gem 'rails', '5.2.2'
 gem 'redis'
 gem 'pg_search'
 gem 'openweather2' ##### TEST
-gem "letter_opener", group: :development ### MAILER
 gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'sidekiq'                     ###
@@ -25,16 +24,16 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'cloudinary', '~> 1.9.1'
 
-
 group :development do
   gem 'web-console', '>= 3.3.0'
 end
 
 group :development, :test do
+  gem "letter_opener"
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  
+
 end
