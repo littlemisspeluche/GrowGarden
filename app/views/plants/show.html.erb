@@ -1,4 +1,99 @@
 
+<!-- <div class="">
+  <ul>
+    <li>
+      <%= image_tag "xxx-xx-xxx.xxx", height: 40 %>
+    </li>
+    <li>
+      <%= image_tag "xxx-xx-xxx.xxx", height: 40 %>
+    </li>
+    <li>
+      <%= image_tag "xxx-xx-xxx.xxx", height: 40 %>
+    </li>
+    <li>
+      <%= image_tag "icon_envalope.png", height: 40 %>
+    </li>
+  </ul>
+</div> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="requirements">
+        <div class="plant-requirement">
+          <%= image_tag "Light.png", class: "needs-icon" %>
+          <span>
+            <p>Light</p>
+            <p>Partial Shade</p>
+          </span>
+        </div>
+        <div class="plant-requirement">
+          <%= image_tag "Temp.png", class: "needs-icon" %>
+          <span>
+            <p>Temp</p>
+            <p>Warm and dry</p>
+          </span>
+        </div>
+        <div class="plant-requirement">
+          <%= image_tag "Container.png", class: "needs-icon" %>
+          <span>
+            <p>Containers</p>
+            <p>Not relevant</p>
+          </span>
+        </div>
+      </div>
+
+      <div class="requirements">
+        <div class="plant-requirement">
+          <%= image_tag "Difficulty.png", class: "needs-icon" %>
+          <span>
+            <p>Difficulty</p>
+            <p>Not hard</p>
+          </span>
+        </div>
+        <div class="plant-requirement">
+          <%= image_tag "Watering.png", class: "needs-icon" %>
+          <span>
+            <p>Watering</p>
+            <p>Daily</p>
+          </span>
+        </div>
+        <div class="plant-requirement">
+          <%= image_tag "Use.png", class: "needs-icon" %>
+          <span>
+            <p>Uses</p>
+            <p>Cooking | Salad | Sauce</p>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12">
+      <div class="plant-description">
+        <p>
+          To get a head start, start the seeds indoors 6 weeks before the last spring frost.Plant seeds about ¼-inch deep and 10 to 12 inches apart. They should grow to about 12 to 24 inches in height. <br>
+          The prefered temp for best growth is 21.2 ºC. <br>
+          Basil needs to be in a location that gets 6 to 8 hours of full Sun daily; soil should be moist and well-drained.<br> During the dry periods in summer, water the plants freely.
+        </p>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+<%= link_to "Add to Your Garden", new_plant_garden_plant_path(@plant), class: 'hidden-xs hidden-md' %>
+<br>
+<div class="back-btn">
+<%= link_to "Back", "javascript:history.back()", class: "bt bt-flat" %>
+</div>
+
+
+
+
+
+<!-- ORIGINAL FILE --- DON'T DELETE UNTIL THE PAGE IS READY!!! -->
+
 <div class="plant-banner">
 
   <%= link_to new_plant_garden_plant_path(@plant) do %>
