@@ -898,7 +898,7 @@ puts "creating flowers category"
     bunching_onion = Plant.new(
       name: "Bunching Onion (Allium cepa 'White Lisbon')",
       description: "It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
-      species: onion,OnionWhite_Lisbon
+      species: onion,
       uses: "Culinary Herb Vegetable",
       photos: "OnionWhite_Lisbon"
     )
