@@ -158,7 +158,7 @@ flowers = Category.create!(
     name: "Boat orchid",
     description: "Cymbidium, commonly known as boat orchids, is a genus of evergreen flowering plants in the orchid family Orchidaceae.",
     species: orchids,
-    photos: "cattleya_orchids"
+    photos: "BoatOrchid"
   )
   boat_orchid.requirement = v_req
   boat_orchid.save
@@ -206,7 +206,7 @@ puts "creating vegetables category"
       name: "Winter Squash ('North Georgia Candy Roaster')",
       description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
       species: squash,
-      photos: "cattleya_orchids"
+      photos: "Winter Squash"
     )
     butternut_squash.requirement = b_req
     butternut_squash.save
@@ -301,7 +301,7 @@ puts "creating vegetables category"
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: eggplant,
           uses: "Vegetable, Suitable as Annual",
-          photos: "black_beauty"
+          photos: "rosa_bianca_eggplant"
           )
 
         eplant2.requirement = e_req
@@ -378,7 +378,7 @@ puts "creating vegetables category"
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: eggplant,
           uses: "Vegetable, Suitable as Annual",
-           photos: "eggplant_solanum_melongena_casper"
+           photos: "Eggplant-Large-Long"
           )
 
         eplant8.requirement = e_req
@@ -1156,7 +1156,7 @@ puts "creating flowers category"
       description: "Sweet Basil is your traditional style Basil that most of us use in our tomato sauces, pesto, in soups, and I use it a lot to make my own Italian seasonings.",
       species: thymes,
       uses: "Groundcover Culinary Herb",
-      photos: "cannonball_cabbage"
+      photos: "Creeping_Thyme"
     )
     common_thyme.requirement = x_req
     common_thyme.save
@@ -1184,7 +1184,7 @@ puts "creating flowers category"
         name: "Portabello Mushroom",
         description: "Common in Italian cooking, dense, rich portobellos lend depth to sauces and pastas and make a great meat substitute. When portabellos are young and small, they're called criminis.",
         species: mushrooms,
-        photos: "cannonball_cabbage"
+        photos: "Portabello_Mushroom"
       )
       portabello_mushroom.requirement = u_req
       portabello_mushroom.save
@@ -1199,7 +1199,7 @@ puts "creating flowers category"
         name: "Shiitake Mushroom",
         description: "They're best identified by their umbrella-shaped brown caps, which curl under ever so slightly. Fresh shiitakes have a light woodsy flavor and aroma, while their dried counterparts are more intense.",
         species: mushrooms,
-        photos: "cannonball_cabbage"
+        photos: "Shiitake_Mushroom"
       )
       shiitake_mushroom.requirement = u_req
       shiitake_mushroom.save
@@ -1215,7 +1215,7 @@ puts "creating flowers category"
         name: "Oyster Mushroom",
         description: "Like their namesakes, they're whitish in color and fan-shaped, and possess a delicate odor and flavor. Oyster mushrooms are found in many Japanese and Chinese dishes such as soups and stir-fries.",
         species: mushrooms,
-        photos: "cannonball_cabbage"
+        photos: "Oyster_Mushroom"
       )
       oyster_mushroom.requirement = u_req
       oyster_mushroom.save
