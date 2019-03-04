@@ -392,7 +392,7 @@ puts "creating vegetables category"
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: eggplant,
           uses: "Vegetable, Suitable as Annual",
-          photos: "eggplant_solanum_melongena_casper"
+          photos: "Eggplant_melongena_Diamond"
           )
 
         eplant9.requirement = e_req
@@ -407,7 +407,7 @@ puts "creating vegetables category"
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: eggplant,
           uses: "Vegetable, Suitable as Annual",
-          photos: "eggplant_solanum_melongena_casper"
+          photos: "Eggplantm_melongena"
           )
 
         eplant10.requirement = e_req
@@ -519,7 +519,7 @@ Needs excellent drainage in pots",
           uses: " Groundcover,  Culinary Herb, Cut Flower",
           container: "Suitable in 1 gallon, Suitable in 3 gallon or larger
 Needs excellent drainage in pots",
-          photos: "common_ginger_zingiber_officinale"
+          photos: "Beehive_Ginger"
           )
 
         ginger4.requirement = f_req
@@ -594,7 +594,7 @@ potato = Species.create(
           species: potato,
           uses: " Vegetable ",
           container: "well-drained",
-          photos: "potato_solanum_tuberosum_all_red"
+          photos: "Potato_Peter_Wilcox"
           )
 
         potato4.requirement = g_req
@@ -676,7 +676,7 @@ zucchini = Species.create(
           description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
           species: zucchini ,
           uses: " Vegetable ",
-          photos: "black_beauty"
+          photos: "Zucchini_Gold_Rush"
           )
 
 
@@ -710,7 +710,7 @@ cucumber = Species.create(
           species: cucumber ,
           uses: " Vegetable ",
           container: " Not suitable for containers",
-          photos: "white_wonder"
+          photos: "Cucumber_Spacemaster"
           )
 
 
@@ -759,7 +759,7 @@ cucumber = Species.create(
           species: cucumber ,
           uses: " Vegetable ",
           container: " Not suitable for containers",
-          photos: "white_wonder"
+          photos: "Cucumber_Burpless"
 
             )
 
