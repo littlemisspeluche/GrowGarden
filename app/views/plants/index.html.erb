@@ -11,7 +11,7 @@
     <% else  %>
        <h1 class="h1"><%= @species.name %> <i class="fas fa-spa"></i></h1>
 	     <div class="row ">
-         <% @plants.each do |plant| %>
+         <%@plants.each do |plant| %>
            <%= link_to category_species_plant_path(plant.species.category, plant. species, plant) do %>
 	 		       <div class="col-xs-12 col-sm-6 col-sm-offset-3">
 				       <div class="card-product plant-index">

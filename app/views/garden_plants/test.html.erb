@@ -1,0 +1,34 @@
+
+  <h1 id="header-garden">My Garden</h1>
+  <div class="container">
+  <div class="row">
+    <% @garden_plant.each do |garden| %>
+    <div class="col-xs-12 col-sm-6">
+      <div class="card-garden-plant">
+        <h3 id="plant-name-garden"><%= garden.plant.name %></h3>
+        <p id="req">Requirements</p>
+        <ul>
+          <p>Sunlight</p>
+          <li> <%= garden.plant.requirement.light %></li>
+          <p>Temperature</p>
+          <li>Between <%= garden.plant.requirement.temperature %> Degrees Celsius</li>
+          <p>Watering</p>
+          <li><%=garden.plant.requirement.watering == "Mesic" ? "Once a day" : "Three Times a week"%></li>
+           <div class="row">
+          <div class="buttons-garden col-sm-6">
+         <li id="status-plant"> <%= link_to "Remove Plant", my_garden_plant_path(garden), method: :delete, class: "btn-yellow" %></li>
+          <li id="status-plant"><%= link_to "Plant Status", my_garden_plant_path(garden), method: :delete, class: "btn-yellow" %></li>
+        </div>
+        </div>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+  </div>
+</div>
+
+
+
+
+
+
