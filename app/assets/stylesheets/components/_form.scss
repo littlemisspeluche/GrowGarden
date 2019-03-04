@@ -25,26 +25,19 @@
   line-height: 29px;
   color: #3d3d3f;
   font-family: 'PT Sans', sans-serif;
+  a:hover, a:active {
+    text-decoration: none;
+    color: #3d3d3f;
+    border: none;
+  }
+  .sign-up, .forgot-password {
+    text-decoration: none;
+    color: #3d3d3f;
+  }
 }
-
-.sign-up  {
-  text-decoration: none;
-  color: #3d3d3f;
-}
-
 
 .inputs {
   padding: 10px;
-}
-
-.forgot-password {
-  color: #3d3d3f;
-  text-decoration: none;
-}
-
-.new-account {
-  margin-top: 90px!important;
-  padding: 30px!important;
 }
 
 
