@@ -4,8 +4,8 @@
   <%= link_to category_species_path(@category, specie) do %>
   <div class="col-xs-12 col-sm-4">
    <div class="card-description">
-    <div class="card-imgg" style = "background-image: url(<%= image_path('Herbs.jpg')%>)"></div>
-    <div class="card-description-info">
+    <div class="card-imgg" style="background-image: url(<%= image_path(specie.name + '.jpg') %>)"></div>
+    <div class="card-description-info card-size">
      <%= link_to "#{specie.name}" ,category_species_path(@category, specie)  %>
      <p><%=specie.description%></p>
    </div>
@@ -15,8 +15,7 @@
 <% end %>
 </div>
 
-
-<div class="top">
+<div class="back-btn">
   <button class="btn-yellow" onclick="javascript:history.back()">back</button>
 
 </div>

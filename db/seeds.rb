@@ -1227,23 +1227,7 @@ puts "creating flowers category"
     #imagas
 
 
-
-    Cloudinary::Uploader.upload("app/assets/images/Basil.jpg")
-    Cloudinary::Uploader.upload("app/assets/images/Cabbage.jpg")
-    Cloudinary::Uploader.upload("app/assets/images/Cucumber.jpeg")
-    Cloudinary::Uploader.upload("app/assets/images/Eggplant.jpeg")
-    Cloudinary::Uploader.upload("app/assets/images/Zucchini.jpg")
-    Cloudinary::Uploader.upload("app/assets/images/Tomatoes.jpg")
-    Cloudinary::Uploader.upload("app/assets/images/Thymes.jpg")
-    Cloudinary::Uploader.upload("app/assets/images/Squash.jpg")
-    Cloudinary::Uploader.upload("app/assets/images/Potato.jpg")
-    Cloudinary::Uploader.upload("app/assets/images/Orchids.jpg")
-    Cloudinary::Uploader.upload("app/assets/images/Onion.jpg")
-    Cloudinary::Uploader.upload("app/assets/images/Mushrooms.jpg")
-    Cloudinary::Uploader.upload("app/assets/images/Lily.jpg")
-    Cloudinary::Uploader.upload("app/assets/images/Lettuce.jpg")
-    Cloudinary::Uploader.upload("app/assets/images/Jasmin.jpg")
-    Cloudinary::Uploader.upload("app/assets/images/Ginger.jpg")
+    Cloudinary::Uploader.upload("app/assets/images/Cucumber.jpg")
 
 
     #imagas

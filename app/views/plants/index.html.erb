@@ -9,7 +9,7 @@
         <%= link_to "Try again",categories_path,class:"try-again-btn" %>
       </div>
     <% else  %>
-       <h1 class="h1"><%= @species.name %> <i class="fas fa-spa"></i></h1>
+       <h1 class="header-category"><%= @species.name%></h1>
 	     <div class="row ">
          <% @plants.each do |plant| %>
            <%= link_to category_species_plant_path(plant.species.category, plant. species, plant) do %>
