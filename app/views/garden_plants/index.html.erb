@@ -8,16 +8,15 @@
 
         <%= cl_image_tag("#{garden.plant.photos}") %>
           <div class="plant-infos">
-            <div class="plant-name"><p>Plant name</p></div>
+            <div class="plant-name"><p><%= garden.plant.species.name %></p></div>
 
               <div class="statuses">
                 <div class="watering"><p>Next watering</p>
-                 <div class="date">10/10/10</div></div>
-                <div class="status"><p>Planted on</p><
-               <div class="date1">10/10/10</div></div>
+                 <div class="date"><%=" In #{garden.water_on.day} days "%></div></div>
+                <div class="status"><p>Planted on</p>.
+               <div class="date1"><%=  "#{garden.created_at.day}/#{garden.created_at.month}/#{garden.created_at.year}"%></div></div>
               </div>
             </div>
-
 
                 <div class="buttons-garden">
                <div class="col-xs-6">

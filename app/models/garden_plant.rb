@@ -6,6 +6,7 @@ class GardenPlant < ApplicationRecord
 
   delegate :name, to: :plant
 
+
   # Retreive the status (Status instance) for today
   def status_today
     status = statuses.where(created_at: Time.zone.now.beginning_of_day..Time.zone.now.end_of_day).first
@@ -31,7 +32,5 @@ class GardenPlant < ApplicationRecord
     self.update(water_on: next_watering)
   end
 
-  def overall_score
 
-  end
 end
