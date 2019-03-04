@@ -1,7 +1,8 @@
 .card-description {
   border-radius: 2px;
   padding: 5px 6px;
-  box-shadow: 0px 0px 3px 2px #e4e4e4
+  box-shadow: 0px 0px 3px 2px #e4e4e4;
+  margin: 10px;
 }
 
 .card-img{
@@ -22,10 +23,9 @@
 .card-description-info {
   margin: 10px;
   a {
-    color: #02686B;
+    color: #0A7D81;
     font-weight: bold;
   }
-
 }
 .card-description-info h2 {
   margin-top: 10px;
@@ -34,7 +34,6 @@
   font-weight: bolder;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #02686B;
   text-decoration:none;
 
 }
@@ -44,24 +43,21 @@
   font-family: 'PT Sans', sans-serif;
   text-decoration:none;
 }
-.h1{
-  text-align: center;
-  margin-top: 100px;
-}
-.test{
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-size: 1.5em;
-  color:  $purple, $aqua;
-  display: inline-block;
-  cursor: pointer;
-  text-decoration: none;
-  padding: 0.6em 1.6em;
-  margin: 0.6em;
-  border-style: solid;
-  border-width: 1px;
-  transition: all 0.2s ease;
-}
+
+//.test{
+//  font-family: "Open Sans";
+//  font-weight: 400;
+//  font-size: 1.5em;
+//  color:  $purple, $aqua;
+//  display: inline-block;
+//  cursor: pointer;
+//  text-decoration: none;
+//  padding: 0.6em 1.6em;
+//  margin: 0.6em;
+//  border-style: solid;
+//  border-width: 1px;
+//  transition: all 0.2s ease;
+//}
 
 .card-product-infos {
   a {
