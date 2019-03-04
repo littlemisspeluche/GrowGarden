@@ -9,6 +9,9 @@ namespace :user do
       health = OverallHealth.new(garden: garden)
       puts "Health....."
       health.perform
+      garden.health = health.score
+      garden.save
+      puts "Added Score #{health.score} points to #{garden.plant.name}"
     end
   end
 end
