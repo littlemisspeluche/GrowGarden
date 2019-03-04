@@ -1,79 +1,84 @@
-.card-garden-plant {
-  border-radius: 2px;
-  padding: 10px 6.5%;
-  box-shadow: 0px 0px 3px 2px #e4e4e4;
-  margin: 10px;
-}
-
-.card-garden-plant ul {
-  list-style: none;
-
-}
-
-
-.card-garden-plant li {
-  margin-bottom: 6px;
-
-}
-
-
-ul p {
-  color: $green;
-  font-style: bold;
-  border-bottom: 3px solid;
-  margin-right: 30px;
-}
-
-
-#remove-garden-plant {
-  padding-top: 10px;
-}
-
-h1 {
-  margin-bottom: 20px;
-}
-
 #header-garden  {
   padding-top: 50px;
   color: $green;
   font-style: bold;
 }
 
+.full-card {
+  height: 200px;
+  padding-bottom: 15px;
+  position: relative;
+  box-shadow: 0px 0px 18px;
+  margin-bottom: 10px;
+  width: 100%;
+}
 
-#req {
-  text-align: center;
-  font-size: 25px;
+.full-card img {
+  width: 100%;
+  height:50%;
 }
 
 
-
-#plant-name-garden {
-  text-align: center;
+.plant-infos {
+  position: relative;
 }
 
-.buttons-garden li {
-  padding-bottom: 5px;
+.plant-name {
+  position: absolute;
+  // margin-left: 40px;
+  top: 5px;
+  left: 40px;
+  font-size: 12px;
 }
 
-// .show-garden-plant {
-//     margin-top: 10px;
-//     background-color: $green;
-//     padding: 10px 15px;
-//     color: white;
-//     font-weight: bold;
-//     border-radius: 4px;
-//     transition: 0.3s;
-// }
-// .remove_garden_plant{
-//     margin-top: 10px;
-//     background-color: $yellow;
-//     padding: 10px 15px;
-//     color: white;
-//     font-weight: bold;
-//     border-radius: 4px;
-//     transition: 0.3s;
-// }
-#status-plant {
-  margin-top: 20px;
+
+.statuses {
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+
+}
+.watering {
+  /* position: absolute; */
+  padding-right: 10px;
+
+
 }
 
+.status {
+  // position: absolute;
+  // padding-left: 8px;
+}
+
+.date {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+
+.date1 {
+  position: absolute;
+  bottom: 10px;
+  right: 8px;
+
+}
+
+.buttons-garden {
+  font-size: 10px;
+  position: absolute;
+  bottom: 13px;
+  left: -12px;
+
+
+
+
+}
+.btn-yellow {
+       background-color: #F8C600;
+       // padding: 10px 8px;
+
+
+   }
