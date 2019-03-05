@@ -1,0 +1,46 @@
+
+<br>
+<div class="garden-show">
+  <div class="plan-name-show">
+    <h1>Plant Name</h1>
+  </div>
+    <div class="garden-gif-main">
+    <div class="garden-image">
+
+    </div>
+      <div class="garden-status">
+      <p>Overall Health</p>
+      <p>80%</p>
+    </div>
+  </div>
+<div class="charting">
+<span class="min-chart" id="chart-sales" data-percent="56"><span class="percent"></span></span>
+<h5><span class="label green badge">Sales <i class="fas fa-arrow-circle-up"></i></span></h5>></div>
+
+
+</div>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>
+
+
+<script>
+  $(function () {
+    $('.min-chart#chart-sales').easyPieChart({
+      barColor: "#4caf50",
+      onStep: function (from, to, percent) {
+        $(this.el).find('.percent').text(Math.round(percent));
+      }
+    });
+  });
+
+
+</script>
+
+</div>
+
+
+
+
+
+
+
