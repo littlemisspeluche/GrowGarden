@@ -1,22 +1,28 @@
 .watering-head {
+
     font-size: 44px;
     font-family: 'Barlow', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
     word-spacing: 9px;
-    color: #0A7D81;
+    color: #3d3d3f;
     margin-top: 90px;
     margin-left: 20px;
+   
+}
+.watering-head h1{
+   border-bottom: 2px solid #F8C600;
 }
 
 .water-btn {
-
-  background-color: #4CAF50; /* Green */
+  margin-left: 3px;
+  background-color: #55babe; /* Green */
   border: none;
   color: white;
+  height: 30px;
   padding: 5px 10px;
   text-align: center;
-  text-decoration: none;
+  margin-top: 18px;
   display: inline-block;
   font-size: 12px;
   border-radius: 10px;
@@ -24,10 +30,31 @@
 }
 
 .watering-plant {
-background-color: #FFFF99;
+
 margin-right: 30px;
 
 list-style-type: none;
 
 
+}
+.watering-head p{
+  font-size: 22px;
+  color: $green;
+
+}
+
+.watering-flex {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 15px;
+  border-bottom: 4px solid #F8C600;
+  h5 {
+    
+  }
 }

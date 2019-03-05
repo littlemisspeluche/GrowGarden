@@ -1,22 +1,22 @@
 
-
+<div class="container">
 <div class="watering-head">
   <h1>My Garden</h1>
-  <h3>You should water these plants today:</h3>
+  <p>You should water these plants today:</p>
 </div>
-<ul>
+  <div class="row">
+    <div class="col-sm">
   <% @plants.each do |plant| %>
   <% if plant.status_today.watered_on.nil? %>
-  <li class="watering-plant">
-    <span>
-    <p><%= plant.name%></p>
+    <div class="watering-flex">
+    <h5><%= plant.name%></h5>
     <%= link_to "Water Me", water_plant_path(plant), method: :post, class: "btn btn-default water-btn" %>
-    </span>
-    
+    </div>
 
     <% else %>
       <em>Watered</em>
     <% end %>
-  </li>
   <% end %>
-</ul>
+  </div>
+  </div>
+</div>
