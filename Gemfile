@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 ruby '2.5.3'
 
+gem 'sendgrid-ruby' ### sendgrid
+
+
 gem 'bootsnap', require: false
 gem 'devise'
 gem 'jbuilder', '~> 2.0'
@@ -14,6 +17,8 @@ gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'sidekiq'                     ###
 gem 'sidekiq-failures', '~> 1.0'  ### BACKGROUND JOBS
+
+
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
