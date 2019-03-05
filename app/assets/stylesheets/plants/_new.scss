@@ -1,20 +1,84 @@
-.note{
- opacity: 1;
- transition: 0.7s opacity;
- text-align: center;
- padding: 12%;
- margin-top: 45%;
+.liad{
+  height: 30vh;
 }
+//.form-inline{
+//  display: flex;
+//  align-items: center;
+//  width: 100%;
+//  margin-left: 0;
+//}
+
+
+//.form-location {
+//  margin: 12px 0 0 27px;
+//}
+.header-location {
+  font-size: 27px;
+}
+
+.form-location {
+  margin-top: 32px;
+  overflow: auto;
+  -webkit-border-radius: 3px;
+  font-family: 'PT Sans', sans-serif;
+  form {
+    display: flex;
+    margin: 0 10px;
+    padding: 12px;
+  }
+}
+
+
+.form-location input[type="text"] {
+  border: 0px;
+  padding: 10px 10px;
+  -webkit-border-radius: 3px;
+}
+
+
+.form-location input::placeholder {
+  color:  #3d3d3f;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+input#garden_plant_location {
+    width: 260px;
+}
+
+.form-location input[type="submit"] {
+  border: 0px;
+  background-color: #F8C600;
+  color: #f6f5f3;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  cursor:pointer;
+}
+
+.btn-go{
+  height: 40px;
+  width: 62px;
+  text-align: center;
+  margin-left: 5px;
+}
+.note{
+  opacity: 1;
+  transition: 0.7s opacity;
+  text-align: center;
+  padding: 12%;
+  margin-top: 55%;
+}
+
 .fade-in {
-  color:$green;
+  color:#0A7D81;
   opacity: 1;
   animation-name: fadeInOpacity;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-duration: 2s;
-  font-size: 11px;
-
+  font-size: 16px;
 }
+
 
 
 @keyframes fadeInOpacity {
@@ -26,16 +90,3 @@
   }
 }
 
-#header-new{
-  font-weight:bold;
-  font-size: 32px;
-}
-
-.form-inline{
-  display: flex;
-  align-items: center;
-}
-
-.liad{
-  height: 30vh;
-}

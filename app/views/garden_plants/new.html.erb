@@ -1,12 +1,15 @@
 <div class="liad">
-	<p id="header-new"><%= @plant.name %></p>
-	<%= simple_form_for @garden_plant, wrapper: :inline_form, html: { class: 'form-inline' }, url: :plant_garden_plants, method: :post do |f| %>
+	<h2 class="header-category header-location"><%= @plant.name %></h2>
+    <div class="form-location">
 
-	  <%= f.input :location, class: "label", placeholder: "Where is you garden?" %>
-	  <%= f.submit "submit", class: "btn btn-yellow" %>
+	<%= simple_form_for @garden_plant, wrapper: :inline_form, url: :plant_garden_plants, method: :post do |f| %>
+
+	  <%= f.input :location, placeholder: "Where is you garden?" %>
+	  <%= f.submit "Go", class: 'btn-go' %>
 	<% end %>
-	
-<%= cl_image_tag("undraw_gardening_j8jx",  width: 375, crop: :fill) %>
+</div>
+<%= cl_image_tag("plants-location",  width: 375, crop: :fill) %>
+
 </div>
 
 <!-- <a href="javascript:history.back()" >back</a> -->
@@ -17,5 +20,5 @@
 
 </div>
 
-  
+
 
