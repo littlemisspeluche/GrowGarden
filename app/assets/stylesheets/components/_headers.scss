@@ -1,0 +1,23 @@
+
+.header-category {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  color: #3d3d3f;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+
+
+.header-category:after {
+  display: block;
+  height: 3px;
+  background-color: #deb615;
+  content:  " ";
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+

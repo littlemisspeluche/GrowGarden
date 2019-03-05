@@ -45,41 +45,11 @@ class GardenPlantsController < ApplicationController
     redirect_to my_garden_plants_path
   end
 
-
-
-  #LIGHT
-  ##Full Sun                  ==>>>>> 3
-  #Full Sun to Partial Shade  ==>>>>> 2
-  ## Partial Shade            ==>>>>> 1
-
-  ##TEMPERATURE
-  #{"20 and 26"
-
-  # temp = "20 and 30"
-  #splitting = temp.split
-  #(splitting[0] + splitting[2]) / 2 = 25 #this is our average of temp
-
-
-  ## WATERING
-  ## Mesic                    ===>>>> 5
-  ## Mesic Dry                ===>>>> 3
-  ## Dry                      ===>>>> 1
-
-
-
-
-
-
-
-
-
   private
 
   def strong_params
-
     params.require(:garden_plant).permit(:location)
   end
 end
-
 
 

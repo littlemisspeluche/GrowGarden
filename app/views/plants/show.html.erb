@@ -1,73 +1,82 @@
-
-<div class="plant-banner">
-
+<div class="plant-picture">
+  <%= image_tag "Basil.jpg" %>
   <%= link_to new_plant_garden_plant_path(@plant) do %>
-    <i class="fas fa-plus plus"></i>
+  <i class="fas fa-plus plus"></i>
   <% end %>
 </div>
-
 <div id="header-plant"><h2><%= @plant.name %></h2></div>
 
 
 <div class="container">
   <div class="row">
-    <!-- left column -->
-    <div class="col-xs-12 col-sm-6">
-      <div class="mobile-icons">
-        <div class="description-card">
-          <i class="fas fa-sun big-icon"></i>
-          <span>
-            <p><strong>Light</strong></p>
-            <p>Direct Light</p>
-          </span>
-        </div>
-          <div class="description-card">
-            <i class="fas fa-temperature-high big-icon"></i>
-            <span>
-              <p><strong>Temp</strong></p>
-              <p>Warm and dry</p>
-            </span>
+    <div class="col-xs-12">
+      <div class="requirements">
+        <div class="plant-requirement">
+          <%= image_tag "Light.png", class: "needs-icon" %>
+          <div class="plant-needs">
+            <p>Light</p>
+            <p>Partial Shade</p>
           </div>
-          <div class="description-card">
-            <i class="fas fa-sliders-h big-icon"></i>
-            <span>
-              <p><strong>Difficulty</strong></p>
-              <p>Not hard</p>
-            </span>
-         </div>
-      </div>
-      <div class="mobile-icons">
-        <div class="description-card">
-          <i class="fas fa-users-cog big-icon"></i>
-          <span>
-            <p><strong>Uses</strong></p>
-            <p>Salad</p>
-          </span>
         </div>
-        <div class="description-card">
-          <i class="fas fa-toolbox big-icon"></i>
-          <span>
-            <p><strong>Containers</strong></p>
+        <div class="plant-requirement">
+          <%= image_tag "Temp.png", class: "needs-icon" %>
+          <div class="plant-needs">
+            <p>Temp</p>
+            <p>Warm and dry</p>
+          </div>
+        </div>
+        <div class="plant-requirement">
+          <%= image_tag "Container.png", class: "needs-icon" %>
+          <div class="plant-needs">
+            <p>Containers</p>
             <p>Not relevant</p>
-          </span>
+          </div>
         </div>
       </div>
-  </div>
-  <!-- right column -->
-  <div class="col-xs-12 col-sm-6">
-      <div class="card">
-      <p>Winter squash is an annual fruit representing several squash species within the genus Cucurbita. It differs from summer squash in that it is harvested and eaten in the mature fruit stage when the seeds within have matured fully and the skin has hardened into a tough rind. At this stage, most varieties of this fruit can be stored for use during the winter. Winter squash is generally cooked before being eaten, and the skin or rind is not usually eaten as it is with summer squash.[1]
-      In New Zealand and Australian English, the term "pumpkin" generally refers to the broader category called "winter squash."</p>
+
+      <div class="requirements">
+        <div class="plant-requirement">
+          <%= image_tag "Difficulty.png", class: "needs-icon" %>
+          <div class="plant-needs">
+            <p>Difficulty</p>
+            <p>Not hard</p>
+          </div>
+        </div>
+        <div class="plant-requirement">
+          <%= image_tag "Watering.png", class: "needs-icon" %>
+          <div class="plant-needs">
+            <p>Watering</p>
+            <p>Daily</p>
+          </div>
+        </div>
+        <div class="plant-requirement">
+          <%= image_tag "Use.png", class: "needs-icon" %>
+          <div class="plant-needs">
+            <p>Uses</p>
+            <p>Cooking | Salad | Sauce</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+
+    <div class="col-xs-12">
+      <div class="plant-description">
+        <p >
+          To get a head start, start the seeds indoors 6 weeks before the last spring frost.Plant seeds about ¼-inch deep and 10 to 12 inches apart. They should grow to about 12 to 24 inches in height. <br>
+          The prefered temp for best growth is 21.2 ºC. <br>
+          Basil needs to be in a location that gets 6 to 8 hours of full Sun daily; soil should be moist and well-drained.<br> During the dry periods in summer, water the plants freely.
+        </p>
+      </div>
+    </div>
+
+
+
   </div>
 </div>
-
-
-<%= link_to "Add to Garden", new_plant_garden_plant_path(@plant) %>
-
+<%= link_to "Add to Your Garden", new_plant_garden_plant_path(@plant), class: 'hidden-xs hidden-md' %>
 <br>
-<div class="top">
+<div class="back-btn">
 <%= link_to "Back", "javascript:history.back()", class: "bt bt-flat" %>
 </div>
+
 
