@@ -1,0 +1,41 @@
+.note{
+ opacity: 1;
+ transition: 0.7s opacity;
+ text-align: center;
+ padding: 12%;
+ margin-top: 45%;
+}
+.fade-in {
+  color:$green;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  font-size: 11px;
+
+}
+
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#header-new{
+  font-weight:bold;
+  font-size: 32px;
+}
+
+.form-inline{
+  display: flex;
+  align-items: center;
+}
+
+.liad{
+  height: 30vh;
+}

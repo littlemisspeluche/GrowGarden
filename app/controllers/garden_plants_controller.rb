@@ -21,7 +21,7 @@ class GardenPlantsController < ApplicationController
   end
 
   def new
-
+    @plant =  Plant.find(params[:plant_id])
     @garden_plant = GardenPlant.new
   end
 
