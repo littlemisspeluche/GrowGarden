@@ -6,6 +6,29 @@ class GardenPlant < ApplicationRecord
 
   delegate :name, to: :plant
 
+   def light_to_int
+
+    case self.plant.requirement.light
+    when "Full Sun"
+      15
+    when "Full Sun to Partial Shade"
+      10
+    else
+      5
+    end
+  end
+
+  def daily_light_to_int
+    light =  self.status_today.daily_light
+    if light < '25'
+      return 15
+    elsif light > '75'
+      return 5
+    else
+      return 10
+    end
+
+  end
 
   # Retreive the status (Status instance) for today
   def status_today
