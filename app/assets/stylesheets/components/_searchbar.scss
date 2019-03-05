@@ -4,6 +4,9 @@
   overflow: auto;
   -webkit-border-radius: 3px;
   font-family: 'PT Sans', sans-serif;
+  form {
+    width: 100%;
+  }
 }
 
 .search-bar input[type="text"] {
@@ -15,13 +18,13 @@
 
 .search-bar input::placeholder {
   color:  #3d3d3f;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: lighter;
 }
 
 .search-bar input[type="submit"] {
   border: 0px;
-  background-color: #deb615;
+  background-color: #F8C600;
   color: #f6f5f3;
   padding: 10px;
   -webkit-border-radius: 5px;
@@ -38,7 +41,7 @@
     margin: 30px 10px 0;
     }
   .search-bar input[type="text"] {
-    width: 70%;
+    width: 73%;
   }
   .search-bar input[type="submit"] {
     width: 70px;
