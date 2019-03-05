@@ -1,9 +1,21 @@
-<h1 id="header-new">Add a new plant</h1>
-<%= simple_form_for @garden_plant, url: :plant_garden_plants, method: :post do |f| %>
+<div class="liad">
+	<p id="header-new"><%= @plant.name %></p>
+	<%= simple_form_for @garden_plant, wrapper: :inline_form, html: { class: 'form-inline' }, url: :plant_garden_plants, method: :post do |f| %>
 
-  <%= f.input :location, placeholder: "Where Are You?" %>
-  <%= f.submit "submit", class: "btn btn-yellow" %>
-<% end %>
-<br>
+	  <%= f.input :location, class: "label", placeholder: "Where is you garden?" %>
+	  <%= f.submit "submit", class: "btn btn-yellow" %>
+	<% end %>
+	
+<%= cl_image_tag("undraw_gardening_j8jx",  width: 375, crop: :fill) %>
+</div>
 
 <!-- <a href="javascript:history.back()" >back</a> -->
+<div class="note">
+	<p class="fade-in">
+		GrowGarden uses the most accurate GPS location services to precisely measure the temperature, precipitation, sunlight, and all other natural factors that determine the health of your garden!
+	</p>
+
+</div>
+
+  
+

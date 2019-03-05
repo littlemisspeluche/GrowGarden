@@ -21,7 +21,7 @@ class GardenPlantsController < ApplicationController
   end
 
   def new
-
+    @plant =  Plant.find(params[:plant_id])
     @garden_plant = GardenPlant.new
   end
 
@@ -32,7 +32,7 @@ class GardenPlantsController < ApplicationController
     @garden_plant.user = current_user
     if @garden_plant.save
       UserMailer.plant_added(current_user).deliver_now
-      redirect_to garden_plants_path
+      redirect_to my_garden_plants_path
     else
       # this link does not refresh my variables (does not go through the action in controller, just the view)
       render :new
@@ -42,7 +42,7 @@ class GardenPlantsController < ApplicationController
   def destroy
     @garden_plant = GardenPlant.find(params[:id])
     @garden_plant.destroy
-    redirect_to garden_plants_path
+    redirect_to my_garden_plants_path
   end
 
 
