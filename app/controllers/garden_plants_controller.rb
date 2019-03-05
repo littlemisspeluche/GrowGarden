@@ -1,6 +1,7 @@
 class GardenPlantsController < ApplicationController
   # all the plants that need to be watered today(like an index)
   def watering
+    
     @plants = current_user.garden_plants.to_be_watered_today
   end
 
@@ -13,7 +14,7 @@ class GardenPlantsController < ApplicationController
   end
 
   def index
-    @garden_plant = GardenPlant.where(user_id: current_user)
+    @garden_plants = current_user.garden_plants
   end
 
   def show
@@ -21,14 +22,14 @@ class GardenPlantsController < ApplicationController
   end
 
   def new
-    @plant =  Plant.find(params[:plant_id])
+    @plant = Plant.find(params[:plant_id])
     @garden_plant = GardenPlant.new
   end
 
   def create
     @garden_plant = GardenPlant.new(strong_params)
     @garden_plant.plant = Plant.find(params[:plant_id])
-    @garden_plant.status_today
+    @garden_plant.water_on = Time.zone.now
     @garden_plant.user = current_user
     if @garden_plant.save
       UserMailer.plant_added(current_user).deliver_now
@@ -51,5 +52,3 @@ class GardenPlantsController < ApplicationController
     params.require(:garden_plant).permit(:location)
   end
 end
-
-
