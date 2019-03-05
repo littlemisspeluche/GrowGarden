@@ -18,7 +18,21 @@ class GardenPlantsController < ApplicationController
 
   def show
     @garden_plant = GardenPlant.find(params[:id])
+    case @garden_plant.health
+    when 0
+      @health = "85%"
+    when 1
+       @health =  "65"
+    when 2
+        @health = '55%'
+    end
+
   end
+
+
+
+
+
 
   def new
     @plant =  Plant.find(params[:plant_id])
