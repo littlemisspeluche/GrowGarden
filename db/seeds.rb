@@ -1227,7 +1227,7 @@ puts "creating flowers category"
     #imagas
 
 
-    Cloudinary::Uploader.upload("app/assets/images/Cucumber.jpg")
+  #  Cloudinary::Uploader.upload("app/assets/images/Strawberries.jpg")
 
 
     #imagas
