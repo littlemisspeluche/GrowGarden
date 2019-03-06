@@ -19,15 +19,17 @@ class GardenPlant < ApplicationRecord
   end
 
   def daily_light_to_int
-    light =  self.status_today.daily_light
-    if light < '25'
-      return 15
-    elsif light > '75'
-      return 5
-    else
-      return 10
-    end
 
+    light =  self.status_today.daily_light
+    if light
+      if light < '25'
+        return 15
+      elsif light > '75'
+        return 5
+      else
+        return 10
+      end
+    end
   end
 
   # Retreive the status (Status instance) for today

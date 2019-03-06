@@ -3,8 +3,7 @@ namespace :user do
   task update_all: :environment do
     puts 'starting.....'
     GardenPlant.all.each do |garden|
-      puts "date"
-      garden.water_on = Date.today
+      garden.update(water_on: Date.today)
       set = WeatherApi.new(garden: garden)
       puts "Weather......"
       set.perform

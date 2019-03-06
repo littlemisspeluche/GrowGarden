@@ -2,6 +2,6 @@
   task daily_report: :environment do
 
   	User.with_garden.each do |user|
-  		UserMailer.daily_report(user)
+  		UserMailer.daily_report(user).deliver_now
   	end
   end
