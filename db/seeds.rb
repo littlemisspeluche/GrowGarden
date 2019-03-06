@@ -207,7 +207,7 @@ puts "creating vegetables category"
       name: "Winter Squash ('North Georgia Candy Roaster')",
       description: " It is the sweetest winter squash with a thick, bright orange, moist flesh that hides very few seeds. The squash is an elongated pear shape with a thin, pale tan skin that is easy to peel. They usually weigh between 2 and 3 pounds.",
       species: squash,
-      photos: "Winter Squash"
+      photos: "Winter_Squash_North_Georgia"
     )
     butternut_squash.requirement = b_req
     butternut_squash.save
