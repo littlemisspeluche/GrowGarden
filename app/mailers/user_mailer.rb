@@ -11,6 +11,9 @@ class UserMailer < ApplicationMailer
 
   def daily_report(user)
     @user = user
+    attachments.inline["Temp.png"] = File.read("#{Rails.root}/app/assets/images/Temp.png")
+    attachments.inline["Light.png"] = File.read("#{Rails.root}/app/assets/images/Light.png")
+    attachments.inline["Watering.png"] = File.read("#{Rails.root}/app/assets/images/Watering.png")
 
     mail to: @user.email, subject: 'Your daily garden report'
   end
