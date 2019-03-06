@@ -1,14 +1,3 @@
-.liad{
-  height: 30vh;
-}
-//.form-inline{
-//  display: flex;
-//  align-items: center;
-//  width: 100%;
-//  margin-left: 0;
-//}
-
-
 //.form-location {
 //  margin: 12px 0 0 27px;
 //}
@@ -18,7 +7,6 @@
 
 .form-location {
   margin-top: 32px;
-  overflow: auto;
   -webkit-border-radius: 3px;
   font-family: 'PT Sans', sans-serif;
   form {
@@ -66,7 +54,6 @@ input#garden_plant_location {
   transition: 0.7s opacity;
   text-align: center;
   padding: 12%;
-  margin-top: 55%;
 }
 
 .fade-in {
