@@ -19,6 +19,7 @@ class GardenPlant < ApplicationRecord
   end
 
   def daily_light_to_int
+
     light =  self.status_today.daily_light
     if light
       if light < '25'
