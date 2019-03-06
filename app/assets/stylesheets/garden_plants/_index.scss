@@ -39,7 +39,7 @@
 }
 
 .full-card {
-  height: 170px;
+  height: 176px;
   position: relative;
   box-shadow: 0px 0px 3px 2px #e4e4e4;
   margin-bottom: 10px;
@@ -57,7 +57,7 @@
     top: 0px;
     left: 0px;
     background-color: #000;
-    opacity: 0.6;
+    opacity: 0.3;
     width: 100%;
     height: 95px;
     border-top-right-radius: 3px;
@@ -85,17 +85,17 @@
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 8px;
-  left: 8px;
+//  top: 8px;
+//  left: 8px;
   font-size: 10px;
   // text-transform: uppercase;
 
   .status {
-    padding-left: 15px;
+    padding: 10px;
     line-height: 10px;
   }
 .watering {
-  padding-right: 15px;
+  margin: 10px;
   line-height: 10px;
   }
 }
@@ -108,15 +108,45 @@
 
 .date1 {
   position: absolute;
-  top: 15px;
-  right: 3px;
+  top: 26px;
+  right: 15px;
   color: #5e5e60;
 }
 
 .buttons-garden {
   font-size: 10px;
-  position: absolute;
-  bottom: 15px;
+  position: relative;
+  top: 44px;
+  bottom: 5px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  width: 100%;
 }
+
+.smaller-btn{
+    width: 62px;
+    height: 33px;
+    font-size: 10px;
+    position: absolute;
+    left: 7px;
+    bottom: -1px;
+  a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+  }
+}
+#icon-trash {
+  top: 11px;
+  a {
+    height: 40px;
+    width: 40px;
+  }
+  img {
+    left: 130px !important;
+    height: 33px;
+    width: 27px;
+    bottom: -1px;
+  }
+}
+
