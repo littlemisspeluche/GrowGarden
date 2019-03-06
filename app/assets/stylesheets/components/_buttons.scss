@@ -28,8 +28,7 @@ a {
   padding: 0px 15px 30px;
 }
 
-/*Betton - Sunflower(Yellow)*/
-
+/*Button - Sunflower(Yellow)*/
 .btn-yellow {
   background-color: #F8C600;
   padding: 10px 15px;
@@ -38,7 +37,6 @@ a {
   border-radius: 4px;
   border: 1px solid #fbcc3a;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-
   transition: 0.3s;
 }
 
@@ -46,6 +44,22 @@ a {
   color: #F8C600;
   background-color: Transparent;
 }
+
+/*Button - Blue*/
+  .btn-blue-sm {
+    background-color: #0f3a60;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+    transition: 0.3s;
+  }
+  .btn-blue-sm:active {
+    text-decoration: none;
+    color: #0f3a60;
+    background-color: Transparent;
+  }
+
 
 .try-again-btn {
   color: white;
