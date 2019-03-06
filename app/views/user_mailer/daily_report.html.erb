@@ -20,23 +20,26 @@
         <div class="email-icons" style="display: flex; justify-content: space-between;">
           <div class="plant-info" style="display: flex; align-items: center;">
 
-            <p>Temperature:</p> 
+             
             <span>
+              <p>Temperature:</p>
              <%= plant.status_today.daily_temp %>
             </span>
           </div>
 
           <div class="plant-info" style="display: flex; align-items: center;">
             
-            <p>Light:</p>
             <span>
+
+            <p>Light:</p>
               <%= plant.status_today.daily_light %>
             </span>
           </div>
 
           <div class="plant-info" style="display: flex; align-items: center;">
-            <p>Next Watering:</p>
+            
             <span>
+              <p>Next Watering:</p>
               <%= plant.water_on.strftime("%d/%m/%y") %>
             </span>
           </div>
