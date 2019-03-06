@@ -9,6 +9,7 @@ class GardenPlant < ApplicationRecord
   attr_accessor :health_percentage
 
   after_initialize :convert_health_to_percentage
+  after_create :update_status
 
    def light_to_int
 
@@ -72,5 +73,14 @@ class GardenPlant < ApplicationRecord
     when 2
      @health_percentage = '55%'
     end
+  end
+
+  def update_status
+    api = WeatherApi.new(garden: self)
+    api.perform
+    health = OverallHealth.new(garden: self)
+    health.perform
+    self.health = health.score
+    self.save
   end
 end
