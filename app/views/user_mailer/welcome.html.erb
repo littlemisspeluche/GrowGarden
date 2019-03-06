@@ -1,7 +1,31 @@
-<h1>Welcome to Grow Garden</h1>
+<%= content_for :mailer_title do %>
+Welcome to Grow Garden!
+<% end %>
 
-<p>Hi, <%= @user.email %></p>
+<%= content_for :header_greeting do %>
+Hi new plant owner
+<% end %>
 
-<p>Happy to welcome you to our community!</p>
+<%= content_for :header_headline do %>
+We will help you grow your plant easily
+<% end %>
 
-<p>See ya!</p>
+<tr>
+  <td>
+    <h3 style="color: #1D446E; font-family: Helvetica; font-weight: 100; font-size: 24px; line-height: 18px;margin:0;padding:5px 0;">
+      You are almost ready to start applying for rooms.
+    </h3>
+    <hr style="width:60px;margin-left: 0;border:1px solid #438E93;"/>
+  </td>
+</tr>
+<tr>
+  <td>
+    <p style="color: #66757F; font-family: Helvetica; font-weight: 100; font-size: 16px; line-height: 22px;">
+      Before applying for a room, we kindly invite you to complete your contact details on your personalised dashboard. These data will help us to pre-fill your application and contract for a room.
+    </p>
+    <p  style="color: #66757F; font-family: Helvetica; font-weight: 100; font-size: 16px; line-height: 22px;">
+      If you have any question or remark, we gladly invite you to contact Kirstin (German, English and French) or Christophe (Dutch, English and French).
+    </p>
+    <p style="color: #66757F; font-family: Helvetica; font-weight: 100; font-size: 16px; line-height: 22px;">Looking forward to meet you!</p>
+  </td>
+</tr>
