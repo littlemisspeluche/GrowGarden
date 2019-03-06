@@ -1,5 +1,11 @@
-<p>Hi,</p>
 
-<p>TODO: Write content</p>
+<% @gardens.each do |g| %>
+<ul>
 
-<p>See ya!</p>
+     <li>Plant - <%= g.plant.name %></li>
+     <li>Todays Temperature - <%= g.status_today.daily_temp %></li>
+     <li>Todays Sunlight - <%= g.status_today.daily_light %></li>
+     <li>Next Watering - <%= g.water_on %></li>
+
+</ul>
+<% end  %>

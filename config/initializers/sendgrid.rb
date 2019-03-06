@@ -1,8 +1,8 @@
-if Rails.env == 'production' || Rails.env == 'staging'
+if Rails.env == 'production'
   ActionMailer::Base.smtp_settings = {
     user_name: 'apikey',
     password: ENV['SENDGRID_API_KEY'],
-    domain: 'growgarden.herokuapp.com',
+    domain: 'growgarden.fun',
     address: 'smtp.sendgrid.net',
     port: 587,
     authentication: :plain,

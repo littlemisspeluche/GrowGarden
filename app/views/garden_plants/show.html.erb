@@ -2,41 +2,111 @@
 <br>
 <div class="garden-show">
   <div class="plan-name-show">
-    <h1>Plant Name</h1>
+    <h1><%= @garden_plant.plant.name %></h1>
   </div>
     <div class="garden-gif-main">
     <div class="garden-image">
 
     </div>
+
       <div class="garden-status">
       <p>Overall Health</p>
-      <p>80%</p>
+      <p><%= @health %></p>
+      <p>Next Watering</p>
+      <p><%= "#{@garden_plant.water_on.day}/#{@garden_plant.water_on.month}/#{@garden_plant.water_on.year}" %></p>
     </div>
   </div>
-<div class="charting">
-<span class="min-chart" id="chart-sales" data-percent="56"><span class="percent"></span></span>
-<h5><span class="label green badge">Sales <i class="fas fa-arrow-circle-up"></i></span></h5>></div>
-
 
 </div>
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="http://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>
-
-
+<canvas id="myChart" width="400" height="400"></canvas>
+<canvas id="myChart1" width="400" height="400"></canvas>
+</div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script type="text/javascript" src="jscript/graph.js"></script>
 <script>
-  $(function () {
-    $('.min-chart#chart-sales').easyPieChart({
-      barColor: "#4caf50",
-      onStep: function (from, to, percent) {
-        $(this.el).find('.percent').text(Math.round(percent));
-      }
-    });
-  });
 
 
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["Today", "Required"],
+        datasets: [{
+            label: 'Todays SunLight',
+            data: [<%= @garden_plant.daily_light_to_int%>,<%= @garden_plant.light_to_int %>],
+            backgroundColor: [
+
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+
+
+var ctx = document.getElementById("myChart1").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["Today", "Required"],
+        datasets: [{
+            label: ['Todays Temperature'],
+            data: [<%= @garden_plant.status_today.daily_temp %>,<%= @garden_plant.plant.requirement.temperature.split[0] %>],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+
+
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+
+
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
 </script>
 
-</div>
+<!-- <script src="/path/to/easy-pie-chart.js"></script> -->
+<!-- <script>
+
+</script> -->
 
 
 

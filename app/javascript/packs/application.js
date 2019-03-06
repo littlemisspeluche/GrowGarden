@@ -16,6 +16,8 @@ window.addEventListener('scroll', debounce(function() {
 autocompleteSearch();
 initAutocomplete();
 
+
+
 // fetching("London, GB")
 
 
