@@ -13,36 +13,36 @@
         Here is your daily garden status:
     </h3>
     <hr style="width:60px;margin-left: 0;border:1px solid #438E93; margin-bottom: 20px;"/>
-    <% @user.garden_plants do |plant| %>
-    <div class="email-card" style="padding: 28px 22px; box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
-      <h3 style="margin-top: 0;"><%#= plant.name %>Common Thyme (Thymus Vulgaris)</h3>
-      <div class="email-icons" style="display: flex; justify-content: space-between;">
-        <div class="plant-info" style="display: flex; align-items: center;">
-          <%= image_tag ('Temp.png'), style: "width: 30px; margin-right: 7px;" %>
+    <% @user.garden_plants.each do |plant| %>
+      <div class="email-card" style="padding: 28px 22px; box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+        <h3 style="margin-top: 0;"><%= plant.name %></h3>
+        <p><%= plant.location %></p>
+        <div class="email-icons" style="display: flex; justify-content: space-between;">
+          <div class="plant-info" style="display: flex; align-items: center;">
+            <%= image_tag ('Temp.png'), style: "width: 30px; margin-right: 7px;" %>
+            <span>
+              <%= plant.status_today.daily_temp %>
+            </span>
+          </div>
 
-          <span>
-            <%= plant.status_today.daily_temp %>
-          </span>
+          <div class="plant-info" style="display: flex; align-items: center;">
+            <%= image_tag ('Light.png'), style: "width: 30px; margin-right: 7px;"%>
+
+            <span>
+              <%= plant.status_today.daily_light %>
+            </span>
+          </div>
+
+          <div class="plant-info" style="display: flex; align-items: center;">
+            <%= image_tag ('Watering.png'), style: "width: 30px; margin-right: 7px;" %>
+            <span>
+              <%= plant.water_on.strftime("%d/%m/%y") %>
+            </span>
+          </div>
+
         </div>
-
-        <div class="plant-info" style="display: flex; align-items: center;">
-          <%= image_tag ('Light.png'), style: "width: 30px; margin-right: 7px;"%>
-
-          <span>
-            <%= plant.status_today.daily_light %>
-          </span>
-        </div>
-
-        <div class="plant-info" style="display: flex; align-items: center;">
-          <%= image_tag ('Watering.png'), style: "width: 30px; margin-right: 7px;" %>
-          <span>
-            <%= plant.water_on %>
-          </span>
-        </div>
-
       </div>
-    </div>
-      <% end  %>
+    <% end  %>
   </td>
 </tr>
 

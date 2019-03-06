@@ -4,8 +4,6 @@ class WeatherApi
     configure
   end
 
-
-
   def perform
     setting_daily_temp(@garden)
     getting_daily_light(@garden)
@@ -19,8 +17,6 @@ class WeatherApi
 
     today_temp = Openweather2.get_weather(city: "#{garden.location}", units: 'metric')
     garden.status_today.update(daily_temp: today_temp.temperature)
-    garden.status_today.save
-    puts "Saved"
   rescue StandardError => e
     p "Temperature Error ====>>> #{e}"
 
@@ -30,8 +26,6 @@ class WeatherApi
     puts "Getting Daily Light......"
     today_light = Openweather2.get_weather(city: "#{garden.location}", units: 'metric')
     garden.status_today.update(daily_light: today_light.clouds)
-    garden.status_today.save
-    puts 'Saved'
   rescue StandardError => e
      p "Light Error ====>>> #{e}"
 
@@ -61,6 +55,4 @@ class WeatherApi
       config.apikey = "7522ff79b2ce460c78e068e593355180"
     end
   end
-
-
 end

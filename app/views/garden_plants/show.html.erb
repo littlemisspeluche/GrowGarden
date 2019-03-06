@@ -11,7 +11,7 @@
 
       <div class="garden-status">
       <p>Overall Health</p>
-      <p><%= @health %></p>
+      <p><%= @garden_plant.health_percentage %></p>
       <p>Next Watering</p>
       <p><%= "#{@garden_plant.water_on.day}/#{@garden_plant.water_on.month}/#{@garden_plant.water_on.year}" %></p>
     </div>
@@ -22,7 +22,6 @@
 <canvas id="myChart1" width="400" height="400"></canvas>
 </div>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-<script type="text/javascript" src="jscript/graph.js"></script>
 <script>
 
 

@@ -6,6 +6,10 @@ class GardenPlant < ApplicationRecord
 
   delegate :name, to: :plant
 
+  attr_accessor :health_percentage
+
+  after_initialize :convert_health_to_percentage
+
    def light_to_int
 
     case self.plant.requirement.light
@@ -57,5 +61,16 @@ class GardenPlant < ApplicationRecord
     self.update(water_on: next_watering)
   end
 
+  private 
 
+  def convert_health_to_percentage
+    case health
+    when 0
+      @health_percentage = "85%"
+    when 1
+      @health_percentage =  "65%"
+    when 2
+     @health_percentage = '55%'
+    end
+  end
 end
