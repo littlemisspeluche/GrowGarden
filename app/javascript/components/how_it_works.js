@@ -35,9 +35,11 @@ export const debounce = function(func, wait = 10, immediate = true) {
 
 
 export const fadeInUp = function() {
+  if (animation) {
     const slideInAt = (window.scrollY + window.innerHeight) - animation.offsetHeight / 4;
     if (slideInAt > getOffsetTop(animation)) {
       animation.classList.add('animation-fade-in');
     }
+  }
 }
 

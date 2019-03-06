@@ -11,7 +11,6 @@ class UserMailer < ApplicationMailer
 
   def daily_report(user)
     @user = user
-    @gardens = GardenPlant.where(user_id: @user)
 
     mail to: @user.email, subject: 'Your daily garden report'
   end

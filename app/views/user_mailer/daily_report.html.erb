@@ -27,16 +27,29 @@
       If you have any question or remark, we gladly invite you to contact Kirstin (German, English and French) or Christophe (Dutch, English and French).
     </p>
     <p style="color: #66757F; font-family: Helvetica; font-weight: 100; font-size: 16px; line-height: 22px;">Looking forward to meet you!</p>
-    <p style="color: #66757F; font-family: Helvetica; font-weight: 100; font-size: 16px; line-height: 22px;">
-      <% @user.garden_plants do |plant| %>
-        <ul>
-           <li>Plant - <%= plant.name %></li>
-           <li>Todays Temperature - <%= plant.status_today.daily_temp %></li>
-           <li>Todays Sunlight - <%= plant.status_today.daily_light %></li>
-           <li>Next Watering - <%= plant.water_on %></li>
-        </ul>
-      <% end  %>
-    </p>
+          <% @user.garden_plants.each do |plant| %>
+            <p style="color: #66757F; font-family: Helvetica; font-weight: 100; font-size: 16px; line-height: 22px;">
+              The status of your <%= plant.name %>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Location</th>
+                    <th>Temp</th>
+                    <th>Sunshine</th>
+                    <th>Next watering</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                     <td><%= plant.location.split.last %></td>
+                     <td><%= plant.status_today.daily_temp %></td>
+                     <td><%= plant.status_today.daily_light %></td>
+                     <td><%= plant.water_on.strftime("%d/%m/%y") %></td>
+                  </tr>
+                </tbody>
+              </table>
+            </p>
+          <% end  %>
   </td>
 </tr>
 
