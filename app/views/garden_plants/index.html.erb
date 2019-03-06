@@ -27,10 +27,10 @@
               </div>
             </div>
             <div class="buttons-garden">
-              <div class="btn-blue-sm">
+              <div class="btn-yellow smaller-btn">
                 <%= link_to "Status", my_garden_plant_path(garden) %>
               </div>
-              <div class="icon-trash">
+              <div id="icon-trash">
                 <%= link_to my_garden_plant_path(garden), method: :delete, data: {confirm: "Are you sure?"} do %>
                   <%= image_tag "trash.png"%>
                 <% end %>
