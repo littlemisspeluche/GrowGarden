@@ -20,14 +20,14 @@
         <div class="email-icons" style="display: flex; justify-content: space-between;">
           <div class="plant-info" style="display: flex; align-items: center;">
 
-            <%= image_tag attachments["Temp.png"].url, style: "width: 30px; margin-right: 7px;" %>
+            <%= image_tag attachments["Temp.png"].url, { width: "30", border: "0", alt: "Temperature" style: "width: 30px; margin-right: 7px;" }  %>
             <span>
               <%= plant.status_today.daily_temp %>
             </span>
           </div>
 
           <div class="plant-info" style="display: flex; align-items: center;">
-            <%= image_tag attachments["Light.png"].url, style: "width: 30px; margin-right: 7px;"%>
+            <%= image_tag attachments["Light.png"].url, { width: "30", border: "0", alt: "Light" style: "width: 30px; margin-right: 7px;" } %>
 
             <span>
               <%= plant.status_today.daily_light %>
@@ -35,7 +35,7 @@
           </div>
 
           <div class="plant-info" style="display: flex; align-items: center;">
-            <%= image_tag attachments["Watering.png"].url, style: "width: 30px; margin-right: 7px;" %>
+            <%= image_tag attachments["Watering.png"].url, { width: "30", border: "0", alt: "Watering" style: "width: 30px; margin-right: 7px;" } %>
             <span>
               <%= plant.water_on.strftime("%d/%m/%y") %>
             </span>
