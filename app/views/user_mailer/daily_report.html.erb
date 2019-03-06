@@ -6,37 +6,44 @@
   Daily Status
 <% end %>
 
-<%= content_for :header_headline do %>
-  Here is your daily garden status:
-<% end %>
 
 <tr>
   <td>
-    <h3 style="color: #1D446E; font-family: Helvetica; font-weight: 100; font-size: 24px; line-height: 18px;margin:0;padding:5px 0;">
-      You are almost ready to start applying for rooms.
+    <h3 style="color: #1D446E; font-family: Helvetica; font-weight: 100; font-size: 24px; line-height: 25px; margin:0; padding:5px 0;">
+        Here is your daily garden status:
     </h3>
-    <hr style="width:60px;margin-left: 0;border:1px solid #438E93;"/>
-  </td>
-</tr>
-<tr>
-  <td>
-    <p style="color: #66757F; font-family: Helvetica; font-weight: 100; font-size: 16px; line-height: 22px;">
-      Before applying for a room, we kindly invite you to complete your contact details on your personalised dashboard. These data will help us to pre-fill your application and contract for a room.
-    </p>
-    <p  style="color: #66757F; font-family: Helvetica; font-weight: 100; font-size: 16px; line-height: 22px;">
-      If you have any question or remark, we gladly invite you to contact Kirstin (German, English and French) or Christophe (Dutch, English and French).
-    </p>
-    <p style="color: #66757F; font-family: Helvetica; font-weight: 100; font-size: 16px; line-height: 22px;">Looking forward to meet you!</p>
-    <p style="color: #66757F; font-family: Helvetica; font-weight: 100; font-size: 16px; line-height: 22px;">
-      <% @user.garden_plants do |plant| %>
-        <ul>
-           <li>Plant - <%= plant.name %></li>
-           <li>Todays Temperature - <%= plant.status_today.daily_temp %></li>
-           <li>Todays Sunlight - <%= plant.status_today.daily_light %></li>
-           <li>Next Watering - <%= plant.water_on %></li>
-        </ul>
+    <hr style="width:60px;margin-left: 0;border:1px solid #438E93; margin-bottom: 20px;"/>
+    <% @user.garden_plants do |plant| %>
+    <div class="email-card" style="padding: 28px 22px; box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+      <h3 style="margin-top: 0;"><%#= plant.name %>Common Thyme (Thymus Vulgaris)</h3>
+      <div class="email-icons" style="display: flex; justify-content: space-between;">
+        <div class="plant-info" style="display: flex; align-items: center;">
+          <%= image_tag ('Temp.png'), style: "width: 30px; margin-right: 7px;" %>
+
+          <span>
+            <%= plant.status_today.daily_temp %>
+          </span>
+        </div>
+
+        <div class="plant-info" style="display: flex; align-items: center;">
+          <%= image_tag ('Light.png'), style: "width: 30px; margin-right: 7px;"%>
+
+          <span>
+            <%= plant.status_today.daily_light %>
+          </span>
+        </div>
+
+        <div class="plant-info" style="display: flex; align-items: center;">
+          <%= image_tag ('Watering.png'), style: "width: 30px; margin-right: 7px;" %>
+          <span>
+            <%= plant.water_on %>
+          </span>
+        </div>
+
+      </div>
+    </div>
       <% end  %>
-    </p>
   </td>
 </tr>
+
 
