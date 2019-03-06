@@ -30,7 +30,7 @@ class OverallHealth
 
   def check_water
 
-    return 1 if @garden.status_today.watered_on.nil? && @garden.water_on.day == Time.now.day
+    return 1 if @garden.status_today.watered_on.nil? && @garden.water_on.try(:day) == Time.now.day
     return 0 if @garden.created_at.day == Time.now.day
     return 1 if @garden.status_today.watered_on.day > @garden.water_on.day
     return 0

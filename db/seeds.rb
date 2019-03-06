@@ -99,7 +99,8 @@ flowers = Category.create!(
     name: "Madonna Lily",
     description: "Lilium candidum, the Madonna lily, is a plant in the true lily family. It is native to the Balkans and Middle East, and naturalized in other parts of Europe, including France, Italy, and Ukraine, and in North Africa, the Canary Islands, Mexico, and other regions.",
     species: lily,
-    photos: "Madona_Lily"
+    photos: "Madona_Lily",
+    short_description:"Cultivated for centuries, award-winner Lilium candidum is a majestic Lily with large (2-3 in or 6-8 cm long), glistening pure white trumpets facing outward and bright yellow pollen. Celebrated for its intense and delicious fragrance, this prolific Lily produces clusters of up to 20 blossoms per stem for a spectacular long-lasting display. Plant it near a patio and enjoy its intoxicating fragrance on a summer evening."
   )
   madona_lily.requirement = a_req
   madona_lily.save
@@ -1096,7 +1097,10 @@ puts "creating flowers category"
       description: "Sweet Basil is your traditional style Basil that most of us use in our tomato sauces, pesto, in soups, and I use it a lot to make my own Italian seasonings.",
       species: basil,
       uses: "Culinary Herb",
-      photos: "Sweet_Basil"
+      photos: "Sweet_Basil",
+      short_description:"Perhaps the most popular and widely used culinary herb. It is a tender annual, aromatic plant with a spicy odor and flavor.  It grows 12-18 inches tall and foliage color can range from green to purple.  Foliage size can vary from large lettuce-like leaves to very small leaves, half inch in size."
+
+
     )
     sweet_basil.requirement = a_req
     sweet_basil.save
