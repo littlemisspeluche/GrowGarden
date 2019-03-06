@@ -580,7 +580,7 @@ potato = Species.create(
           species: potato,
           uses: " Vegetable ",
           container: "well-drained",
-          photos: "potato_solanum_tuberosum_all_red"
+          photos: "Potato_PeterWilcox"
           )
 
         potato3.requirement = g_req
