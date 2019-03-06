@@ -1,13 +1,67 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%= yield :mailer_title %></title>
     <style>
       /* Email styles need to be inline */
+      body{margin: 0; padding: 0; min-width: 100% !important; font-family: Helvetica; font-weight: 100;}
+      img{height: auto;}
+        @media only screen and (max-width: 550px), screen and (max-device-width: 550px) {
+        body[yahoo] .hide {display: none!important;}
+        body[yahoo] .buttonwrapper {background-color: transparent!important;}
+        body[yahoo] .button {padding: 0px!important;}
+        body[yahoo] .button a {background-color: #e05443; padding: 15px 15px 13px!important;}
+        body[yahoo] .unsubscribe {display: block; margin-top: 20px; padding: 10px 50px; background: #2f3942; border-radius: 5px; text-decoration: none!important; font-weight: bold;}
+        }
     </style>
   </head>
 
-  <body>
-    <%= yield %>
+  <body yahoo="" bgcolor="#F1F5F7" style="min-width: 100% !important; font-family: Helvetica; font-weight: 100; margin: 0; padding: 0;">
+    <table width="100%" bgcolor="#F1F5F7" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+
+        <table bgcolor="#ffffff" class="content" align="center" cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 600px;">
+          <tr>
+            <td bgcolor="#cae6e9" class="header" style="padding: 10px 30px 20px;">
+
+              <table align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; text-align: center;">
+                <tr>
+                  <td height="70" style="padding: 30px">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <%= render "shared/mailers/logo" %>
+                      <tr>
+                        <td>
+                          <h1 style="color: #1D446E; font-family: Helvetica; font-weight: 100; font-size: 38px; line-height: 38px; padding: 40px 0 20px;">
+                            <%= yield :header_greeting  %>
+                          </h1>
+                          <h2 style="color: #1D446E; font-family: Helvetica; font-weight: bold; font-size: 18px; line-height: 38px; padding: 5px 0 20px;">
+                            <%= yield :header_headline %>
+                          </h2>
+                          <p style="color: #1D446E; font-family: Helvetica; font-weight: 100; font-size: 18px; line-height: 27px;padding: 5px 0 0;">
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+          <tr>
+            <td class="innerpadding borderbottom" style="border-bottom-width: 1px; border-bottom-color: #fff; border-bottom-style: solid; padding:  30px;">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <%= yield %>
+              </table>
+            </td>
+          </tr>
+          <%= render "shared/mailers/footer" %>
+        </table>
+
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
