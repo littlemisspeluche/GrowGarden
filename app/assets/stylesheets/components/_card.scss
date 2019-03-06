@@ -33,19 +33,20 @@
 
 
 .card-description-info h2 {
-  margin-top: 10px;
   font-size: 20px;
   font-family: 'PT Sans', sans-serif;
   font-weight: bolder;
   letter-spacing: 2px;
   text-decoration:none;
   text-transform: uppercase;
+  margin: 10px;
 }
 .card-description-info p {
   font-size: 14px;
   color: black;
   font-family: 'PT Sans', sans-serif;
   text-decoration:none;
+  margin: 10px 0;
 }
 
 
@@ -61,12 +62,6 @@
   border: none;
 }
 
-// .card-product-infos {
-//   a {
-//     color: $green;
-//     font-weight: bold;
-//   }
-// }
 
 .plant-index {
   margin-top: 0 !important;

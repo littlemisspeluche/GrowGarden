@@ -27,11 +27,13 @@
               </div>
             </div>
             <div class="buttons-garden">
-              <div class="col-xs-6">
-                <%= link_to "Remove ", my_garden_plant_path(garden), method: :delete , class: 'btn-blue-sm', data: {confirm: "Are you sure?"}%>
+              <div class="btn-blue-sm">
+                <%= link_to "Status", my_garden_plant_path(garden) %>
               </div>
-              <div class="col-xs-6">
-                <%= link_to "Status", my_garden_plant_path(garden), class: 'btn-blue-sm' %>
+              <div class="icon-trash">
+                <%= link_to my_garden_plant_path(garden), method: :delete, data: {confirm: "Are you sure?"} do %>
+                  <%= image_tag "trash.png"%>
+                <% end %>
               </div>
             </div>
           </div>
