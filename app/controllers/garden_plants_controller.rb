@@ -40,9 +40,11 @@ class GardenPlantsController < ApplicationController
     @garden_plant.water_on = Date.today
     @garden_plant.user = current_user
 
+
     if @garden_plant.save
-      UserMailer.plant_added(current_user).deliver_now
-      redirect_to my_garden_plants_path
+
+       UserMailer.plant_added(current_user).deliver_now
+       redirect_to my_garden_plants_path
     else
       # this link does not refresh my variables (does not go through the action in controller, just the view)
       render :new
