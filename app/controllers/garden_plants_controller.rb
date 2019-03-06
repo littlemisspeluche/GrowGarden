@@ -1,7 +1,7 @@
 class GardenPlantsController < ApplicationController
   # all the plants that need to be watered today(like an index)
   def watering
-    
+
     @plants = current_user.garden_plants.to_be_watered_today
   end
 
@@ -23,17 +23,11 @@ class GardenPlantsController < ApplicationController
     when 0
       @health = "85%"
     when 1
-       @health =  "65"
+      @health =  "65"
     when 2
-        @health = '55%'
+      @health = '55%'
     end
-
   end
-
-
-
-
-
 
   def new
     @plant = Plant.find(params[:plant_id])
@@ -43,8 +37,9 @@ class GardenPlantsController < ApplicationController
   def create
     @garden_plant = GardenPlant.new(strong_params)
     @garden_plant.plant = Plant.find(params[:plant_id])
-    @garden_plant.water_on = Time.zone.now
+    @garden_plant.water_on = Date.today
     @garden_plant.user = current_user
+
     if @garden_plant.save
       UserMailer.plant_added(current_user).deliver_now
       redirect_to my_garden_plants_path

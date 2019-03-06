@@ -7,6 +7,9 @@ namespace :seed do
       garden.user = user if garden.user == nil
       garden.location = "New York" if garden.location == "in" || garden.location == "out"
       garden.plant = Plant.last if garden.plant == nil
+      if garden.status_today.daily_light.nil?
+        p garden
+      end
       garden.save
     end
   end

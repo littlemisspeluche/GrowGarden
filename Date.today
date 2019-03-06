@@ -1,0 +1,2 @@
+      invoke  active_record
+      remove    db/migrate/20190306110424_add_column_default_to_garden_plant.rb
