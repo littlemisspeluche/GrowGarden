@@ -3,12 +3,14 @@
 * ------------------------------------- */
 
 .alert {
-  margin: 0;
+  margin-top: 62px;
   text-align: center;
-  color: white;
+  color: #f6f5f3;
+  font-family: 'PT Sans', sans-serif;
+
 }
 .alert-info {
-  background: $green;
+  background: #55babe;
 }
 .alert-warning {
   background: $red;
