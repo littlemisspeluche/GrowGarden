@@ -8,6 +8,8 @@ class User < ApplicationRecord
 
   after_create :send_welcome_email
 
+  scope :with_garden, -> { includes(:garden_plants).where.not(garden_plants: { id: nil} )}
+
   private
 
   def send_welcome_email

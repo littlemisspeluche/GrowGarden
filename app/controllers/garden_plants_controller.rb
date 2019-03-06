@@ -9,7 +9,6 @@ class GardenPlantsController < ApplicationController
   def water
     @plant = GardenPlant.find(params[:id])
     @plant.mark_as_watered
-
     redirect_to plant_watering_path
   end
 
@@ -43,7 +42,7 @@ class GardenPlantsController < ApplicationController
   def create
     @garden_plant = GardenPlant.new(strong_params)
     @garden_plant.plant = Plant.find(params[:plant_id])
-    @garden_plant.water_on = Time.zone.now
+    @garden_plant.water_on = Date.today
     @garden_plant.user = current_user
     if @garden_plant.save
       UserMailer.plant_added(current_user).deliver_now
