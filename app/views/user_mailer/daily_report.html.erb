@@ -22,7 +22,7 @@
 
 
             <span>
-              <p>Temperature:</p>
+              <p><strong>Temperature</strong></p>
              <%= plant.status_today.daily_temp %>
             </span>
           </div>
@@ -31,7 +31,7 @@
 
             <span>
 
-            <p>Light:</p>
+            <p><strong>Light</strong></p>
               <%= plant.status_today.daily_light %>
             </span>
           </div>
@@ -39,7 +39,7 @@
           <div class="plant-info" style="display: flex; align-items: center;">
 
             <span>
-              <p>Next Watering:</p>
+              <p><strong>Next Watering</strong></p>
               <%= plant.water_on.strftime("%d/%m/%y") %>
             </span>
           </div>
