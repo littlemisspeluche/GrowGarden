@@ -2,7 +2,7 @@
   <% if @plant.photos %>
   <%= cl_image_tag(@plant.photos) %>
 <% else %>
-  <%= image_tag "Basil.jpg" %>
+  <%= image_tag "basil-herb-2.jpg" %>
   <% end %>
   <%= link_to new_plant_garden_plant_path(@plant) do %>
   <i class="fas fa-plus plus"></i>
@@ -74,7 +74,7 @@
 <%= link_to "Add to Your Garden", new_plant_garden_plant_path(@plant), class: 'hidden-xs hidden-md' %>
 <br>
 <div class="back-btn">
-  <button class="btn-yellow" onclick="javascript:history.back()">back</button>
+  <button class="btn-pink" onclick="javascript:history.back()">back</button>
 </div>
 
 

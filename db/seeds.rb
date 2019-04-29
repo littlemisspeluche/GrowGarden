@@ -176,7 +176,7 @@ flowers = Category.create!(
 puts "creating vegetables category"
   vegetables = Category.create!(
     name: "Vegetables",
-    description: "Fresh fruits are generally high in fiber, vitamin C, and water. Regular consumption of fruit is generally associated with reduced risks of several diseases and functional declines associated with aging")
+    description: "Fresh fruits are generally known as high in fiber, vitamin C and water. Regular consumption of fruit is generally associated with reduced risks of several diseases and functional declines associated with aging.")
 
   # SPECIES
     squash = Species.create!(
@@ -968,7 +968,7 @@ puts "creating flowers category"
     puts "creating fruits category"
       fruits = Category.create!(
         name: "Fruits",
-        description: "Vegetables can be eaten either raw or cooked and play an important role in human nutrition, being mostly low in fat and carbohydrates, but high in vitamins, minerals and dietary fiber. Many nutritionists encourage people to consume plenty of fruit and vegetables, five or more portions a day often being recommended.")
+        description: "Vegetables can be eaten either raw or cooked and play an important role in human nutrition, being mostly low in fat and carbohydrates, but high in vitamins, minerals and dietary fiber.")
 
   # SPECIES
     strawberries = Species.create!(
@@ -1230,7 +1230,7 @@ puts "creating flowers category"
 
     #imagas
 
-    Cloudinary::Uploader.upload("app/assets/images/trash.png")
+    Cloudinary::Uploader.upload("app/assets/images/basil-herb-2.png")
 
 
     #imagas

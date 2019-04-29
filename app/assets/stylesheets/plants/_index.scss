@@ -15,18 +15,18 @@
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
   display: flex;
   align-items: center;
-  margin-left: 0px;
+  margin-left: -18px;
 }
 
 .plant-img{
-  height: 120px;
+  height: 134px;
   background-size: cover;
   background-position: center;
   width: 120px;
 }
 
 .card-product a {
-  color: #0A7D81;
+  color: #87aa85;
 }
 .card-product a:active{
   text-decoration: none;
@@ -36,15 +36,16 @@
 .card-product h3 {
   margin-top: 10px;
   font-size: 16px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Reem Kufi', sans-serif;
+
   text-transform: capitalize;
   letter-spacing: 2px;
 }
 
 .card-product p {
-  font-size: 12px;
-  color: #3d3d3f;
-  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  color: #563f4d;
+  font-family: 'Amaranth', sans-serif;
   text-decoration:none;
 }
 

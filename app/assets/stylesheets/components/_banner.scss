@@ -1,30 +1,16 @@
 .banner-top {
+  background: url('/assets/background.png');
   background-size: cover !important;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 30px);
   text-align: center;
   background-position: center;
   background-attachment: fixed;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
   flex-direction: column;
-//  background-color: #FFF;
-}
-
-.background-img {
-    min-height: 330px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  img {
-    width: 325px;
-    height: 360px;
-    margin: 66px 6px;
-  }
+  display: flex;
 }
 
 .banner-content {
-  max-height: 350px;
+  max-height: 556px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -33,23 +19,23 @@
 
 .banner-content h1 {
   font-size: 44px;
-  font-family: 'Barlow', sans-serif;
+font-family: 'Reem Kufi', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  word-spacing: 9px;
-  color:#0A7D81;
+  word-spacing: 6px;
+  margin: 10px 5px;
+  color: #f4d2e7;
 }
 
 .banner-content p {
-  font-size: 18px;
-  font-weight: lighter;
-  font-family: 'PT Sans', sans-serif;
-  color:  #3d3d3f;
-  opacity: 0.7;
-  margin-bottom: 30px;
+  font-size: 20px;
+font-family: 'Reem Kufi', sans-serif;
+  color:  #c99cb8;
+  // opacity: 0.7;
+  margin: 40px 15px;
 }
 .banner-center {
-  padding-top: 106px;
+  padding-top: 255px;
 }
 
 /* Medua Query for Search Box */
