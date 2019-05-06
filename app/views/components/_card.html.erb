@@ -4,7 +4,7 @@
   	<div class="card-img" style="background-image: url(<%= image_path(category.name + '.jpg') %>)"></div>
     <div class="card-description">
       <h2><%= category.name %></h2>
-      <p><%= category.description.truncate(66, omission: '... (Read More)') %></p>
+      <p class="category-description"><%= category.description.truncate(200, omission: '... (Read More)') %></p>
     </div>
   </div>
   <% end %>

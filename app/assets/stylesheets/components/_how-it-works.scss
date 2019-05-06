@@ -1,55 +1,48 @@
 .section-steps {
-  position: absolute;
-  right: 103px;
-//  background-color:white;
   padding: 120px 0;
   font-size: 16px;
   font-weight: lighter;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Reem Kufi', sans-serif;
 }
 
 .steps-box:first-child{
-    text-align: right;
-    padding-right: 3%;
-    margin-top: 30px;
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
 }
 
 .steps-box:last-child{
-  padding-left: 3%;
-  margin-top: 70px;
-  margin-bottom: 35px;
-
+  position: relative;
+  left: 2%;
+  top: 100px;
 }
-.span-1-of-2 {
-  width: 49.2%;
-}
+.span-1-of-2 {width: 49.2%;}
 
 .col {
   display: block;
   float: left;
   margin: 1% 0 1% 1.6%;
 }
-.col:first-child {
-  margin-left: 0;
-}
+.col:first-child {margin-left: 0;}
 
 
 // Animated iPhone Display
 
-.app-screen {
- width: 40%;
-}
+.app-screen {width: 40%;}
 
 .animated {
   opacity: 0;
   transform: translateY(-10%);
   transition: all 0.6s ease;
+  animation-timing-function: linear;
 }
 
 
 .animation-fade-in {
   opacity: 1;
   transform: translate(0);
+    animation-timing-function: linear;
+
 }
 
 // Header - How it Works
@@ -57,7 +50,7 @@
   text-align: center;
   font-size: 26px;
   color: #3d3d3f;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Reem Kufi', sans-serif;
   text-transform: uppercase;
   word-spacing: 2px;
   margin: 60px auto 55px ;
@@ -68,7 +61,7 @@
 .section-steps h2:after {
   display: block;
   height: 3px;
-  background-color: #F8C600;
+  background-color: #c99cb8;
   content:  " ";
   width: 233px;
   margin: 30px auto;
@@ -83,25 +76,24 @@
    margin-bottom: 80px;
 }
 
-#first-item {
-  padding-top: 0;
+.description-steps {
+  padding-top: 11px;
+  color: #563f4d;
 }
-.work-step p {
-padding-top: 10px;
+.description-steps:last-child {padding-top: 14px;}
 
-}
 // Step Number
 .step{
-  color: #F8C600;
-  border: 3px solid #F8C600;
+  color: #87aa85;
+  border: 2px solid #87aa85;
   display: inline-block;
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
   text-align: center;
-  padding: 5px;
+  padding: 7px 5px 5px;
   float: left;
-  font-size: 150%;
+  font-size: 119%;
   margin-right: 25px;
 
 }
@@ -112,11 +104,28 @@ padding-top: 10px;
     margin-right: 10px;
 }
 
+@media only screen and (max-width:1078px){
+  .description-steps:last-child {padding-top: 2px;}
+  .description-steps:last-of-type { padding-top: 10px;}
+  .work-step{margin-bottom: 33px;}
+  .work-step:last-of-type {
+    margin-bottom:57px;
+  }
+  .steps-box:first-child {
+    position: relative;
+    right:4%;
+  }
+  .steps-box:last-child {
+    position:relative;
+    left:-10px;
+    top:52px;
+  }
+}
 
-/* Mobile device (up to 812px) - iPhone x : from 481px to 812px*/
+
 @media only screen and (max-width:812px){
   .section-steps {
-    padding: 40px;
+    padding:20px 40px 40px;
     right: 0;
      }
     .row,
@@ -150,3 +159,39 @@ padding-top: 10px;
     margin-right: 10px;
   }
 }
+@media only screen and (max-width:500px){
+  .steps-box:first-child{
+    position:relative;
+    right:0;
+    padding-right: 0;
+  }
+  .steps-box:last-child{
+    position:relative;
+    left: 0px;
+  }
+  .description-steps:last-of-type {
+    padding-top: 10px;
+    font-size: 16px;
+    font-family: 'Reem Kufi', sans-serif;
+  }
+  .work-step {
+    text-align:center;
+  }
+   .work-step p {
+    padding-left: 0;
+   }
+  .step {
+    float:none;
+    position: relative;
+    left: 3%;
+  }
+  .btn-download {
+    height:30px;
+    position:relative;
+    left:0;
+  }
+  .back-btn {
+    margin: 40px 36.9% 0;
+  }
+}
+

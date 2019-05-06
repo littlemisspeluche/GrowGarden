@@ -1,24 +1,34 @@
-<div class="liad">
-	<h2 class="header-category header-location"><%= @plant.name %></h2>
-    <div class="form-location">
+	<div class="container">
+		<div class="section-location">
+			<div class="row">
+				<div class="header-location">
+					<h2 class="header-category add-location-header"> Adding <%= @plant.name %> to your garden </h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-location">
+					<%= simple_form_for @garden_plant, wrapper: :inline_form, url: :plant_garden_plants, method: :post do |f| %>
 
-	<%= simple_form_for @garden_plant, wrapper: :inline_form, url: :plant_garden_plants, method: :post do |f| %>
+				  <%= f.input :location, placeholder: "Where is you garden?" %>
+				  <%= f.submit "Go", class: 'btn-go' %>
+					<% end %>
+				</div>
+			</div>
+			<%= image_tag "garden-location.png", class: "img-location" %>
+			<div class="note">
+				<p class="fade-in">
+					We use the most accurate GPS location services to precisely measure the temperature, precipitation, sunlight, and all other natural factors that determine the health of your garden!
+				</p>
+			</div>
 
-	  <%= f.input :location, placeholder: "Where is you garden?" %>
-	  <%= f.submit "Go", class: 'btn-go' %>
-	<% end %>
-</div>
-<%= cl_image_tag("plants-location",  width: 375, crop: :fill) %>
+		</div>
 
-</div>
+	</div>
+
+
 
 <!-- <a href="javascript:history.back()" >back</a> -->
-<div class="note">
-	<p class="fade-in">
-		GrowGarden uses the most accurate GPS location services to precisely measure the temperature, precipitation, sunlight, and all other natural factors that determine the health of your garden!
-	</p>
 
-</div>
 
 
 

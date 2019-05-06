@@ -2,7 +2,7 @@
   <div class="banner-content">
     <div class="banner-center">
       <h1>Grow Garden</h1>
-      <p>We will take care of your plants</p>
+      <p>Get remainers and notification that will help you grow your plants easly</p>
       <div class="form-inline search-bar">
         <%= form_tag plants_path, method: :get do %>
           <%= text_field_tag :query,
@@ -11,13 +11,8 @@
               placeholder: "What do you want to grow?" %>
               <%= submit_tag 'Search', class: 'button' %>
         <% end %>
-
       </div>
-
     </div>
-  </div>
-  <div class="background-img">
-    <%= image_tag 'background-img.png' %>
   </div>
 </div>
 
