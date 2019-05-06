@@ -1,5 +1,5 @@
 <h2 class="header-garden">My Garden</h2>
-<div class="container">
+
   <div class="row">
 
     <% @garden_plants.each do |garden| %>
@@ -15,9 +15,9 @@
               </div>
               <div class="statuses">
                 <div class="status">
-                  <p>Planted on</p>
-                  <div class="date1"><%= "#{garden.created_at.day}/#{garden.created_at.month}/#{garden.created_at.year}"%>
-                  </div>
+                  <p>Planted on
+                  <%= "#{garden.created_at.day}/#{garden.created_at.month}/#{garden.created_at.year}"%>
+                  </p>
                 </div>
               </div>
             </div>
@@ -38,4 +38,4 @@
     </div>
    <% end %>
   </div>
-</div>
+

@@ -1,56 +1,48 @@
 .section-steps {
-  // position: absolute;
-  // right: 103px;
-//  background-color:white;
   padding: 120px 0;
   font-size: 16px;
   font-weight: lighter;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Reem Kufi', sans-serif;
 }
 
 .steps-box:first-child{
-    text-align: right;
-    padding-right: 3%;
-    margin-top: 30px;
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
 }
 
 .steps-box:last-child{
-
-position: relative;
-left: 2%;
-top: 100px;
-
+  position: relative;
+  left: 2%;
+  top: 100px;
 }
-.span-1-of-2 {
-  width: 49.2%;
-}
+.span-1-of-2 {width: 49.2%;}
 
 .col {
   display: block;
   float: left;
   margin: 1% 0 1% 1.6%;
 }
-.col:first-child {
-  margin-left: 0;
-}
+.col:first-child {margin-left: 0;}
 
 
 // Animated iPhone Display
 
-.app-screen {
- width: 40%;
-}
+.app-screen {width: 40%;}
 
 .animated {
   opacity: 0;
   transform: translateY(-10%);
   transition: all 0.6s ease;
+  animation-timing-function: linear;
 }
 
 
 .animation-fade-in {
   opacity: 1;
   transform: translate(0);
+    animation-timing-function: linear;
+
 }
 
 // Header - How it Works
@@ -88,13 +80,8 @@ top: 100px;
   padding-top: 11px;
   color: #563f4d;
 }
-.description-steps:last-child {
-  padding-top: 14px;
-}
-// .work-step p {
-// padding-top: 10px;
+.description-steps:last-child {padding-top: 14px;}
 
-// }
 // Step Number
 .step{
   color: #87aa85;
@@ -138,7 +125,7 @@ top: 100px;
 
 @media only screen and (max-width:812px){
   .section-steps {
-    padding: 40px;
+    padding:20px 40px 40px;
     right: 0;
      }
     .row,

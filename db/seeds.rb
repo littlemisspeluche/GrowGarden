@@ -36,7 +36,80 @@ puts "creating flowers category"
 
 flowers = Category.create!(
  name: "Flowers",
- description: "Variety of flowers suitable for your garden or inside of your home.")
+ description: "Variety of flowers suitable for your garden or inside of your home."
+)
+
+  amaryllis = Species.create!(
+    category: flowers,
+    name: "Amaryllis",
+    description: "All types of Amaryllis"
+  )
+    amr_req = Requirement.new(
+     light: "Full Sun to Partial Shade",
+     temperature: "13 and 28",
+     watering: "Mesic"
+    )
+
+amaryllis_minerva = Plant.new(
+  name: "Amaryllis Minerva",
+  description: "Amaryllis is a bulbous plant, with each bulb being 5–10 cm (2.0–3.9 in) in diameter. It has several strap-shaped, green leaves, 30–50 cm (12–20 in) long and 2–3 cm (0.79–1.18 in) broad, arranged in two rows.",
+  species: amaryllis,
+  uses: "Decoration",
+  photos: "Amaryllis_Minerva",
+  short_description:"Few bulbs are easier to grow than amaryllis — and few bloom with greater exuberance and beauty. Just plant the bulb in good potting soil, water regularly and provide bright, indirect light. A support stake is handy for keeping the blooms upright, but little else is required. Most varieties will begin blooming six to eight weeks after planting; some can take as long as ten weeks."
+)
+amaryllis_minerva.requirement = amr_req
+amaryllis_minerva.save
+
+# GARDENPLANT
+GardenPlant.create(plant: amaryllis_minerva, user: user_4, location: 'Tel Aviv, Israel')
+
+# PLANTS
+pink_amaryllis = Plant.new(
+  name: "Pink Amaryllis",
+  description: "Amaryllis is a bulbous plant, with each bulb being 5–10 cm (2.0–3.9 in) in diameter. It has several strap-shaped, green leaves, 30–50 cm (12–20 in) long and 2–3 cm (0.79–1.18 in) broad, arranged in two rows.",
+  species: amaryllis,
+  uses: "Decoration",
+  photos: "Pink_Amaryllis",
+  short_description:"Few bulbs are easier to grow than amaryllis — and few bloom with greater exuberance and beauty. Just plant the bulb in good potting soil, water regularly and provide bright, indirect light. A support stake is handy for keeping the blooms upright, but little else is required. Most varieties will begin blooming six to eight weeks after planting; some can take as long as ten weeks."
+)
+pink_amaryllis.requirement = amr_req
+pink_amaryllis.save
+
+# GARDENPLANT
+GardenPlant.create(plant: pink_amaryllis, user: user_4, location: 'Tel Aviv, Israel')
+
+#PLANTS
+clown_stripe_amaryllis = Plant.new(
+  name: "Clown Stripe Amaryllis",
+  description: "Amaryllis is a bulbous plant, with each bulb being 5–10 cm (2.0–3.9 in) in diameter. It has several strap-shaped, green leaves, 30–50 cm (12–20 in) long and 2–3 cm (0.79–1.18 in) broad, arranged in two rows.",
+  species: amaryllis,
+  uses: "Decoration",
+  photos: "Clown_Stripe_Amaryllis",
+  short_description:"Few bulbs are easier to grow than amaryllis — and few bloom with greater exuberance and beauty. Just plant the bulb in good potting soil, water regularly and provide bright, indirect light. A support stake is handy for keeping the blooms upright, but little else is required. Most varieties will begin blooming six to eight weeks after planting; some can take as long as ten weeks."
+)
+clown_stripe_amaryllis.requirement = amr_req
+clown_stripe_amaryllis.save
+
+# GARDENPLANT
+GardenPlant.create(plant: clown_stripe_amaryllis, user: user_4, location: 'Tel Aviv, Israel')
+
+
+
+# SPECIES
+aubrieta = Species.create!(
+  category: flowers,
+  name: "Aubrieta",
+  description: "All types of Aubrieta"
+)
+
+# SPECIES
+ballon_flower = Species.create!(
+  category: flowers,
+  name: "Ballon-Flower",
+  description: "All types of Ballon Flower",
+)
+
 
 # SPECIES
  jasmin = Species.create!(
@@ -176,7 +249,7 @@ flowers = Category.create!(
 puts "creating vegetables category"
   vegetables = Category.create!(
     name: "Vegetables",
-    description: "Fresh fruits are generally known as high in fiber, vitamin C and water. Regular consumption of fruit is generally associated with reduced risks of several diseases and functional declines associated with aging.")
+    description: "Fresh fruits are generally high in fiber, vitamin C, and water. Regular consumption of fruit is generally associated with reduced risks of several diseases and functional declines associated with aging")
 
   # SPECIES
     squash = Species.create!(
@@ -968,7 +1041,7 @@ puts "creating flowers category"
     puts "creating fruits category"
       fruits = Category.create!(
         name: "Fruits",
-        description: "Vegetables can be eaten either raw or cooked and play an important role in human nutrition, being mostly low in fat and carbohydrates, but high in vitamins, minerals and dietary fiber.")
+        description: "Vegetables can be eaten either raw or cooked and play an important role in human nutrition, being mostly low in fat and carbohydrates, but high in vitamins, minerals and dietary fiber. Many nutritionists encourage people to consume plenty of fruit and vegetables, five or more portions a day often being recommended.")
 
   # SPECIES
     strawberries = Species.create!(
@@ -1067,7 +1140,9 @@ puts "creating flowers category"
       description: "The cherry tomato is a type of small round tomato believed to be an intermediate genetic admixture between wild currant-type tomatoes and domesticated garden tomatoes.",
       species: tomatoes,
       uses: "Culinary Herb Vegetable",
-      photos: "Cherry_Tomat"
+      photos: "Cherry_Tomato",
+      short_description:"The cherry tomato is a type of small round tomato believed to be an intermediate genetic admixture between wild currant-type tomatoes and domesticated garden tomatoes."
+
     )
     cherry_tomato.requirement = y_req
     cherry_tomato.save
@@ -1108,7 +1183,37 @@ puts "creating flowers category"
   # GARDENPLANT
     GardenPlant.create(plant: sweet_basil, user: user_2, location:"in",)
 
-    ########
+  # PLANTS
+  napoletano_basil = Plant.new(
+    name: "Napoletano Basil",
+    description: "Napoletano Basil This is another variety of the sweet basil. It still remains true to the traditional basil flavor, though it is a tad spicier than the other varieties of sweet basil.",
+    species: basil,
+    uses: "Culinary Herb",
+    photos: "Napoletano_Basil",
+    short_description:"Perhaps the most popular and widely used culinary herb. It is a tender annual, aromatic plant with a spicy odor and flavor.  It grows 12-18 inches tall and foliage color can range from green to purple.  Foliage size can vary from large lettuce-like leaves to very small leaves, half inch in size."
+  )
+  napoletano_basil.requirement = a_req
+  napoletano_basil.save
+
+  # GARDENPLANT
+  GardenPlant.create(plant: napoletano_basil, user: user_4, location:"Paris, France",)
+
+  # PLANTS
+  dark_opal_dasil = Plant.new(
+    name: "Dark Opal Basil",
+    description: "This basil is unique because of its dark coloring. You may have never considered adding herbs to your flower arrangements, but after reading this article, hopefully, your mind will change.",
+    species: basil,
+    uses: "Culinary Herb",
+    photos: "Dark_Opal_Basil",
+    short_description:"Perhaps the most popular and widely used culinary herb. It is a tender annual, aromatic plant with a spicy odor and flavor.  It grows 12-18 inches tall and foliage color can range from green to purple.  Foliage size can vary from large lettuce-like leaves to very small leaves, half inch in size."
+
+  )
+  dark_opal_dasil.requirement = a_req
+  dark_opal_dasil.save
+
+  # GARDENPLANT
+  GardenPlant.create(plant: dark_opal_dasil, user: user_2, location:"in",)
+
 
   # PLANTS
     holy_basil = Plant.new(
@@ -1123,7 +1228,27 @@ puts "creating flowers category"
   # GARDENPLANT
     GardenPlant.create(plant: sweet_basil, user: user, location:"in", )
 
-    ########
+  # SPECIES
+  mints = Species.create!(
+    category: herbs,
+    name: "Mints",
+    description: "All types of Mints"
+  )
+
+
+  # SPECIES
+  lavender = Species.create!(
+    category: herbs,
+    name: "Lavender",
+    description: "All types of Lavender"
+  )
+
+  # SPECIES
+  garlic = Species.create!(
+    category: herbs,
+    name: "Garlic",
+    description: "All types of Garlic"
+  )
 
   # SPECIES
     thymes = Species.create!(
@@ -1227,15 +1352,34 @@ puts "creating flowers category"
 
   # GARDENPLANT
     GardenPlant.create(plant: oyster_mushroom, user: user, location: 'Tel Aviv, Israel' )
+  # PLANTS
+      common_mushroom = Plant.new(
+        name: "White Button Mushroom",
+        description: "The most common and mildest-tasting mushroom around. Ninety percent of the mushrooms we eat are this variety. Less intensely flavored than many of its more exotic kin, it can be eaten either raw or cooked, and works well in soups and salads, and on pizzas.",
+        species: mushrooms,
+        photos: "White_Button_Mushroom"
+      )
+      common_mushroom.requirement = u_req
+      common_mushroom.save
+
+  # GARDENPLANT
+    GardenPlant.create(plant: common_mushroom, user: user_4, location: 'Tel Aviv, Israel' )
+  # PLANTS
+      crimini_mushroom = Plant.new(
+        name: "Crimini Mushroom",
+        description: "A crimino is a young portobello. Although the crimino is darker, firmer and more flavorful than its cousin the white button mushroom, the two can be used interchangeably. Increasingly, retailers hoping to capitalize on the popularity of the portabellos are selling crimini mushrooms as 'baby bellas'.",
+        species: mushrooms,
+        photos: "Crimini_Mushroom"
+      )
+      crimini_mushroom.requirement = u_req
+      crimini_mushroom.save
+
+  # GARDENPLANT
+    GardenPlant.create(plant: crimini_mushroom, user: user_4, location: 'Tel Aviv, Israel' )
 
     #imagas
 
-    Cloudinary::Uploader.upload("app/assets/images/basil-herb-2.png")
-
-
-    #imagas
-
-
+  Cloudinary::Uploader.upload("app/assets/images/Cherry_Tomato.jpg")
 
 
 

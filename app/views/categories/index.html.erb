@@ -1,5 +1,15 @@
 <%= render 'components/banner' %>
 <div class="container">
+  <section class="section-categories">
+      <h2 class="section-header">Browse Plants By Category</h2>
+    <div class="row">
+      <% @categories.each do |category| %>
+      <%= render 'components/card', category: category %>
+      <% end %>
+    </div>
+  </section>
+</div>
+<div class="container">
   <section class="section-steps">
     <div class="row">
         <h2>How it works &ndash; Simple as 1, 2, 3</h2>
@@ -28,14 +38,5 @@
     </div>
   </section>
 </div>
-<div class="container">
-  <section class="section-categories">
-      <h2 class="section-header">Browse Plants By Category</h2>
-    <div class="row">
-      <% @categories.each do |category| %>
-      <%= render 'components/card', category: category %>
-      <% end %>
-    </div>
-  </section>
-</div>
+
 
